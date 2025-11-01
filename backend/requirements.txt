@@ -9,3 +9,4 @@ openai
 matplotlib
 pytest
 httpx>=0.25.0
+faker
