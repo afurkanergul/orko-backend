@@ -11,26 +11,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1 – Checkout repository
+      # Step 1 – Checkout code
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2 – Set up Python 3.14
+      # Step 2 – Set up Python 3.12 (GitHub doesn't support 3.14 yet)
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.14"
+          python-version: "3.12"
 
       # Step 3 – Install dependencies
       - name: Install dependencies
-        working-directory: backend
         run: |
+          cd backend
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pytest
 
       # Step 4 – Run pytest suite
       - name: Run tests
-        working-directory: backend
         run: |
+          cd backend
           pytest tests --maxfail=1 --disable-warnings -q
