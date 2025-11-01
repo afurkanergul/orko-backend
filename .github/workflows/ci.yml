@@ -15,7 +15,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2 – Set up Python 3.14 (matches your local)
+      # Step 2 – Set up Python 3.14
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -29,8 +29,8 @@ jobs:
           pip install -r requirements.txt
           pip install pytest
 
-      # Step 4 – Run pytest suite (look in backend/tests)
+      # Step 4 – Run pytest suite
       - name: Run tests
-        working-directory: .
+        working-directory: backend
         run: |
-          pytest backend/tests -q --disable-warnings
+          pytest tests --maxfail=1 --disable-warnings -q
