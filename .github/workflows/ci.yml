@@ -20,13 +20,21 @@ jobs:
           python-version: "3.12"
 
       - name: Install dependencies
+        working-directory: backend
         run: |
-          cd backend
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           pip install pytest
 
-      - name: Run tests
+      - name: Debug folder structure
+        working-directory: backend
         run: |
-          cd backend
+          echo "Current path:"
+          pwd
+          echo "Files in backend:"
+          ls -R
+
+      - name: Run tests
+        working-directory: backend
+        run: |
           pytest tests --maxfail=1 --disable-warnings -q
