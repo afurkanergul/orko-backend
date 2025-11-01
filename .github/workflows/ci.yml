@@ -1,0 +1,36 @@
+name: ORKO Backend CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1 – Checkout code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2 – Set up Python 3.14 (matches your local)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.14"
+
+      # Step 3 – Install dependencies
+      - name: Install dependencies
+        working-directory: backend
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      # Step 4 – Run pytest suite
+      - name: Run tests
+        working-directory: backend
+        run: |
+          pytest -q --disable-warnings
