@@ -52,3 +52,5 @@ backend/app/core/vault.key
 # Temporary data, embeddings, and notebooks
 embeddings_sample.csv
 notebooks/
+
+backend/app/integrations/email/credentials_outlook.json
