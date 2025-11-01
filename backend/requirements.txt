@@ -10,3 +10,6 @@ matplotlib
 pytest
 httpx>=0.25.0
 faker
+google-auth
+google-auth-oauthlib
+google-api-python-client
