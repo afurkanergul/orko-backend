@@ -1,2 +1,11 @@
 fastapi==0.115.0
 uvicorn[standard]==0.30.5
+sqlalchemy
+alembic
+python-dotenv
+psycopg2-binary
+pandas
+openai
+matplotlib
+pytest
+httpx>=0.25.0
