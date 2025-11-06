@@ -173,12 +173,23 @@ async def startup_event():
     else:
         print("↩️ File Watcher already scheduled; skipping.")
 
+# =====================================================
+# 🌐 Root route (Render health check)
+# =====================================================
+@app.get("/")
+def root():
+    return {
+        "status": "ok",
+        "service": "orko-api",
+        "note": "ORKO backend is running smoothly on Render."
+    }
+
 
 # =====================================================
 # 🏁 Render Entry Point
 # =====================================================
-
 if __name__ == "__main__":
     import uvicorn
-    port = int(os.environ.get("PORT", 8000))  # ✅ dynamic port for Render
+    # Render dynamically assigns a port via the PORT environment variable
+    port = int(os.environ.get("PORT", 10000))
     uvicorn.run("backend.app.main:app", host="0.0.0.0", port=port)
