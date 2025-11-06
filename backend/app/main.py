@@ -13,12 +13,26 @@ sys.modules['queue'] = _real_queue
 import sys, os
 import asyncio
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware   # ✅ Added
+from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
 
 # 👇 Ensure project root ("backend") is on the path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..")))
 
+# =====================================================
+# 🌍 Environment Handling (Render + Local)
+# =====================================================
+
+env_path = os.path.join(os.path.dirname(__file__), "..", ".env.local")
+if os.path.exists(env_path):
+    print(f"🌍 Loading local .env from {env_path}")
+    load_dotenv(env_path)
+else:
+    print("⚙️ Running in Render environment (no .env.local file)")
+
+# =====================================================
 # ✅ Routers
+# =====================================================
 from backend.app.routes import (
     auth_email,
     emails,
@@ -28,7 +42,7 @@ from backend.app.routes import (
     whatsapp,
     health,
     dashboard,
-    overview   # ✅ added
+    overview
 )
 
 # ✅ Background integrations
@@ -54,7 +68,11 @@ app = FastAPI(
 # ✅ Enable CORS for frontend → backend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origins=[
+        "http://localhost:3000",
+        "http://127.0.0.1:3000",
+        "https://orko-frontend.onrender.com"  # ✅ allow deployed frontend
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -69,7 +87,7 @@ app.include_router(ingest.router)
 app.include_router(whatsapp.router)
 app.include_router(health.router)
 app.include_router(dashboard.router)
-app.include_router(overview.router)   # ✅ added
+app.include_router(overview.router)
 
 
 # =====================================================
@@ -90,10 +108,7 @@ def say_hello():
 # =====================================================
 
 async def start_file_watcher():
-    """
-    Periodically checks Drive & SharePoint for new files
-    and writes them into the database.
-    """
+    """Periodically checks Drive & SharePoint for new files and writes them into the database."""
     print("📁 ORKO File Watcher started.")
     while True:
         try:
@@ -123,17 +138,12 @@ async def start_file_watcher():
                 all_changes = (drive_changes or []) + (sp_changes or [])
                 try:
                     ingest_files_bulk(all_changes)
-
-                    # ✅ Log successful persistence
                     try:
                         log_ingest("watcher", f"Persisted {len(all_changes)} change(s)")
                     except Exception as _e:
                         print(f"⚠️ log_ingest persist note failed: {_e}")
-
                 except Exception as e:
                     print(f"⚠️ DB insert error during File Watcher tick: {e}")
-
-                    # ✅ Log DB insert failure
                     try:
                         log_ingest("watcher", f"DB insert error: {e}", level="error")
                     except Exception as _e:
@@ -142,7 +152,6 @@ async def start_file_watcher():
         except Exception as e:
             print(f"⚠️ File Watcher error: {e}")
 
-        # check every 60 seconds
         await asyncio.sleep(60)
 
 
@@ -163,3 +172,13 @@ async def startup_event():
         print("✅ File Watcher scheduled.")
     else:
         print("↩️ File Watcher already scheduled; skipping.")
+
+
+# =====================================================
+# 🏁 Render Entry Point
+# =====================================================
+
+if __name__ == "__main__":
+    import uvicorn
+    port = int(os.environ.get("PORT", 8000))  # ✅ dynamic port for Render
+    uvicorn.run("backend.app.main:app", host="0.0.0.0", port=port)
