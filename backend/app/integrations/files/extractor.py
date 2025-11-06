@@ -13,7 +13,7 @@ import traceback
 from app.integrations.files.parsers.pdf_parser import read_pdf
 from app.integrations.files.parsers.docx_parser import read_docx
 from app.integrations.files.parsers.txt_parser import read_txt
-from app.integrations.files.parsers.fallback import read_with_textract
+from app.integrations.files.parsers.fallback import read_with_textract  # ← now safe fallback (no textract)
 
 # --- Import cleaning helpers ---
 from app.integrations.files.cleaning import clean_text, chunk_text
@@ -51,6 +51,7 @@ def extract_and_embed(
         elif ext == ".txt":
             raw_text = read_txt(file_path)
         else:
+            # 🔁 New safe fallback (no textract)
             raw_text = read_with_textract(file_path)
 
         if not raw_text or not raw_text.strip():
