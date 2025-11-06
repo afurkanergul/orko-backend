@@ -1,14 +1,18 @@
+# backend/app/db/session.py
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from dotenv import load_dotenv
-import os
 
 # ------------------------------------------------------------
 # Load environment variables
 # ------------------------------------------------------------
 dotenv_path = os.path.join(os.path.dirname(__file__), "..", "..", ".env.local")
-print(f"🌍 Loading .env from: {os.path.abspath(dotenv_path)}")
-load_dotenv(dotenv_path)
+if os.path.exists(dotenv_path):
+    print(f"🌍 Loading .env from: {os.path.abspath(dotenv_path)}")
+    load_dotenv(dotenv_path)
+else:
+    print("⚠️ .env.local not found — assuming environment vars are preloaded (Render)")
 
 # ------------------------------------------------------------
 # Database URL
@@ -16,12 +20,16 @@ load_dotenv(dotenv_path)
 DATABASE_URL = os.getenv("DATABASE_URL")
 
 if not DATABASE_URL:
-    raise ValueError("❌ DATABASE_URL not found in .env.local")
+    raise ValueError("❌ DATABASE_URL not found in environment variables")
+
+# ✅ Ensure Render uses psycopg2-compatible URL
+if DATABASE_URL.startswith("postgres://"):
+    DATABASE_URL = DATABASE_URL.replace("postgres://", "postgresql+psycopg2://", 1)
 
 # ------------------------------------------------------------
 # SQLAlchemy engine and session
 # ------------------------------------------------------------
-engine = create_engine(DATABASE_URL)
+engine = create_engine(DATABASE_URL, pool_pre_ping=True, echo=False)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # ------------------------------------------------------------
@@ -46,5 +54,5 @@ def get_engine():
     """
     global _engine_singleton
     if _engine_singleton is None:
-        _engine_singleton = create_engine(DATABASE_URL)
+        _engine_singleton = engine
     return _engine_singleton

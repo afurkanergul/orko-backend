@@ -1,19 +1,34 @@
 # backend/app/db/helpers/logs.py
+import os, sys
 from datetime import datetime, timezone
 from sqlalchemy import text
-import sys, os
+from dotenv import load_dotenv
 
-# ✅ Ensure the project root ("backend") is on sys.path
+# ==========================================================
+# 1️⃣ Ensure environment is loaded for Render / local use
+# ==========================================================
+dotenv_path = os.path.join(os.path.dirname(__file__), "../../../.env.local")
+if os.path.exists(dotenv_path):
+    load_dotenv(dotenv_path)
+else:
+    print("⚠️ .env.local not found — assuming environment variables set in environment (Render).")
+
+# ==========================================================
+# 2️⃣ Ensure backend is on import path
+# ==========================================================
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../..")))
 
-# ✅ Fixed import — works in both local test and app runtime
+# ==========================================================
+# 3️⃣ Import shared session manager (dynamic DATABASE_URL)
+# ==========================================================
 from backend.app.db.session import SessionLocal
 
-
+# ==========================================================
+# 4️⃣ Logging function
+# ==========================================================
 def log_ingest(source: str, message: str, level: str = "info") -> None:
     """
-    Write a short, safe log line into ingestion_logs.
-    Keeps messages short; do not pass huge payloads.
+    Writes a short, safe log line into ingestion_logs table.
     """
     db = SessionLocal()
     try:
