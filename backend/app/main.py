@@ -156,22 +156,27 @@ async def start_file_watcher():
 
 
 # =====================================================
-# 🚦 Startup: run both listeners
+# 🚦 Startup: run both listeners with resilience
 # =====================================================
 
 @app.on_event("startup")
 async def startup_event():
-    # Gmail listener
-    asyncio.create_task(start_gmail_listener(interval_minutes=15))
-    print("📬 Gmail auto-listener started.")
+    async def safe_run(task_fn, name: str, *args, **kwargs):
+        """Safely runs background tasks; auto-restarts on failure."""
+        while True:
+            try:
+                await task_fn(*args, **kwargs)
+            except Exception as e:
+                print(f"⚠️ {name} crashed with error: {e} — restarting in 30s...")
+                await asyncio.sleep(30)
 
-    # File watcher
-    if not hasattr(app.state, "file_watcher_started"):
-        app.state.file_watcher_started = True
-        asyncio.create_task(start_file_watcher())
-        print("✅ File Watcher scheduled.")
-    else:
-        print("↩️ File Watcher already scheduled; skipping.")
+    # Gmail Listener
+    asyncio.create_task(safe_run(start_gmail_listener, "Gmail Listener", interval_minutes=15))
+    print("📬 Gmail Listener scheduled safely.")
+
+    # File Watcher
+    asyncio.create_task(safe_run(start_file_watcher, "File Watcher"))
+    print("📁 File Watcher scheduled safely.")
 
 # =====================================================
 # 🌐 Root route (Render health check)
