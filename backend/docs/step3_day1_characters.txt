@@ -1,0 +1,25 @@
+Telegram → sends chat messages to your system (via a webhook URL).
+
+WhatsApp → sends chat messages via Twilio to your system (webhook).
+
+Gmail / Microsoft 365 (Outlook) → provide emails your system pulls regularly 
+(API fetch via Gmail API or MS Graph API).
+
+Drive / SharePoint → provide files your system watches (API change feed).
+
+ORKO Backend → has three parts: Front Door (FastAPI Router), Queue, Processor.
+
+WHY IT MATTERS
+• One front door (FastAPI Router) keeps everything organized and secure.  
+• The Queue prevents overload and ensures no message is lost.  
+• The Processor normalizes and stores data so later brains (knowledge, pattern, skill) work smoothly.
+
+ONE-SENTENCE PATH
+Telegram / WhatsApp / Gmail / Microsoft 365 / Files → FastAPI Router (/ingest/message) → Queue → Processor → Database (+ Vector Index later)
+
+GLOSSARY
+Router → Your front door (web URL) that receives incoming data.  
+Queue → A safe waiting line that stores messages before processing.  
+Processor → The worker that takes each message from the line and saves it to the database.  
+Schema → The agreed list of fields each message must have (source, sender, timestamp, content, attachments).  
+Webhook → A URL that external apps call to deliver data automatically.

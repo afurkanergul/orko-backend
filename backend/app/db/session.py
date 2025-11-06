@@ -10,7 +10,6 @@ dotenv_path = os.path.join(os.path.dirname(__file__), "..", "..", ".env.local")
 print(f"🌍 Loading .env from: {os.path.abspath(dotenv_path)}")
 load_dotenv(dotenv_path)
 
-
 # ------------------------------------------------------------
 # Database URL
 # ------------------------------------------------------------
@@ -34,3 +33,18 @@ def get_db():
         yield db
     finally:
         db.close()
+
+# ------------------------------------------------------------
+# ✅ Helper for background/utility scripts (e.g., file_ingest)
+# ------------------------------------------------------------
+_engine_singleton = None
+
+def get_engine():
+    """
+    Returns a reusable SQLAlchemy engine instance.
+    Used by Alembic helpers and background workers.
+    """
+    global _engine_singleton
+    if _engine_singleton is None:
+        _engine_singleton = create_engine(DATABASE_URL)
+    return _engine_singleton

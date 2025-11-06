@@ -6,7 +6,21 @@ from sqlalchemy import engine_from_config, pool
 from alembic import context
 
 # -------------------------------------------------------------------
-# ✅ FINAL FIX — make sure Alembic always finds your "app" package
+# ✅ Force Alembic to use IPv4 (prevents ::1 localhost issue)
+# -------------------------------------------------------------------
+os.environ["PGHOST"] = "127.0.0.1"
+
+# -------------------------------------------------------------------
+# ✅ Load environment variables from .env.local
+# -------------------------------------------------------------------
+from dotenv import load_dotenv
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env.local"))
+
+# Debug print to confirm
+print("🔍 DATABASE_URL currently loaded as:", os.getenv("DATABASE_URL"))
+
+# -------------------------------------------------------------------
+# ✅ Ensure Alembic finds your app folder correctly
 # -------------------------------------------------------------------
 import importlib.util
 
@@ -25,16 +39,25 @@ print("📦 APP_DIR:", APP_DIR)
 print("📦 sys.path (first 3):", sys.path[:3])
 print("📂 session.py exists?:", os.path.exists(os.path.join(APP_DIR, "db", "session.py")))
 
-# ✅ Imports
+# -------------------------------------------------------------------
+# ✅ Import your models and session
+# -------------------------------------------------------------------
 from app.db.base import Base
 from app.db.models import *  # noqa
 from app.db.session import engine
-
 
 # -------------------------------------------------------------------
 # Alembic configuration
 # -------------------------------------------------------------------
 config = context.config
+
+# ✅ Force Alembic to use the DATABASE_URL from .env.local (not alembic.ini)
+database_url = os.getenv("DATABASE_URL")
+if database_url:
+    config.set_main_option("sqlalchemy.url", database_url)
+    print(f"🔗 Using DATABASE_URL from .env.local")
+else:
+    print("⚠️ DATABASE_URL not found in .env.local! Check file path or spelling.")
 
 # Set up Python logging
 if config.config_file_name is not None:

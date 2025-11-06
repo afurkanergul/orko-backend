@@ -1,25 +1,20 @@
+# backend/app/db/models.py
 from sqlalchemy import (
     Integer, String, Text, ForeignKey, DateTime, UniqueConstraint
 )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from sqlalchemy.dialects.postgresql import JSONB
 from typing import Optional, List
 from datetime import datetime
 
-# Import our base and mixins
+# Import our base, mixins, and portable JSON type
 from .base import Base, TimestampMixin, StatusMixin
+from .types import JSONType  # ✅ replaces direct JSONB import
 
 
 # === STEP 2 / DAY 7 — RBAC PREP (Sub-Step 1) ===
-# Plan: add org_id to multi-tenant tables (users, trades, files)
-# Create roles, permissions, user_roles tables
-# Create ENUM user_role ('admin', 'operator', 'viewer')
-# Filtering rule: always limit by org_id for user’s organization
-# (Actual ALTER/CREATE statements will be executed in pgAdmin in Sub-Steps 2–5)
-
+# Multi-tenant schema prep with org_id + role + isolation
 
 # ---------- ORGS ----------
-# [RBAC Day 7] This table already represents each organization (root of org_id)
 class Org(TimestampMixin, StatusMixin, Base):
     __tablename__ = "orgs"
 
@@ -32,7 +27,6 @@ class Org(TimestampMixin, StatusMixin, Base):
 
 
 # ---------- USERS ----------
-# [RBAC Day 7] Will add org_id (INTEGER) + role (ENUM) to this model
 class User(TimestampMixin, StatusMixin, Base):
     __tablename__ = "users"
     __table_args__ = (UniqueConstraint("email", name="uq_users_email"),)
@@ -51,7 +45,6 @@ class User(TimestampMixin, StatusMixin, Base):
 
 
 # ---------- AUTH TOKENS ----------
-# [RBAC Day 7] Belongs to a user; no org_id needed (inherits via user)
 class AuthToken(TimestampMixin, StatusMixin, Base):
     __tablename__ = "auth_tokens"
 
@@ -65,7 +58,6 @@ class AuthToken(TimestampMixin, StatusMixin, Base):
 
 
 # ---------- AUTOMATIONS ----------
-# [RBAC Day 7] Will add org_id (INTEGER) to this model (each automation belongs to an org)
 class Automation(TimestampMixin, StatusMixin, Base):
     __tablename__ = "automations"
 
@@ -74,35 +66,69 @@ class Automation(TimestampMixin, StatusMixin, Base):
     name: Mapped[str] = mapped_column(String(200), nullable=False)
     trigger: Mapped[Optional[str]] = mapped_column(String(200))   # e.g. "email.received"
     action: Mapped[Optional[str]] = mapped_column(String(200))    # e.g. "send_slack"
-    config: Mapped[Optional[dict]] = mapped_column(JSONB)         # flexible settings
+    config: Mapped[Optional[dict]] = mapped_column(JSONType)      # ✅ portable JSON
     last_run_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
 
     user: Mapped["User"] = relationship(back_populates="automations")
 
 
 # ---------- LOGS ----------
-# [RBAC Day 7] org_id already exists here — no change needed
 class Log(Base):
     __tablename__ = "logs"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     org_id: Mapped[Optional[int]] = mapped_column(ForeignKey("orgs.id", ondelete="SET NULL"))
     user_id: Mapped[Optional[int]] = mapped_column(ForeignKey("users.id", ondelete="SET NULL"))
-    level: Mapped[str] = mapped_column(String(30), default="info", nullable=False)  # info/warn/error
+    level: Mapped[str] = mapped_column(String(30), default="info", nullable=False)
     event: Mapped[str] = mapped_column(String(200), nullable=False)
-    details: Mapped[Optional[dict]] = mapped_column(JSONB)
+    details: Mapped[Optional[dict]] = mapped_column(JSONType)     # ✅ portable JSON
     created_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True), server_default=None)
 
 
 # ---------- FEEDBACK ----------
-# [RBAC Day 7] Will add org_id (INTEGER) to this model later (feedback belongs to an org)
 class Feedback(TimestampMixin, Base):
     __tablename__ = "feedback"
 
     id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
-    rating: Mapped[Optional[int]] = mapped_column(Integer)        # 1..5 stars
+    rating: Mapped[Optional[int]] = mapped_column(Integer)
     comment: Mapped[Optional[str]] = mapped_column(Text)
-    context: Mapped[Optional[dict]] = mapped_column(JSONB)        # where feedback happened
+    context: Mapped[Optional[dict]] = mapped_column(JSONType)     # ✅ portable JSON
 
     user: Mapped["User"] = relationship(back_populates="feedbacks")
+
+# ---------- FILES ----------
+class FileRecord(Base):
+    __tablename__ = "files"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    provider: Mapped[str] = mapped_column(String(50), nullable=False)
+    remote_id: Mapped[str] = mapped_column(String(255), unique=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    owner: Mapped[Optional[str]] = mapped_column(String(255))
+    modified_at: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
+    created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=datetime.utcnow)
+
+# -------------------------------------------------------------------------
+# IngestionAudit  (created for Step 3 Day 11 – Sub-Step 2 Part B)
+# -------------------------------------------------------------------------
+from datetime import datetime, timezone
+from sqlalchemy import Column, Integer, String, DateTime, Text
+
+class IngestionAudit(Base):
+    __tablename__ = "ingestion_audit"
+
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    source = Column(String(50), nullable=False)               # telegram / gmail / drive / sharepoint …
+    msg_id = Column(String(128), nullable=True)               # external id from that source
+    org_id = Column(Integer, nullable=True)                   # tenant id
+    received_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    processed_at = Column(DateTime(timezone=True), nullable=True)
+    status = Column(String(20), default="received")            # received / processed / failed
+    error = Column(Text, nullable=True)
+    created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    updated_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc),
+                        onupdate=lambda: datetime.now(timezone.utc))
+
+    def __repr__(self):
+        return f"<IngestionAudit(id={self.id}, source={self.source}, status={self.status})>"
