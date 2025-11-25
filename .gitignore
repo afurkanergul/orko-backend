@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python
 __pycache__/
 *.py[cod]
@@ -24,3 +25,61 @@ Thumbs.db
 # Aider
 .aider*
 aider_logs/
+=======
+# =============================
+# ORKO Backend — Git Ignore List
+# =============================
+
+# 🔧 Python / Virtual Environment
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# 🧱 Environment & System Files
+.env
+.env.local
+.DS_Store
+Thumbs.db
+
+# 🧠 Development / IDE files
+.vscode/
+.idea/
+*.code-workspace
+
+# 🧪 Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 🗃️ Build artifacts
+dist/
+build/
+*.egg-info/
+
+# =============================
+# 🔒 Sensitive files (Vaults, Tokens, Credentials)
+# =============================
+
+# Email & Google credentials (full path for backend folder)
+backend/app/integrations/google/credentials.json
+backend/app/integrations/email/credentials_gmail.json
+backend/app/integrations/email/token_gmail.json
+backend/app/integrations/email/token_outlook.json
+
+# Local encryption vault
+backend/app/core/orko_vault.json
+backend/app/core/vault.key
+
+# =============================
+# 🧠 Other project exclusions
+# =============================
+
+# Temporary data, embeddings, and notebooks
+embeddings_sample.csv
+notebooks/
+
+backend/app/integrations/email/credentials_outlook.json
+>>>>>>> 0e617b2fa638697bd42e9a900ed3aea7e4b9e620
