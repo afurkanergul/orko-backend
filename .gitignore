@@ -1,85 +1,56 @@
-<<<<<<< HEAD
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-.env
+# ===============================================
+# ORKO Backend / Full Project — Git Ignore List
+# ===============================================
+
+######## Python / Virtual Environment ########
 .venv/
-venv/
 env/
-
-# Node / frontend
-node_modules/
-dist/
-build/
-
-# IDE
-.vscode/
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Aider
-.aider*
-aider_logs/
-=======
-# =============================
-# ORKO Backend — Git Ignore List
-# =============================
-
-# 🔧 Python / Virtual Environment
-.venv/
+venv/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 *.log
 
-# 🧱 Environment & System Files
+######## Environment & System Files ########
 .env
 .env.local
 .DS_Store
 Thumbs.db
 
-# 🧠 Development / IDE files
+######## IDE / Editor ########
 .vscode/
 .idea/
 *.code-workspace
 
-# 🧪 Test cache
+######## Test Caches ########
 .pytest_cache/
 .coverage
 htmlcov/
 
-# 🗃️ Build artifacts
+######## Node / Frontend ########
+node_modules/
 dist/
 build/
+
+######## Build Artifacts ########
 *.egg-info/
 
-# =============================
-# 🔒 Sensitive files (Vaults, Tokens, Credentials)
-# =============================
+######## Sensitive Files (Vault, Keys) ########
+backend/app/core/orko_vault.json
+backend/app/core/vault.key
 
-# Email & Google credentials (full path for backend folder)
+######## Email Credentials ########
 backend/app/integrations/google/credentials.json
 backend/app/integrations/email/credentials_gmail.json
 backend/app/integrations/email/token_gmail.json
 backend/app/integrations/email/token_outlook.json
+backend/app/integrations/email/credentials_outlook.json
 
-# Local encryption vault
-backend/app/core/orko_vault.json
-backend/app/core/vault.key
-
-# =============================
-# 🧠 Other project exclusions
-# =============================
-
-# Temporary data, embeddings, and notebooks
+######## Temporary Data / Embeddings ########
 embeddings_sample.csv
 notebooks/
 
-backend/app/integrations/email/credentials_outlook.json
->>>>>>> 0e617b2fa638697bd42e9a900ed3aea7e4b9e620
+######## Aider Internal ########
+.aider*
+aider_logs/
