@@ -1,9 +1,0 @@
-───────────────────────────────────────────────
-TABLE: users
-QUERY: SELECT * FROM users WHERE email='ahmet@example.com';
-PLAN: Index Scan using uq_users_email
-PLANNING TIME: 3.222 ms
-EXECUTION TIME: 0.115 ms
-STATUS: ✅ FAST
-NOTES: Already indexed; no optimization needed.
-───────────────────────────────────────────────
