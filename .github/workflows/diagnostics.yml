@@ -1,0 +1,64 @@
+name: ORKO Diagnostics (Aider)
+
+on:
+  pull_request:
+    branches:
+      - dev
+  workflow_dispatch: {}
+
+jobs:
+  tests-and-diagnostics:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install backend deps
+        working-directory: ./orko-backend
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pytest
+
+      - name: Run backend tests
+        working-directory: ./orko-backend
+        run: |
+          pytest || exit 1
+
+      # Placeholder for Aider-based diagnostics
+      - name: Run Aider diagnostics (placeholder)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Running Aider diagnostics placeholder..."
+          # In future, you can call a script that uses Aider CLI, e.g.:
+          # pip install aider-chat
+          # python scripts/run_aider_diagnostics.py
+
+      - name: Post diagnostics summary comment (placeholder)
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const body = [
+              "## ORKO Diagnostics (Aider Placeholder)",
+              "",
+              "- Tests: Run in this workflow.",
+              "- Diagnostics: To be filled by Aider CLI integration.",
+              "",
+              "_This is a placeholder. Real diagnostics will come from Aider tasks._"
+            ].join("\n");
+            github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body
+            })
