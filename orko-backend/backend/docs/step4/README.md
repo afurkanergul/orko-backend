@@ -1,0 +1,1 @@
+Day 1 outputs (wireframes + design tokens) — no backend edits.

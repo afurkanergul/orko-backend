@@ -1,0 +1,2 @@
+Later: define template structure.
+Later: connect templates to dynamic loader.

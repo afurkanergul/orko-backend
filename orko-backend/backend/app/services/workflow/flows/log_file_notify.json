@@ -1,0 +1,8 @@
+{
+  "name": "log_file_notify",
+  "steps": [
+    { "action": "log_message" },
+    { "action": "write_file" },
+    { "action": "notify_user" }
+  ]
+}

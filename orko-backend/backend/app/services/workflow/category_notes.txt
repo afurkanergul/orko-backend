@@ -1,0 +1,3 @@
+Planning file for action categories.
+Later: group actions by category.
+Later: allow Composer to filter actions by category.

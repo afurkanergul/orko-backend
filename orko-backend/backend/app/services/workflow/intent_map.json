@@ -1,0 +1,12 @@
+{
+  "trading:create_contract": "workflow.trading.create_contract",
+  "logistics:book_truck": "workflow.logistics.book_truck",
+  "finance:generate_cashflow_report": "workflow.finance.cashflow_report",
+  "hr:create_employee": "workflow.hr.create_employee",
+  "it_ops:restart_service": "workflow.it.restart_service",
+  "customer_support:list_tickets": "workflow.cs.list_tickets",
+  "operations:create_checklist": "workflow.ops.create_checklist",
+  "analytics:revenue_breakdown": "workflow.analytics.revenue_breakdown",
+  "logistics:list_vessels": "workflow.logistics.list_vessels",
+  "finance:list_overdue_invoices": "workflow.finance.list_overdue_invoices"
+}

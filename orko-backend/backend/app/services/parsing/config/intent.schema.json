@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "title": "ORKOCommandIntent",
+  "description": "Structured intent produced by the ORKO command parser.",
+  "type": "object",
+  "required": ["command", "action", "parameters", "context"],
+  "properties": {
+    "command": {
+      "type": "string",
+      "description": "Raw natural language command from the user."
+    },
+    "action": {
+      "type": "string",
+      "description": "Normalized action key used by the Intent Mapper and Workflow Engine."
+    },
+    "parameters": {
+      "type": "object",
+      "description": "Action-specific parameters extracted from the command.",
+      "additionalProperties": true
+    },
+    "context": {
+      "type": "object",
+      "description": "Execution context for the command.",
+      "properties": {
+        "source_channel": {
+          "type": "string",
+          "description": "Where the command came from (chat, email, dashboard, webhook, etc.)."
+        },
+        "user_id": {
+          "type": "string",
+          "description": "Identifier of the requesting user."
+        },
+        "org_id": {
+          "type": "string",
+          "description": "Identifier of the organization/tenant."
+        },
+        "session_id": {
+          "type": "string",
+          "description": "Session identifier for grouping related commands."
+        },
+        "locale": {
+          "type": "string",
+          "description": "Locale or language code (e.g., en-US)."
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,5090 @@
+[
+  {
+    "id": "3e417819-53e7-4909-956b-823204c426ea",
+    "timestamp": "2025-11-18T15:26:57.013844",
+    "brain": "knowledge",
+    "summary": "Initial learning cycle placeholder.",
+    "metadata": {
+      "info": "Will be replaced by real analysis later."
+    }
+  },
+  {
+    "id": "3116b194-7fa5-4090-93b3-1fc5b49cda99",
+    "timestamp": "2025-11-18T15:46:59.718146",
+    "brain": "system",
+    "summary": "Captured brain insights.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 5
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 2
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 1
+      }
+    }
+  },
+  {
+    "id": "dd7d685d-748d-401b-86f3-eb45b2f3dcda",
+    "timestamp": "2025-11-18T15:55:48.261287",
+    "brain": "pattern",
+    "summary": "Detected 1 correlation",
+    "metadata": {
+      "event": {
+        "brain": "pattern",
+        "title": "Detected 1 correlation"
+      },
+      "mapped_update": {
+        "pattern": {
+          "patterns": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "d3ea7821-4248-4788-8107-ccaaa2d36d84",
+    "timestamp": "2025-11-18T15:57:14.087593",
+    "brain": "knowledge",
+    "summary": "Indexed documents",
+    "metadata": {
+      "event": {
+        "brain": "knowledge",
+        "title": "Indexed documents"
+      },
+      "mapped_update": {
+        "knowledge": {
+          "docs_added": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "7e789e1d-f7bd-46b7-b0e1-e5cef9121f2e",
+    "timestamp": "2025-11-18T15:57:14.088589",
+    "brain": "skill",
+    "summary": "Auto-classified file",
+    "metadata": {
+      "event": {
+        "brain": "skill",
+        "title": "Auto-classified file"
+      },
+      "mapped_update": {
+        "skill": {
+          "skills": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "fa07aa15-462a-485e-be2f-d66604d1fc76",
+    "timestamp": "2025-11-18T15:57:14.089165",
+    "brain": "pattern",
+    "summary": "Detected new sequence",
+    "metadata": {
+      "event": {
+        "brain": "pattern",
+        "title": "Detected new sequence"
+      },
+      "mapped_update": {
+        "pattern": {
+          "patterns": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "41c14976-47dc-4ece-8a57-f5abd042464d",
+    "timestamp": "2025-11-18T15:58:27.712415",
+    "brain": "knowledge",
+    "summary": "Indexed documents",
+    "metadata": {
+      "event": {
+        "brain": "knowledge",
+        "title": "Indexed documents"
+      },
+      "mapped_update": {
+        "knowledge": {
+          "docs_added": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "7fd49655-33cb-4147-a934-ff73397ef9d7",
+    "timestamp": "2025-11-18T15:58:27.713491",
+    "brain": "skill",
+    "summary": "Auto-classified file",
+    "metadata": {
+      "event": {
+        "brain": "skill",
+        "title": "Auto-classified file"
+      },
+      "mapped_update": {
+        "skill": {
+          "skills": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "fbfedaea-d939-4b94-8cb1-8ff31d59bf48",
+    "timestamp": "2025-11-18T15:58:27.714220",
+    "brain": "pattern",
+    "summary": "Detected new sequence",
+    "metadata": {
+      "event": {
+        "brain": "pattern",
+        "title": "Detected new sequence"
+      },
+      "mapped_update": {
+        "pattern": {
+          "patterns": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "2154e9cf-1bd5-4dd3-98e8-64ba74ae7d74",
+    "timestamp": "2025-11-18T16:15:36.376655",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "3d3bcf40-2c97-489f-8484-d2f67ceb70cb",
+    "timestamp": "2025-11-18T16:15:36.377877",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "a41d1caa-0f7a-4a71-b7aa-6b6254e93925",
+    "timestamp": "2025-11-18T16:18:33.391639",
+    "brain": "knowledge",
+    "summary": "Indexed docs",
+    "metadata": {
+      "event": {
+        "brain": "knowledge",
+        "title": "Indexed docs"
+      },
+      "mapped_update": {
+        "knowledge": {
+          "docs_added": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "b3af82d6-d8a1-4db9-b82f-075710eb0693",
+    "timestamp": "2025-11-18T16:18:33.392705",
+    "brain": "skill",
+    "summary": "Executed skill routine",
+    "metadata": {
+      "event": {
+        "brain": "skill",
+        "title": "Executed skill routine"
+      },
+      "mapped_update": {
+        "skill": {
+          "skills": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "c33d9ff1-ffe9-4486-ab53-19eb72678ab6",
+    "timestamp": "2025-11-18T16:18:33.393443",
+    "brain": "pattern",
+    "summary": "Detected correlation",
+    "metadata": {
+      "event": {
+        "brain": "pattern",
+        "title": "Detected correlation"
+      },
+      "mapped_update": {
+        "pattern": {
+          "patterns": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "e7d3320e-1431-450e-b5be-7a76ea653244",
+    "timestamp": "2025-11-18T16:19:47.993111",
+    "brain": "knowledge",
+    "summary": "Indexed docs",
+    "metadata": {
+      "event": {
+        "brain": "knowledge",
+        "title": "Indexed docs"
+      },
+      "mapped_update": {
+        "knowledge": {
+          "docs_added": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "930e1413-f901-4f21-8bdb-940698f8f25b",
+    "timestamp": "2025-11-18T16:19:47.994638",
+    "brain": "skill",
+    "summary": "Executed skill routine",
+    "metadata": {
+      "event": {
+        "brain": "skill",
+        "title": "Executed skill routine"
+      },
+      "mapped_update": {
+        "skill": {
+          "skills": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "b4d28d9b-4fe0-4533-8746-845cb3bb9d71",
+    "timestamp": "2025-11-18T16:19:47.995698",
+    "brain": "pattern",
+    "summary": "Detected correlation",
+    "metadata": {
+      "event": {
+        "brain": "pattern",
+        "title": "Detected correlation"
+      },
+      "mapped_update": {
+        "pattern": {
+          "patterns": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "0a7fc904-4d00-4b7b-b162-d5cba3285fc2",
+    "timestamp": "2025-11-18T16:19:47.996516",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Small document activity."
+      },
+      "pattern": {
+        "insight": "One pattern detected — good start."
+      },
+      "skill": {
+        "insight": "Some skills executed — early reinforcement."
+      }
+    }
+  },
+  {
+    "id": "0339a804-b448-4069-a2de-3389a575dc15",
+    "timestamp": "2025-11-18T16:21:19.010396",
+    "brain": "knowledge",
+    "summary": "Indexed docs",
+    "metadata": {
+      "event": {
+        "brain": "knowledge",
+        "title": "Indexed docs"
+      },
+      "mapped_update": {
+        "knowledge": {
+          "docs_added": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "b49ace41-38b3-4830-b00a-414e6e1b02c9",
+    "timestamp": "2025-11-18T16:21:19.011880",
+    "brain": "pattern",
+    "summary": "Found pattern",
+    "metadata": {
+      "event": {
+        "brain": "pattern",
+        "title": "Found pattern"
+      },
+      "mapped_update": {
+        "pattern": {
+          "patterns": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "ea5b0d29-6a0f-4897-9030-43030cccd121",
+    "timestamp": "2025-11-18T16:21:19.012794",
+    "brain": "skill",
+    "summary": "Executed skill",
+    "metadata": {
+      "event": {
+        "brain": "skill",
+        "title": "Executed skill"
+      },
+      "mapped_update": {
+        "skill": {
+          "skills": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "74a82255-3024-4ca8-be7f-4527302d97c9",
+    "timestamp": "2025-11-18T16:21:19.013630",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Small document activity."
+      },
+      "pattern": {
+        "insight": "One pattern detected — good start."
+      },
+      "skill": {
+        "insight": "Some skills executed — early reinforcement."
+      }
+    }
+  },
+  {
+    "id": "efc01ec9-cfdc-4cbb-b007-3a9abc074b7b",
+    "timestamp": "2025-11-18T16:32:37.832713",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 12
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "61b247ce-2379-40c7-ad4f-67283f26c26a",
+    "timestamp": "2025-11-18T16:32:37.834104",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Moderate document ingestion."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "dd07dd5d-3b08-4e02-a756-384e53f2da1d",
+    "timestamp": "2025-11-18T16:35:20.067533",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 12
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "ed541502-1c66-403e-9bae-220df91105ac",
+    "timestamp": "2025-11-18T16:35:20.068684",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Moderate document ingestion."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "9700428d-e2b3-4028-aa20-bb3a89c1da06",
+    "timestamp": "2025-11-18T16:35:48.872961",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 12
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "51b1d986-6059-4f44-baaf-cfe2fca56109",
+    "timestamp": "2025-11-18T16:35:48.876059",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Moderate document ingestion."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "9735bb10-e760-455d-8cf7-a423defc3e4d",
+    "timestamp": "2025-11-18T16:36:19.875219",
+    "brain": "knowledge",
+    "summary": "Indexed docs",
+    "metadata": {
+      "event": {
+        "brain": "knowledge",
+        "title": "Indexed docs"
+      },
+      "mapped_update": {
+        "knowledge": {
+          "docs_added": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "4ee6bb32-801a-4fec-b9aa-448617079fcd",
+    "timestamp": "2025-11-18T16:36:19.877740",
+    "brain": "pattern",
+    "summary": "Found pattern",
+    "metadata": {
+      "event": {
+        "brain": "pattern",
+        "title": "Found pattern"
+      },
+      "mapped_update": {
+        "pattern": {
+          "patterns": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "70ff5ecc-4ed5-40ec-b46d-874aff1af8d5",
+    "timestamp": "2025-11-18T16:36:19.879187",
+    "brain": "skill",
+    "summary": "Executed skill",
+    "metadata": {
+      "event": {
+        "brain": "skill",
+        "title": "Executed skill"
+      },
+      "mapped_update": {
+        "skill": {
+          "skills": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "00c81702-ff8a-4e72-83a0-313ddd485d9e",
+    "timestamp": "2025-11-18T16:36:19.880431",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Moderate document ingestion."
+      },
+      "pattern": {
+        "insight": "One pattern detected — good start."
+      },
+      "skill": {
+        "insight": "Some skills executed — early reinforcement."
+      }
+    }
+  },
+  {
+    "id": "18db5063-8a94-4e02-b167-a662716d0fef",
+    "timestamp": "2025-11-18T16:37:36.691588",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 12
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "eef17a1a-d598-4d7c-bdf1-5b5236fdc746",
+    "timestamp": "2025-11-18T16:37:36.694093",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Moderate document ingestion."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "6e549714-6d44-4dfc-835f-bd117c7798f7",
+    "timestamp": "2025-11-18T16:39:11.359986",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 12
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "02b33216-9581-4e95-a4cf-8f58c5eaad5e",
+    "timestamp": "2025-11-18T16:39:11.362947",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Moderate document ingestion."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "bd0e809c-8ac4-4102-a561-335d76daa7cd",
+    "timestamp": "2025-11-18T16:39:11.364479",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.5,
+        "weight": 14.399999999999999
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "4aae57da-6e77-413e-b88e-3cc1391927df",
+    "timestamp": "2025-11-18T16:41:24.920821",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 12
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "8b69d780-785f-42ed-aec7-1d4bcec9e24b",
+    "timestamp": "2025-11-18T16:41:24.922467",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Moderate document ingestion."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "f4c92fe1-dc33-4ae3-a90d-a0564f998aa9",
+    "timestamp": "2025-11-18T16:41:24.923670",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.5,
+        "weight": 14.399999999999999
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "15ed3230-ae3c-4a51-870c-04e33e22913a",
+    "timestamp": "2025-11-18T16:58:12.510619",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "1ced5aec-dfec-42e1-a427-5ef379bd7051",
+    "timestamp": "2025-11-18T16:58:12.512841",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "599bfa0e-f161-4f72-9206-2711670ae1cd",
+    "timestamp": "2025-11-18T16:58:12.514329",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "e04d0279-1431-4e98-8c59-a5102941377c",
+    "timestamp": "2025-11-18T17:00:34.964032",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "b51736b7-63d7-4224-ad21-7c250cf17a80",
+    "timestamp": "2025-11-18T17:00:34.968723",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "7f650962-f68b-4684-b895-4efef7892363",
+    "timestamp": "2025-11-18T17:00:34.970061",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "d195ff4f-0664-4b28-899f-e18361ba2e04",
+    "timestamp": "2025-11-18T17:00:34.971369",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "c9a25cc1-b8c2-4607-b214-506a2b4e2f06",
+    "timestamp": "2025-11-18T17:03:57.472550",
+    "brain": "knowledge",
+    "summary": "Doc",
+    "metadata": {
+      "event": {
+        "brain": "knowledge",
+        "title": "Doc"
+      },
+      "mapped_update": {
+        "knowledge": {
+          "docs_added": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "678420f1-e326-429f-9c44-65db5461f355",
+    "timestamp": "2025-11-18T17:03:57.475134",
+    "brain": "pattern",
+    "summary": "Pattern",
+    "metadata": {
+      "event": {
+        "brain": "pattern",
+        "title": "Pattern"
+      },
+      "mapped_update": {
+        "pattern": {
+          "patterns": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "b7b4bf81-1b57-4f5c-b290-debb53cd0578",
+    "timestamp": "2025-11-18T17:03:57.476834",
+    "brain": "skill",
+    "summary": "Skill",
+    "metadata": {
+      "event": {
+        "brain": "skill",
+        "title": "Skill"
+      },
+      "mapped_update": {
+        "skill": {
+          "skills": 1
+        }
+      }
+    }
+  },
+  {
+    "id": "6204de63-d907-47ab-8ffd-7eaa842ee1f1",
+    "timestamp": "2025-11-18T17:03:57.478405",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "Small document activity."
+      },
+      "pattern": {
+        "insight": "One pattern detected — good start."
+      },
+      "skill": {
+        "insight": "Some skills executed — early reinforcement."
+      }
+    }
+  },
+  {
+    "id": "7ed69133-492f-4b90-984a-b29e8e490cc3",
+    "timestamp": "2025-11-18T17:03:57.480170",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.25,
+        "weight": 1
+      },
+      "pattern": {
+        "confidence": 0.2,
+        "weight": 1
+      },
+      "skill": {
+        "confidence": 0.3,
+        "weight": 1
+      }
+    }
+  },
+  {
+    "id": "20f9b531-21cb-46e8-b66a-901886145d01",
+    "timestamp": "2025-11-18T17:03:57.483091",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.25,
+      "weight_normalized": 0.06,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.168
+    }
+  },
+  {
+    "id": "9da1f266-4842-4efa-a7b8-2229c932ea11",
+    "timestamp": "2025-11-18T17:16:29.659851",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "cf3d0dff-46b7-4ecb-b3b0-a872e5b95bd2",
+    "timestamp": "2025-11-18T17:16:29.661788",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "04906cc0-f160-4e63-b0cc-7fc50b5116a3",
+    "timestamp": "2025-11-18T17:16:29.663473",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "b829f52d-73a3-441e-bdff-edb6c1181b0c",
+    "timestamp": "2025-11-18T17:16:29.665022",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "c701a8f8-011f-4c47-a4b0-9e623bab93ab",
+    "timestamp": "2025-11-18T17:16:29.666427",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.98
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.985
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.975
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "9f9534d8-6fae-471b-ae37-47c311be86a1",
+    "timestamp": "2025-11-18T17:16:29.671983",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "268f5a92-b3aa-4ccd-8c74-54fe8ba36f96",
+    "timestamp": "2025-11-18T17:16:29.674357",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "3e8a44cc-7987-48d7-b24f-e797255ed30b",
+    "timestamp": "2025-11-18T17:16:29.676387",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "4cb955f3-c46b-4583-b7a3-0683b8e100fe",
+    "timestamp": "2025-11-18T17:16:29.678119",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "98a610be-981c-45f7-aa0f-12c4bce4b236",
+    "timestamp": "2025-11-18T17:16:29.679830",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.96
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.97
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.95
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "af731932-389d-40fe-806c-56f86d42f06a",
+    "timestamp": "2025-11-18T17:16:29.684699",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "19697682-3e88-4677-a93e-90d9d6a6cd48",
+    "timestamp": "2025-11-18T17:16:29.687176",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "c794f0fb-54cc-4681-836f-9445993a8e66",
+    "timestamp": "2025-11-18T17:16:29.690591",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "19e7ae3c-120a-4e31-bf0c-62e05919b5c9",
+    "timestamp": "2025-11-18T17:16:29.693139",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "c25247c2-ae4c-4b02-8e1a-05b2f0b5460b",
+    "timestamp": "2025-11-18T17:16:29.695088",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.94
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.955
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9249999999999999
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "a202a734-9296-4dee-9c45-734ee5023e36",
+    "timestamp": "2025-11-18T17:26:16.323186",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "67015fdf-863e-4e49-afb6-cfc2787a0676",
+    "timestamp": "2025-11-18T17:26:16.326344",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "73a1c6d8-c56b-49e9-9ecc-1af1e5cf38f9",
+    "timestamp": "2025-11-18T17:26:16.328313",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "8fc129cf-80ae-42ed-b524-da0e374fb443",
+    "timestamp": "2025-11-18T17:26:16.330614",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "2d45e2a5-20ab-4715-92d0-c0be885c2422",
+    "timestamp": "2025-11-18T17:26:20.167764",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "e5b8ac6c-39b6-473f-85b6-b55b8111e160",
+    "timestamp": "2025-11-18T17:26:20.170970",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "caf9f9e8-12a5-463e-9fb4-3782c9fe40e0",
+    "timestamp": "2025-11-18T17:26:20.173241",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "ea7e1ce6-6510-4e2c-ba7b-053b2af73898",
+    "timestamp": "2025-11-18T17:26:20.175010",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "7ce042ab-d1f7-4c11-918f-98ef88469dae",
+    "timestamp": "2025-11-18T17:28:39.325196",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "e6202ee7-1b8d-46e5-b117-42fd882890ce",
+    "timestamp": "2025-11-18T17:28:39.328779",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "6a71d816-b104-4a5f-951f-f5c1b756489d",
+    "timestamp": "2025-11-18T17:28:39.330909",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "a001fcd5-9b00-4007-8b6b-cff40b408db8",
+    "timestamp": "2025-11-18T17:28:39.332828",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "cc8b481c-a979-404d-931b-2edd02a69edc",
+    "timestamp": "2025-11-18T17:28:39.335032",
+    "brain": "system",
+    "summary": "Long-term decay applied.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9751
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.982045
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.96915
+      }
+    }
+  },
+  {
+    "id": "5ebe2abf-6515-4a61-a375-67c83a2fd779",
+    "timestamp": "2025-11-18T17:28:39.338051",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9751
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.982045
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.96915
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "3574b890-1c62-41c0-9685-0fa66ac0862e",
+    "timestamp": "2025-11-18T17:28:39.341641",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "a39ed161-1eeb-477f-a3f8-7b6154cf1bcd",
+    "timestamp": "2025-11-18T17:28:39.343434",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "b30e015b-b3eb-45b4-95e7-33cc0f822317",
+    "timestamp": "2025-11-18T17:28:39.345291",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "c2cac9e9-ac86-40ca-a9ca-e0f770206faa",
+    "timestamp": "2025-11-18T17:28:39.347072",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "003901a7-8fc6-43dd-9166-e6c8a4fe6df3",
+    "timestamp": "2025-11-18T17:28:39.348967",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9551
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9670449999999999
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9441499999999999
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "308a99f1-027f-4c18-9053-563149cb819b",
+    "timestamp": "2025-11-18T17:28:39.351616",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "e0bb47f5-c7e8-4bfd-8130-27a48fb965dc",
+    "timestamp": "2025-11-18T17:28:39.355359",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "5e94e7f8-c426-4391-b127-210fdb90b3a1",
+    "timestamp": "2025-11-18T17:28:39.359502",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "a70a3897-1580-4018-b6f5-3ee8036077a0",
+    "timestamp": "2025-11-18T17:28:39.362603",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "ca0942cb-a04c-43c5-953e-58800a58816b",
+    "timestamp": "2025-11-18T17:28:39.364818",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9350999999999999
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9520449999999999
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9191499999999999
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "2330b14f-5ecc-41c7-99b0-be38ae2f39dc",
+    "timestamp": "2025-11-18T17:28:39.368040",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "d3afce13-6a67-4900-94e9-847984205245",
+    "timestamp": "2025-11-18T17:28:39.370571",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "d33f8386-bcf7-43fa-a683-b36bcad24fd6",
+    "timestamp": "2025-11-18T17:28:39.372706",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "19f126fa-3009-4158-813f-73351e2ec280",
+    "timestamp": "2025-11-18T17:28:39.376464",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "1feda4cc-2159-4094-916e-f2ddb4601952",
+    "timestamp": "2025-11-18T17:28:39.378886",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9150999999999999
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9370449999999999
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8941499999999999
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "c957a743-0f3d-4c4e-bac1-d5fb00af1f85",
+    "timestamp": "2025-11-18T17:28:39.382145",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "6a5921b9-cc62-4b72-a356-0350fc2c87e0",
+    "timestamp": "2025-11-18T17:28:39.384267",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "0d045ac6-a3a9-47d2-9bd5-313cb917d036",
+    "timestamp": "2025-11-18T17:28:39.386320",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "a0877308-3f07-4af6-a56a-654bc9e922e5",
+    "timestamp": "2025-11-18T17:28:39.388680",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "d6f57af2-6e31-4773-809a-cd391d7ff341",
+    "timestamp": "2025-11-18T17:28:39.392389",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8950999999999999
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9220449999999999
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8691499999999999
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "9d9b2485-a08b-404c-a7c7-e77fe31bc900",
+    "timestamp": "2025-11-18T17:28:39.395998",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "0506d26e-2ac1-46b6-8206-171c480c28db",
+    "timestamp": "2025-11-18T17:28:39.398874",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "a401bf43-9df5-4363-8dbc-7b4a663c3760",
+    "timestamp": "2025-11-18T17:28:39.401288",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "889c811e-4234-450a-925f-42b8db31df58",
+    "timestamp": "2025-11-18T17:28:39.403870",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "470b46bc-e9fd-4fe7-9273-4ac9fa74318c",
+    "timestamp": "2025-11-18T17:28:39.406251",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8750999999999999
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.9070449999999999
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8441499999999998
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "32377811-b7ad-4f65-9980-591160194354",
+    "timestamp": "2025-11-18T17:28:39.409858",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "e4436d74-a12b-4739-91bb-b97c8621ce1f",
+    "timestamp": "2025-11-18T17:28:39.412964",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "512952fd-5c05-4c79-b0a9-0b3b45032d06",
+    "timestamp": "2025-11-18T17:28:39.416129",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "c2bfffa1-4589-4706-991b-7e8149c52bc0",
+    "timestamp": "2025-11-18T17:28:39.419230",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "9b17d35d-6e2d-4026-86a9-96097eb8ce40",
+    "timestamp": "2025-11-18T17:28:39.421793",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8550999999999999
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8920449999999999
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8191499999999998
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "d1f82ef1-cf81-47d5-9eb5-32d380970af3",
+    "timestamp": "2025-11-18T17:28:39.426224",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "de4ce89a-20d9-4927-90f0-5fd6056fa820",
+    "timestamp": "2025-11-18T17:28:39.429262",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "45cf93be-cfc4-41dc-b8d0-850e814751f3",
+    "timestamp": "2025-11-18T17:28:39.431934",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "d04e33c4-5569-4e80-83a5-9e4dd431c420",
+    "timestamp": "2025-11-18T17:28:39.434688",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "5315df52-139f-45ce-908f-3e7fd5d764f0",
+    "timestamp": "2025-11-18T17:28:39.437388",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8350999999999998
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8770449999999999
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7941499999999998
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "1a66d470-01cf-4530-9e40-3d193f6a31c2",
+    "timestamp": "2025-11-18T17:28:39.441255",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "7f8c4ef9-5573-4d42-aecb-602960fa9d18",
+    "timestamp": "2025-11-18T17:28:39.444395",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "2d997c74-31ff-467d-b314-bff56b41cc19",
+    "timestamp": "2025-11-18T17:28:39.446918",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "04e5e995-7c7a-4300-9410-d7b8bc23a2fb",
+    "timestamp": "2025-11-18T17:28:39.449413",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "efd3337a-272a-4622-a8bd-6c282ff3e5ef",
+    "timestamp": "2025-11-18T17:28:39.451961",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8150999999999998
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8620449999999998
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7691499999999998
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "a4eebb17-b7fa-463c-874a-1c21c5c4651e",
+    "timestamp": "2025-11-18T17:28:39.455055",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "87220892-9e7c-469c-bb44-93cb340c869b",
+    "timestamp": "2025-11-18T17:28:39.459190",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "b26cea67-c54c-432d-b4d6-660a1ded66af",
+    "timestamp": "2025-11-18T17:28:39.462137",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "9982b23e-743d-4cea-abf0-a0ced42b0ce4",
+    "timestamp": "2025-11-18T17:28:39.464904",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "19bb880d-57e3-4ff4-8368-0a596a658281",
+    "timestamp": "2025-11-18T17:28:39.467402",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7950999999999998
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8470449999999998
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7441499999999998
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "f5183afa-2d9e-4c3d-b7ba-38f77244eb2a",
+    "timestamp": "2025-11-18T17:28:39.471135",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "d0bfe4b3-bd3f-41a7-91ab-fee774355b4a",
+    "timestamp": "2025-11-18T17:28:39.475384",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "eb379024-bdba-41e1-9211-2e51537cc2c6",
+    "timestamp": "2025-11-18T17:28:39.478528",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "9804b99c-8109-490d-8786-63773ec95fb4",
+    "timestamp": "2025-11-18T17:28:39.481500",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "1705fc61-e314-4943-86a5-1b2af60dbb99",
+    "timestamp": "2025-11-18T17:28:39.484355",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7750999999999998
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8320449999999998
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7191499999999997
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "c305aef0-8abf-4209-9561-1bf9e7901c9e",
+    "timestamp": "2025-11-18T17:28:39.488104",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "27a48fd7-4c0b-4011-b6e6-cee9805d93d6",
+    "timestamp": "2025-11-18T17:28:39.492228",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "48f1be8f-4169-4472-b2dd-847f45e2ce4c",
+    "timestamp": "2025-11-18T17:28:39.495488",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "30726dd7-6021-4d1c-9ae3-44f729784843",
+    "timestamp": "2025-11-18T17:28:39.498371",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "25cb2219-560b-48e2-9838-93ac6bdee2e1",
+    "timestamp": "2025-11-18T17:28:39.501304",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7550999999999998
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8170449999999998
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6941499999999997
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "bb4d4735-417b-4550-81da-fe36de37f995",
+    "timestamp": "2025-11-18T17:28:39.505519",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "f0f2e014-ee75-471a-9ab3-9f37d2f0f0af",
+    "timestamp": "2025-11-18T17:28:39.509805",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "67a8b8c1-0a09-4404-9fe2-49722787e018",
+    "timestamp": "2025-11-18T17:28:39.512817",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "2217005b-6629-4f36-ac69-f6dd822cf6c9",
+    "timestamp": "2025-11-18T17:28:39.515772",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "083bb4de-f884-45ff-815a-2ac864c8ec42",
+    "timestamp": "2025-11-18T17:28:39.518790",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7350999999999998
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.8020449999999998
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6691499999999997
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "02e93fe8-196a-4a0e-bca6-05f8d42d51df",
+    "timestamp": "2025-11-18T17:28:39.524506",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "04d636f9-6f00-4dd4-ace1-66878d50b2e5",
+    "timestamp": "2025-11-18T17:28:39.527682",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "72e2eb43-3f7d-4957-b28a-96e19d26d64f",
+    "timestamp": "2025-11-18T17:28:39.530774",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "8f746784-81b5-4981-adc7-be26fbb65e63",
+    "timestamp": "2025-11-18T17:28:39.533631",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "ae151b8d-a9ce-4e9c-bb00-aa59c55861aa",
+    "timestamp": "2025-11-18T17:28:39.536650",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7150999999999997
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7870449999999998
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6441499999999997
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "a94cb9c9-1533-4a14-8356-558e1905ddb2",
+    "timestamp": "2025-11-18T17:28:39.543252",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "56d5cea5-b02a-4193-b942-27ba21a3f87c",
+    "timestamp": "2025-11-18T17:28:39.549546",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "de6b83dd-6ec2-4b01-9c85-9cda60021c96",
+    "timestamp": "2025-11-18T17:28:39.556920",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "fe378a94-1e9b-42af-884e-9917f9be17c9",
+    "timestamp": "2025-11-18T17:28:39.577429",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "a658e878-6f3d-456f-b992-20dd4f05b16f",
+    "timestamp": "2025-11-18T17:28:39.584690",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6950999999999997
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7720449999999998
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6191499999999996
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "5c203e3b-fb39-4ce1-a069-80e7d17c7846",
+    "timestamp": "2025-11-18T17:28:39.595734",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "5fee3386-181f-4f0f-9531-62fd86b51d71",
+    "timestamp": "2025-11-18T17:28:39.600196",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "e727c917-1acc-442f-bd5c-1f7b415dde58",
+    "timestamp": "2025-11-18T17:28:39.608968",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "03312b0b-a4da-428a-b1f6-10035554b86a",
+    "timestamp": "2025-11-18T17:28:39.615254",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "5f967bb7-f424-4729-bd8f-db6bbf6b6191",
+    "timestamp": "2025-11-18T17:28:39.618540",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6750999999999997
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7570449999999997
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5941499999999996
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "c563b71e-39c2-45ba-89cb-1b61738dd008",
+    "timestamp": "2025-11-18T17:28:39.624535",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "2172523c-8486-4793-ae35-158694b224f8",
+    "timestamp": "2025-11-18T17:28:39.628079",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "b1e9c755-ca72-41cd-8582-9ab37d465100",
+    "timestamp": "2025-11-18T17:28:39.631533",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "9f0447b9-1284-47d5-bb6d-1ae4671c8f47",
+    "timestamp": "2025-11-18T17:28:39.635234",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "21cfa7ae-800f-4481-9525-7a46e733fbd2",
+    "timestamp": "2025-11-18T17:28:39.641397",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6550999999999997
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7420449999999997
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5691499999999996
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "fbeff147-1e8d-4e77-a27a-38ebb6699ded",
+    "timestamp": "2025-11-18T17:28:39.645826",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "cb42a8ef-c798-43a7-ab79-d20d4a92d231",
+    "timestamp": "2025-11-18T17:28:39.649367",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "73eafab7-d590-4981-92b0-4c87bb648232",
+    "timestamp": "2025-11-18T17:28:39.652795",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "022e5c0f-8c59-4e6b-b733-de2e22a24797",
+    "timestamp": "2025-11-18T17:28:39.657729",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "81cc3bfb-3b55-4ddf-90b1-31f8c50b29f6",
+    "timestamp": "2025-11-18T17:28:39.661509",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6350999999999997
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7270449999999997
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5441499999999996
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "10af8fbb-4e08-4cc0-bc69-e3f1588f3c47",
+    "timestamp": "2025-11-18T17:28:39.665815",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "97f9f38e-b16c-444a-8efa-9531981856d3",
+    "timestamp": "2025-11-18T17:28:39.669813",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "11f17751-95fa-4410-a0bf-b538787dc769",
+    "timestamp": "2025-11-18T17:28:39.675139",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "c3793d11-ab25-4b71-91b1-5afa14f9c9f7",
+    "timestamp": "2025-11-18T17:28:39.679239",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "d361b9eb-15e0-480f-821a-d613bf813443",
+    "timestamp": "2025-11-18T17:28:39.682604",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6150999999999996
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.7120449999999997
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5191499999999996
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "b0a9018c-f61b-460d-a88f-d299221f9c26",
+    "timestamp": "2025-11-18T17:28:39.686616",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "167a3c09-d05e-41a6-8fd1-6d1f4e8bddd3",
+    "timestamp": "2025-11-18T17:28:39.691408",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "306c86f9-55ac-4485-8e15-df1e277d6fad",
+    "timestamp": "2025-11-18T17:28:39.695534",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "251391c7-d714-4bd6-9e31-a577f9fa941f",
+    "timestamp": "2025-11-18T17:28:39.699524",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "efee742c-508f-4f5a-9c36-7881822f3305",
+    "timestamp": "2025-11-18T17:28:39.704624",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5950999999999996
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6970449999999997
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "fae7d6c9-a1c1-48f1-8bfa-acc7685151ec",
+    "timestamp": "2025-11-18T17:28:39.710013",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "af3f29e5-737f-4fde-861c-600d83e2f440",
+    "timestamp": "2025-11-18T17:28:39.714361",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "d14ff5c2-e670-4e97-943d-9e549ce38133",
+    "timestamp": "2025-11-18T17:28:39.718846",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "6a576c04-a99d-4fda-bb42-ed3860c3bdbb",
+    "timestamp": "2025-11-18T17:28:39.723942",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "16cbaaed-9451-4098-baac-7d3b3777dfb2",
+    "timestamp": "2025-11-18T17:28:39.727983",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5750999999999996
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6820449999999997
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "0f1e6eed-e105-4fd3-94bc-6e6c3b3bbfdf",
+    "timestamp": "2025-11-18T17:28:39.732394",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "3d88ea50-c1a8-4574-bcac-dd56c90693a5",
+    "timestamp": "2025-11-18T17:28:39.736881",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "eb5c4946-3816-40a5-84e3-7a894ffd342f",
+    "timestamp": "2025-11-18T17:28:39.741661",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "da8303d7-4f28-43f6-a387-4c85f61ea254",
+    "timestamp": "2025-11-18T17:28:39.745879",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "d1153ff7-fdc0-4908-98a2-d8a5371d6c25",
+    "timestamp": "2025-11-18T17:28:39.750005",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5550999999999996
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6670449999999997
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "921d35d1-3cb5-4f82-b56f-76dc56983842",
+    "timestamp": "2025-11-18T17:28:39.756180",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "8dd1de9b-d693-4150-a973-ca5c9ffc0396",
+    "timestamp": "2025-11-18T17:28:39.759958",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "baae22e4-8efe-4c2f-96d7-da564ee8aa04",
+    "timestamp": "2025-11-18T17:28:39.763986",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "764aaef6-f354-4b7a-bb19-57a41e1145b6",
+    "timestamp": "2025-11-18T17:28:39.768121",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "e601de20-f8b1-41ac-9cb2-9710ef69d74f",
+    "timestamp": "2025-11-18T17:28:39.774432",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5350999999999996
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6520449999999997
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "cc5d5540-34b5-489c-b6fd-58fda0dae344",
+    "timestamp": "2025-11-18T17:28:39.780275",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "0ec0a735-b194-4db3-a3cc-7334aa73d4ee",
+    "timestamp": "2025-11-18T17:28:39.785048",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "04a2dbcf-d58e-463b-b3e5-ae6a5958e6a7",
+    "timestamp": "2025-11-18T17:28:39.790968",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "9bbdfe93-28c2-4bc2-a11f-944ec0332fc1",
+    "timestamp": "2025-11-18T17:28:39.794905",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "56d70c39-d739-4206-99d9-7469b74795a0",
+    "timestamp": "2025-11-18T17:28:39.798869",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5150999999999996
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6370449999999996
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "86c203dd-45dc-4ce3-9a4e-c58c1d4f520b",
+    "timestamp": "2025-11-18T17:28:39.803392",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "22efd3ed-b06d-47d5-aa9b-90f7a61d11b9",
+    "timestamp": "2025-11-18T17:28:39.808814",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "b2424805-be80-49cd-b42a-b9c3124cc8e6",
+    "timestamp": "2025-11-18T17:28:39.813496",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "e36d73fb-c06d-4d4e-b735-deae4ac92b76",
+    "timestamp": "2025-11-18T17:28:39.817727",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "a15d6743-b446-40db-acab-d451b4f8748d",
+    "timestamp": "2025-11-18T17:28:39.822522",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6220449999999996
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "08529c32-c86b-406c-892e-25c186a80b9b",
+    "timestamp": "2025-11-18T17:28:39.828091",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "2b72033e-2211-45a8-a00f-76aa184025c8",
+    "timestamp": "2025-11-18T17:28:39.833133",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "037162c4-2d90-4c0e-829a-07c27043257d",
+    "timestamp": "2025-11-18T17:28:39.837508",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "d264dae1-0aa8-4a0d-bb5d-e6595264ff01",
+    "timestamp": "2025-11-18T17:28:39.842327",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "799b6c80-8ec1-4d37-b8cf-f5d2a17ac151",
+    "timestamp": "2025-11-18T17:28:39.846414",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.6070449999999996
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "9b04d870-09ed-4ad5-8812-94a023091b06",
+    "timestamp": "2025-11-18T17:28:39.851455",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "8ee47471-a810-43e6-a70a-19240fb4fac2",
+    "timestamp": "2025-11-18T17:28:39.857181",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "306860ca-ee90-4066-9022-0330818fad85",
+    "timestamp": "2025-11-18T17:28:39.862092",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "f9fca85f-0b54-4e00-915c-a02517017192",
+    "timestamp": "2025-11-18T17:28:39.866159",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "73093197-a24c-477a-bfdc-b5d70739b9f3",
+    "timestamp": "2025-11-18T17:28:39.870286",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5920449999999996
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "67eb3217-c97d-45a4-a801-831fcc79cfa5",
+    "timestamp": "2025-11-18T17:28:39.876336",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "d40c6a84-c0c9-4771-bb5c-f5f80890332f",
+    "timestamp": "2025-11-18T17:28:39.880583",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "eb7c23c7-3bca-487f-acda-87afbf59bcb5",
+    "timestamp": "2025-11-18T17:28:39.884795",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "03f06191-cf55-447f-92fe-404b12191973",
+    "timestamp": "2025-11-18T17:28:39.890167",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "09ecaf30-3d52-4de2-b897-064efbaedf1a",
+    "timestamp": "2025-11-18T17:28:39.894706",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5770449999999996
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "efa1b0df-2737-4ed6-8114-4c4397d4252f",
+    "timestamp": "2025-11-18T17:28:39.900565",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "05b12f0d-caca-422e-ade2-1c65c8182a32",
+    "timestamp": "2025-11-18T17:28:39.907079",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "3d48b6de-42e9-4c01-a00c-f4031cc488d8",
+    "timestamp": "2025-11-18T17:28:39.912599",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "74e4001e-4bf1-4828-a28f-3799e0ef76f6",
+    "timestamp": "2025-11-18T17:28:39.916903",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "48ca54ed-7ac2-4518-b8da-92ffbd97dd99",
+    "timestamp": "2025-11-18T17:28:39.922217",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5620449999999996
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "4a3700a7-05f6-404f-a492-99e3d3d0c2a2",
+    "timestamp": "2025-11-18T17:28:39.927525",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "87ee902c-b626-4687-a19b-26007f50bdbe",
+    "timestamp": "2025-11-18T17:28:39.931939",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "5a00abb1-d358-4968-bf22-b4e2f09d43b5",
+    "timestamp": "2025-11-18T17:28:39.936166",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "cf0dfffe-7dc9-4b4c-a597-e7f38c8cb577",
+    "timestamp": "2025-11-18T17:28:39.941562",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "7c8cd554-312e-4b5e-8f22-9939a95c545b",
+    "timestamp": "2025-11-18T17:28:39.946007",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5470449999999996
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "7fbac1a4-5f7f-47fc-98c1-93a50ff2cf75",
+    "timestamp": "2025-11-18T17:28:47.993918",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "b3931bce-2ac3-4100-a0b2-05fb4bfa1982",
+    "timestamp": "2025-11-18T17:28:48.000903",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "38a8a28f-c8c2-4cbd-87e5-7cd8b790c02c",
+    "timestamp": "2025-11-18T17:28:48.006268",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "7fc9812a-099b-42ff-ac27-1d7d752027fa",
+    "timestamp": "2025-11-18T17:28:48.013477",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "9885ad6e-5e45-443a-ad51-9497b45af654",
+    "timestamp": "2025-11-18T17:28:48.019270",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5320449999999995
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "c7137f1d-bb8b-4997-9538-71f973f8e6bc",
+    "timestamp": "2025-11-18T17:28:48.025975",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "199aa7e3-9e93-40c7-9c78-ba78c5cbba0e",
+    "timestamp": "2025-11-18T17:28:48.031325",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "90d1e14f-14b9-487d-96c8-9b62100bcdf3",
+    "timestamp": "2025-11-18T17:28:48.035901",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "6e3b9865-ed45-4c3e-8dcb-a3d489ca7144",
+    "timestamp": "2025-11-18T17:28:48.042310",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "05e7f003-398f-475b-8ac8-50c0fcf96b51",
+    "timestamp": "2025-11-18T17:28:48.047707",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5170449999999995
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "50f9acdc-2baf-4099-916b-aa488b2b267e",
+    "timestamp": "2025-11-18T17:28:48.053399",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "45ae9181-4e14-4e01-b1a3-d18ce494fd4d",
+    "timestamp": "2025-11-18T17:28:48.058713",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "d083f4fc-5991-48d8-af94-eb7292d2531b",
+    "timestamp": "2025-11-18T17:28:48.063388",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "afd98343-8214-4c70-8cf7-260b0e841fef",
+    "timestamp": "2025-11-18T17:28:48.068191",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "010bc9d2-1381-4bd9-9323-a48b1e7a2330",
+    "timestamp": "2025-11-18T17:28:48.075040",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5020449999999995
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "e8af833d-9e43-465c-a8f6-7475bb862f41",
+    "timestamp": "2025-11-18T17:28:48.082310",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "074493fe-43a7-467c-ab9a-f8d679c79de1",
+    "timestamp": "2025-11-18T17:28:48.090641",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "f74d30cb-a100-494d-8278-e7e413218f06",
+    "timestamp": "2025-11-18T17:28:48.096772",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "b7de121e-dbf2-4cd5-8297-b7e5759ddf7b",
+    "timestamp": "2025-11-18T17:28:48.102142",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "03dbebe7-0321-4a81-bbaa-474499b24c55",
+    "timestamp": "2025-11-18T17:28:48.107991",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "feb22f1e-1d6e-47a1-a9f4-54a00f6f4542",
+    "timestamp": "2025-11-18T17:28:48.113826",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "0872c276-a234-4a1d-8990-e09a84adec14",
+    "timestamp": "2025-11-18T17:28:48.119410",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "d32bfec7-a902-45c1-8bc6-e37835779e73",
+    "timestamp": "2025-11-18T17:28:48.126293",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "f028256d-ac71-42eb-9bed-d129385f0e3c",
+    "timestamp": "2025-11-18T17:28:48.132103",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "c112ec13-b0d5-408c-bd96-6fd22aedd2e0",
+    "timestamp": "2025-11-18T17:28:48.138668",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "18ae0a8b-f46d-4296-8a2c-868ccac263a2",
+    "timestamp": "2025-11-18T17:28:48.145851",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "9bbbff71-bae6-47a8-97b2-ae9cfecd8aa7",
+    "timestamp": "2025-11-18T17:28:48.151570",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "78171388-cab7-4f4e-8466-cafb329cb611",
+    "timestamp": "2025-11-18T17:28:48.158481",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "eb9880a0-9a93-4f9f-af1d-b51eec0dc17e",
+    "timestamp": "2025-11-18T17:28:48.164322",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "99d1647c-996d-4fce-abf1-81023459d763",
+    "timestamp": "2025-11-18T17:28:48.169164",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "ac8dc3f2-466f-4dc6-ab0f-4910ec4fd117",
+    "timestamp": "2025-11-18T17:28:48.176897",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "da0cc12f-8a12-46f8-aec9-4e1d97ad6230",
+    "timestamp": "2025-11-18T17:28:48.182056",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "db22d437-3060-4ad8-a16c-341af2b98afd",
+    "timestamp": "2025-11-18T17:28:48.187816",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "36fb20fe-4dda-420e-9115-9a9cd187a3b3",
+    "timestamp": "2025-11-18T17:28:48.193416",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "ba4fb1a5-84b3-4573-ba33-f1885608c3fb",
+    "timestamp": "2025-11-18T17:28:48.198449",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "199f7d8d-ec83-4546-a45d-024f566030c2",
+    "timestamp": "2025-11-18T17:28:48.204536",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "befcac9d-4318-4639-9479-b9ebb29961af",
+    "timestamp": "2025-11-18T17:28:48.211567",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "82453077-baa3-46bb-bc67-b5c5aa509aed",
+    "timestamp": "2025-11-18T17:28:48.217281",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "546fde97-4bfd-4c9a-b981-6d45dba41a12",
+    "timestamp": "2025-11-18T17:28:48.223600",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "04092660-901d-4cbb-a2f9-c04540dabef6",
+    "timestamp": "2025-11-18T17:28:48.229571",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "dc30d945-720d-4070-ae53-e5cfc7223d7d",
+    "timestamp": "2025-11-18T17:28:48.235849",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "98548c88-3a91-4c1e-b6c6-797c19ad5bb4",
+    "timestamp": "2025-11-18T17:28:48.243306",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "2c48f60b-a477-4a1b-91a9-a3ca778913b4",
+    "timestamp": "2025-11-18T17:28:48.249703",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "49a6ea65-22d8-4472-9972-46a3f61a5362",
+    "timestamp": "2025-11-18T17:28:48.256804",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "6e6157bc-183e-48a3-ada8-f29c2c4d3d58",
+    "timestamp": "2025-11-18T17:28:48.262940",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  },
+  {
+    "id": "80eb493f-488c-433c-b8f6-ab87621c598b",
+    "timestamp": "2025-11-18T17:28:48.268721",
+    "brain": "system",
+    "summary": "Periodic learning snapshot.",
+    "metadata": {
+      "knowledge": {
+        "brain": "knowledge",
+        "docs_indexed": 0
+      },
+      "pattern": {
+        "brain": "pattern",
+        "patterns_detected": 0
+      },
+      "skill": {
+        "brain": "skill",
+        "skills_learned": 0
+      }
+    }
+  },
+  {
+    "id": "f3f31158-7f82-44d1-b3e8-a31277c91e25",
+    "timestamp": "2025-11-18T17:28:48.276629",
+    "brain": "system",
+    "summary": "Heuristic learning analysis completed.",
+    "metadata": {
+      "knowledge": {
+        "insight": "No documents processed yet."
+      },
+      "pattern": {
+        "insight": "No patterns detected."
+      },
+      "skill": {
+        "insight": "No skills triggered yet."
+      }
+    }
+  },
+  {
+    "id": "aa8e837b-b049-4543-9966-a3c589018e5d",
+    "timestamp": "2025-11-18T17:28:48.282103",
+    "brain": "system",
+    "summary": "Learning score evaluation completed.",
+    "metadata": {
+      "knowledge": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "pattern": {
+        "confidence": 0.0,
+        "weight": 0
+      },
+      "skill": {
+        "confidence": 0.0,
+        "weight": 0
+      }
+    }
+  },
+  {
+    "id": "5cd49575-9194-4461-8807-6ec43b7041f6",
+    "timestamp": "2025-11-18T17:28:48.290417",
+    "brain": "system",
+    "summary": "Learning strength evaluation completed.",
+    "metadata": {
+      "confidence_avg": 0.0,
+      "weight_normalized": 0.0,
+      "heuristic_signal": 0.0,
+      "learning_strength": 0.0
+    }
+  },
+  {
+    "id": "f4423e3b-c5e5-4940-b5f4-accc32832286",
+    "timestamp": "2025-11-18T17:28:48.296658",
+    "brain": "system",
+    "summary": "Brain meta updated based on learning strength.",
+    "metadata": {
+      "knowledge": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "pattern": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "skill": {
+        "cumulative_learning": 0.0,
+        "confidence_level": 0.0,
+        "memory_factor": 0.5
+      },
+      "strength": 0.0
+    }
+  }
+]

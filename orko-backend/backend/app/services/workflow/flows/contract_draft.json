@@ -1,0 +1,9 @@
+{
+  "name": "contract_draft",
+  "steps": [
+    { "action": "collect_requirements" },
+    { "action": "draft_contract" },
+    { "action": "summarize_sections" },
+    { "action": "notify_user" }
+  ]
+}

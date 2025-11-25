@@ -1,0 +1,3 @@
+Plan for dynamically loading workflow actions.
+Later: detect all Python files in this folder.
+Later: load action modules automatically.

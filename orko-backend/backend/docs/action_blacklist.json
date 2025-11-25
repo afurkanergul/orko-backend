@@ -1,0 +1,13 @@
+{
+  "blocked": [
+    "delete_record",
+    "shutdown_system",
+    "erase_database",
+    "drop_table",
+    "disable_security_controls",
+    "terminate_employee",
+    "cancel_contract",
+    "void_contract",
+    "revoke_access"
+  ]
+}

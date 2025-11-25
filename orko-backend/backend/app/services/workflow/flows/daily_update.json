@@ -1,0 +1,9 @@
+{
+  "name": "daily_update",
+  "steps": [
+    { "action": "fetch_tasks" },
+    { "action": "summarize_tasks" },
+    { "action": "generate_update" },
+    { "action": "notify_user" }
+  ]
+}

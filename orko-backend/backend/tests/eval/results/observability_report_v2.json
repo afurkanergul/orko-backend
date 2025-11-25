@@ -1,0 +1,470 @@
+{
+  "timestamp": 1763657508.6476977,
+  "traffic": {
+    "parser_events": 306,
+    "trigger_events": 6,
+    "workflow_events": 0,
+    "domains": {
+      "logistics": 53,
+      "general": 225,
+      "trading": 10,
+      "docs": 18
+    },
+    "actions": {
+      "generate": 34,
+      "restart": 4,
+      "create": 47,
+      "list": 40,
+      "book": 4,
+      "add": 6,
+      "show": 27,
+      "open": 3,
+      "allocate": 3,
+      "schedule": 15,
+      "deploy": 6,
+      "update": 3,
+      "prepare": 6,
+      "run": 6,
+      "promote": 3,
+      "rotate": 3,
+      "rollback": 3,
+      "increase": 3,
+      "escalate": 3,
+      "forecast": 9,
+      "analyze": 9,
+      "rebuild": 3,
+      "classify": 3,
+      "summarize": 15,
+      "approve": 3,
+      "draft": 12,
+      "review": 6,
+      "check": 3,
+      "initiate": 3,
+      "assign": 3,
+      "optimize": 6,
+      "inspect": 3,
+      "tag": 3,
+      "plan": 3,
+      "record": 3
+    }
+  },
+  "latency": {
+    "p50": 0.0,
+    "p95": 0.0,
+    "p99": 0.0,
+    "avg": 0.0,
+    "max": 0.0
+  },
+  "errors": {
+    "workflow_errors": 0
+  },
+  "guardrails": {
+    "unknown_action": 155,
+    "blocked_action": 4
+  },
+  "weak_domains": [
+    {
+      "domain": "marketing",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "general",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 74,
+      "fn": 0,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "general_admin",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "knowledge_work",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "operations",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "logistics",
+      "precision": 0.17647058823529413,
+      "recall": 0.6,
+      "f1": 0.2727272727272727,
+      "tp": 3,
+      "fp": 14,
+      "fn": 2,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "sales",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "customer_support",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "trading",
+      "precision": 0.3333333333333333,
+      "recall": 0.2,
+      "f1": 0.25,
+      "tp": 1,
+      "fp": 2,
+      "fn": 4,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "hr",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "retail",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "legal",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "finance",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "devops",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "it_ops",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "procurement",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "manufacturing",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "docs",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 6,
+      "fn": 0,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "healthcare_admin",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "energy",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6,
+      "reason": "Low F1/precision/recall"
+    },
+    {
+      "domain": "analytics",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5,
+      "reason": "Low F1/precision/recall"
+    }
+  ],
+  "prf_metrics": {
+    "marketing": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "general": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 74,
+      "fn": 0
+    },
+    "general_admin": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    },
+    "knowledge_work": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "operations": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6
+    },
+    "logistics": {
+      "precision": 0.17647058823529413,
+      "recall": 0.6,
+      "f1": 0.2727272727272727,
+      "tp": 3,
+      "fp": 14,
+      "fn": 2
+    },
+    "sales": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    "customer_support": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    },
+    "trading": {
+      "precision": 0.3333333333333333,
+      "recall": 0.2,
+      "f1": 0.25,
+      "tp": 1,
+      "fp": 2,
+      "fn": 4
+    },
+    "hr": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    },
+    "retail": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6
+    },
+    "legal": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7
+    },
+    "finance": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6
+    },
+    "devops": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    },
+    "it_ops": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7
+    },
+    "procurement": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6
+    },
+    "manufacturing": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 7
+    },
+    "docs": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 6,
+      "fn": 0
+    },
+    "healthcare_admin": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 3
+    },
+    "energy": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 6
+    },
+    "analytics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    }
+  },
+  "per_domain_accuracy": {
+    "trading": 0.0,
+    "logistics": 0.0,
+    "finance": 0.0,
+    "hr": 0.0,
+    "it_ops": 0.0,
+    "devops": 0.0,
+    "customer_support": 0.0,
+    "operations": 0.0,
+    "analytics": 0.0,
+    "sales": 0.0,
+    "marketing": 0.0,
+    "procurement": 0.0,
+    "manufacturing": 0.0,
+    "legal": 0.0,
+    "retail": 0.0,
+    "energy": 0.0,
+    "healthcare_admin": 0.0,
+    "general_admin": 0.0,
+    "knowledge_work": 0.0
+  },
+  "accuracy": 0.0,
+  "total_commands": 100
+}

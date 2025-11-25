@@ -1,0 +1,836 @@
+trading:
+  description: "Physical and paper commodity / financial trading flows."
+  examples:
+    - command: "Create a new wheat shipment contract to Egypt for 10,000 MT FOB Black Sea."
+      expected:
+        domain: "trading"
+        action: "create_contract"
+        parameters:
+          commodity: "wheat"
+          quantity_mt: 10000
+          incoterm: "FOB"
+          origin_region: "Black Sea"
+          destination_country: "Egypt"
+
+    - command: "Show PnL for corn in LATAM this quarter."
+      expected:
+        domain: "trading"
+        action: "show_pnl"
+        parameters:
+          commodity: "corn"
+          region: "LATAM"
+          period: "this_quarter"
+
+    - command: "Update price basis for sunflower oil."
+      expected:
+        domain: "trading"
+        action: "update_price_basis"
+        parameters:
+          product: "sunflower oil"
+          basis_type: "price"
+          effective_from: "today"
+
+    - command: "Create a hedging plan for next quarter soybean exposure."
+      expected:
+        domain: "trading"
+        action: "create_hedging_plan"
+        parameters:
+          commodity: "soybean"
+          horizon: "next_quarter"
+          risk_type: "price_exposure"
+
+
+logistics:
+  description: "Transport, warehousing, shipment and delivery operations."
+  examples:
+    - command: "Book a truck for 500 MT barley to Ankara silo tomorrow."
+      expected:
+        domain: "logistics"
+        action: "book_truck"
+        parameters:
+          product: "barley"
+          quantity_mt: 500
+          destination: "Ankara silo"
+          date: "tomorrow"
+          mode: "truck"
+
+    - command: "List all vessels arriving in Mersin this week."
+      expected:
+        domain: "logistics"
+        action: "list_vessels"
+        parameters:
+          port: "Mersin"
+          period: "this_week"
+
+    - command: "Allocate a warehouse slot for incoming shipment tomorrow."
+      expected:
+        domain: "logistics"
+        action: "allocate_warehouse_slot"
+        parameters:
+          shipment_type: "incoming"
+          date: "tomorrow"
+
+    - command: "List all shipments delayed more than 48 hours."
+      expected:
+        domain: "logistics"
+        action: "list_delayed_shipments"
+        parameters:
+          delay_hours_gt: 48
+
+    - command: "Create a delivery schedule for Istanbul warehouse."
+      expected:
+        domain: "logistics"
+        action: "create_delivery_schedule"
+        parameters:
+          warehouse: "Istanbul"
+          horizon: "upcoming_deliveries"
+
+
+finance:
+  description: "Budgets, cashflow, accounting and financial reporting."
+  examples:
+    - command: "Generate a monthly cashflow report for EMEA."
+      expected:
+        domain: "finance"
+        action: "generate_cashflow_report"
+        parameters:
+          region: "EMEA"
+          period: "monthly"
+
+    - command: "Show all invoices past due for more than 30 days."
+      expected:
+        domain: "finance"
+        action: "list_overdue_invoices"
+        parameters:
+          overdue_days: 30
+
+    - command: "Show monthly operating expenses for January."
+      expected:
+        domain: "finance"
+        action: "show_operating_expenses"
+        parameters:
+          period: "monthly"
+          month: "January"
+
+    - command: "Generate tax summary for year 2024."
+      expected:
+        domain: "finance"
+        action: "generate_tax_summary"
+        parameters:
+          year: 2024
+          scope: "all_entities"
+
+    - command: "Generate invoice aging report for corporate accounts."
+      expected:
+        domain: "finance"
+        action: "invoice_aging"
+        parameters:
+          account_type: "corporate"
+
+    - command: "Prepare budget forecast for Q3."
+      expected:
+        domain: "finance"
+        action: "prepare_budget_forecast"
+        parameters:
+          period: "Q3"
+          scope: "company_wide"
+
+
+hr:
+  description: "People operations, hiring, leave, and performance processes."
+  examples:
+    - command: "Add a new employee in Dubai office to the payroll system."
+      expected:
+        domain: "hr"
+        action: "create_employee"
+        parameters:
+          location: "Dubai"
+          system: "payroll"
+
+    - command: "List all employees on vacation next week in Istanbul."
+      expected:
+        domain: "hr"
+        action: "list_vacations"
+        parameters:
+          location: "Istanbul"
+          period: "next_week"
+
+    - command: "Add emergency leave for employee John Doe."
+      expected:
+        domain: "hr"
+        action: "add_leave"
+        parameters:
+          employee_name: "John Doe"
+          leave_type: "emergency"
+
+    - command: "Promote employee Sara to Senior Analyst."
+      expected:
+        domain: "hr"
+        action: "promote_employee"
+        parameters:
+          employee_name: "Sara"
+          new_title: "Senior Analyst"
+
+    - command: "Schedule onboarding for new hires starting next Monday."
+      expected:
+        domain: "hr"
+        action: "schedule_onboarding"
+        parameters:
+          start_date: "next_monday"
+
+
+it_ops:
+  description: "Tickets, deployments, infrastructure and incident workflows."
+  examples:
+    - command: "Open a high-priority ticket for API latency in production."
+      expected:
+        domain: "it_ops"
+        action: "create_ticket"
+        parameters:
+          priority: "high"
+          issue_type: "latency"
+          environment: "production"
+
+    - command: "Restart the payments service in EU cluster."
+      expected:
+        domain: "it_ops"
+        action: "restart_service"
+        parameters:
+          service: "payments"
+          cluster: "EU"
+
+    - command: "Run diagnostics on authentication server."
+      expected:
+        domain: "it_ops"
+        action: "run_diagnostics"
+        parameters:
+          target: "authentication_server"
+
+    - command: "Rotate logs on the production cluster."
+      expected:
+        domain: "it_ops"
+        action: "rotate_logs"
+        parameters:
+          environment: "production_cluster"
+
+    - command: "Schedule patch update for core banking system."
+      expected:
+        domain: "it_ops"
+        action: "schedule_patch"
+        parameters:
+          system: "core_banking"
+          update_type: "patch"
+
+    - command: "Deploy the billing service to staging."
+      expected:
+        domain: "it_ops"
+        action: "deploy_service"
+        parameters:
+          service: "billing"
+          environment: "staging"
+
+
+devops:
+  description: "Deployment, runtime scaling and engineering platform operations."
+  examples:
+    - command: "Deploy the new authentication microservice to production."
+      expected:
+        domain: "devops"
+        action: "deploy_microservice"
+        parameters:
+          service: "authentication"
+          environment: "production"
+
+    - command: "Rollback the analytics service to the previous version."
+      expected:
+        domain: "devops"
+        action: "rollback_service"
+        parameters:
+          service: "analytics"
+          version: "previous"
+
+    - command: "Increase CPU allocation for the fraud detection service."
+      expected:
+        domain: "devops"
+        action: "adjust_resources"
+        parameters:
+          service: "fraud_detection"
+          resource: "CPU"
+          direction: "increase"
+
+    - command: "Rebuild the DevOps monitoring dashboard."
+      expected:
+        domain: "devops"
+        action: "rebuild_dashboard"
+        parameters:
+          dashboard: "monitoring"
+
+    - command: "Run load test for the login API with 5000 concurrent users."
+      expected:
+        domain: "devops"
+        action: "run_load_test"
+        parameters:
+          api: "login"
+          concurrent_users: 5000
+
+
+customer_support:
+  description: "Support tickets, SLAs, escalations and customer requests."
+  examples:
+    - command: "Show all open high-priority support tickets for ACME Corp."
+      expected:
+        domain: "customer_support"
+        action: "list_tickets"
+        parameters:
+          customer: "ACME Corp"
+          status: "open"
+          priority: "high"
+
+    - command: "Show all unresolved tickets older than 48 hours."
+      expected:
+        domain: "customer_support"
+        action: "list_unresolved_tickets"
+        parameters:
+          status: "unresolved"
+          older_than_hours: 48
+
+    - command: "Classify all customer tickets by sentiment."
+      expected:
+        domain: "customer_support"
+        action: "sentiment_classification"
+        parameters:
+          dimension: "sentiment"
+
+    - command: "List all customer escalations in the last 48 hours."
+      expected:
+        domain: "customer_support"
+        action: "list_escalations"
+        parameters:
+          timeframe_hours: 48
+
+    - command: "Create a new support case for customer BlueWave Inc."
+      expected:
+        domain: "customer_support"
+        action: "create_case"
+        parameters:
+          customer: "BlueWave Inc"
+          channel: "email"
+
+    - command: "Escalate the ticket for payment synchronization failure."
+      expected:
+        domain: "customer_support"
+        action: "escalate_ticket"
+        parameters:
+          issue: "payment_synchronization_failure"
+          priority: "high"
+
+
+operations:
+  description: "General operations: tasks, checklists, staffing, and risk."
+  examples:
+    - command: "Create a daily startup checklist for the packaging line."
+      expected:
+        domain: "operations"
+        action: "create_checklist"
+        parameters:
+          area: "packaging line"
+          frequency: "daily"
+
+    - command: "Assign an approval task to the plant manager for tomorrow's maintenance."
+      expected:
+        domain: "operations"
+        action: "create_approval_task"
+        parameters:
+          role: "plant_manager"
+          subject: "maintenance"
+          due_date: "tomorrow"
+
+    - command: "Schedule preventive maintenance for machine A12."
+      expected:
+        domain: "operations"
+        action: "schedule_maintenance"
+        parameters:
+          machine_id: "A12"
+          maintenance_type: "preventive"
+
+    - command: "List all operational risks assigned to the operations manager."
+      expected:
+        domain: "operations"
+        action: "list_risks"
+        parameters:
+          owner_role: "operations_manager"
+          category: "operational"
+
+    - command: "Summarize operational incidents for this month."
+      expected:
+        domain: "operations"
+        action: "summarize_incidents"
+        parameters:
+          period: "this_month"
+
+    - command: "Forecast operational staffing needs for next quarter."
+      expected:
+        domain: "operations"
+        action: "forecast_staffing"
+        parameters:
+          horizon: "next_quarter"
+
+
+analytics:
+  description: "Reporting, KPIs, forecasting and advanced analytics."
+  examples:
+    - command: "Show MTD revenue by region and product."
+      expected:
+        domain: "analytics"
+        action: "revenue_breakdown"
+        parameters:
+          period: "month_to_date"
+          group_by:
+            - "region"
+            - "product"
+
+    - command: "Generate retention analysis for premium customers."
+      expected:
+        domain: "analytics"
+        action: "retention_analysis"
+        parameters:
+          customer_segment: "premium"
+
+    - command: "Forecast monthly demand for the next 6 months."
+      expected:
+        domain: "analytics"
+        action: "forecast_demand"
+        parameters:
+          frequency: "monthly"
+          horizon_months: 6
+
+    - command: "Generate churn probability analysis for all customer segments."
+      expected:
+        domain: "analytics"
+        action: "churn_analysis"
+        parameters:
+          segments: "all"
+
+    - command: "Analyze customer churn trends for enterprise accounts."
+      expected:
+        domain: "analytics"
+        action: "churn_analysis"
+        parameters:
+          segment: "enterprise_accounts"
+          focus: "trends"
+
+
+sales:
+  description: "Sales pipeline, opportunities and performance."
+  examples:
+    - command: "Create a new sales opportunity with ACME Corp for Q3."
+      expected:
+        domain: "sales"
+        action: "create_opportunity"
+        parameters:
+          account: "ACME Corp"
+          period: "Q3"
+
+    - command: "Show pipeline status for enterprise deals."
+      expected:
+        domain: "sales"
+        action: "show_pipeline"
+        parameters:
+          deal_type: "enterprise"
+
+    - command: "Generate win-loss analysis for last quarter."
+      expected:
+        domain: "sales"
+        action: "win_loss_analysis"
+        parameters:
+          period: "last_quarter"
+
+    - command: "List all opportunities expected to close within 30 days."
+      expected:
+        domain: "sales"
+        action: "list_opportunities"
+        parameters:
+          expected_close_within_days: 30
+
+    - command: "Show best-selling products for Q1 across all stores."
+      expected:
+        domain: "sales"
+        action: "top_products"
+        parameters:
+          period: "Q1"
+          scope: "all_stores"
+
+
+marketing:
+  description: "Marketing spend, campaigns, competition, and engagement."
+  examples:
+    - command: "Create a new outbound email campaign for inactive customers."
+      expected:
+        domain: "marketing"
+        action: "create_campaign"
+        parameters:
+          segment: "inactive_customers"
+          channel: "email"
+
+    - command: "Analyze marketing spend effectiveness for Q2."
+      expected:
+        domain: "marketing"
+        action: "analyze_spend"
+        parameters:
+          period: "Q2"
+
+    - command: "Generate social media engagement report for last week."
+      expected:
+        domain: "marketing"
+        action: "engagement_report"
+        parameters:
+          channel: "social_media"
+          period: "last_week"
+
+    - command: "Create competitive landscape report for mobile devices."
+      expected:
+        domain: "marketing"
+        action: "competitive_report"
+        parameters:
+          category: "mobile_devices"
+
+
+procurement:
+  description: "Suppliers, sourcing, savings, and vendor approvals."
+  examples:
+    - command: "List all suppliers with overdue deliveries."
+      expected:
+        domain: "procurement"
+        action: "list_overdue_suppliers"
+        parameters:
+          status: "overdue"
+
+    - command: "Approve vendor contract renewal for Globex Ltd."
+      expected:
+        domain: "procurement"
+        action: "approve_vendor_contract"
+        parameters:
+          vendor_name: "Globex Ltd"
+
+    - command: "Create sourcing plan for semiconductor components."
+      expected:
+        domain: "procurement"
+        action: "create_sourcing_plan"
+        parameters:
+          item: "semiconductor_components"
+
+    - command: "Generate weekly procurement savings report."
+      expected:
+        domain: "procurement"
+        action: "procurement_savings_report"
+        parameters:
+          period: "weekly"
+
+    - command: "Create a procurement tracker for office supplies."
+      expected:
+        domain: "procurement"
+        action: "create_procurement_tracker"
+        parameters:
+          category: "office_supplies"
+
+    - command: "Create a purchase order for 300 laptops."
+      expected:
+        domain: "procurement"
+        action: "create_purchase_order"
+        parameters:
+          item: "laptop"
+          quantity: 300
+
+    - command: "Initiate procurement for backup generators."
+      expected:
+        domain: "procurement"
+        action: "initiate_procurement"
+        parameters:
+          item: "backup_generators"
+
+
+manufacturing:
+  description: "Production lines, machines, downtime, and quality results."
+  examples:
+    - command: "Show machine downtime report for manufacturing line 2."
+      expected:
+        domain: "manufacturing"
+        action: "machine_downtime_report"
+        parameters:
+          line: "2"
+
+    - command: "Schedule calibration for quality sensors."
+      expected:
+        domain: "manufacturing"
+        action: "schedule_calibration"
+        parameters:
+          equipment: "quality_sensors"
+
+    - command: "Assign technicians to repair manufacturing robot A7."
+      expected:
+        domain: "manufacturing"
+        action: "assign_technicians"
+        parameters:
+          equipment: "manufacturing_robot_A7"
+
+    - command: "Record quality inspection results for batch QZ-109."
+      expected:
+        domain: "manufacturing"
+        action: "record_inspection_results"
+        parameters:
+          batch_id: "QZ-109"
+
+    - command: "Optimize assembly line sequence for reduced downtime."
+      expected:
+        domain: "manufacturing"
+        action: "optimize_line_sequence"
+        parameters:
+          line: "assembly"
+          goal: "reduced_downtime"
+
+    - command: "List all active work orders in assembly section."
+      expected:
+        domain: "manufacturing"
+        action: "list_work_orders"
+        parameters:
+          area: "assembly"
+          status: "active"
+
+
+legal:
+  description: "Contracts, NDAs, compliance and audits."
+  examples:
+    - command: "Draft an NDA for a new supplier in Germany."
+      expected:
+        domain: "legal"
+        action: "draft_nda"
+        parameters:
+          party_type: "supplier"
+          country: "Germany"
+
+    - command: "List all compliance actions pending for Q1."
+      expected:
+        domain: "legal"
+        action: "list_compliance_actions"
+        parameters:
+          period: "Q1"
+
+    - command: "Review the service contract for renewal terms."
+      expected:
+        domain: "legal"
+        action: "review_contract"
+        parameters:
+          contract_type: "service"
+          focus: "renewal_terms"
+
+    - command: "Draft employment contract for new senior engineer."
+      expected:
+        domain: "legal"
+        action: "draft_employment_contract"
+        parameters:
+          role: "senior_engineer"
+
+    - command: "Review compliance documents for new data privacy regulations."
+      expected:
+        domain: "legal"
+        action: "review_compliance_docs"
+        parameters:
+          topic: "data_privacy_regulations"
+
+    - command: "Prepare compliance briefing for new data regulations."
+      expected:
+        domain: "legal"
+        action: "prepare_briefing"
+        parameters:
+          topic: "new_data_regulations"
+
+    - command: "Summarize all audit findings for year 2024."
+      expected:
+        domain: "legal"
+        action: "summarize_audit_findings"
+        parameters:
+          year: 2024
+
+
+retail:
+  description: "Stores, products, inventory, and retail sales."
+  examples:
+    - command: "Check inventory levels for smart watches in Europe region."
+      expected:
+        domain: "retail"
+        action: "check_inventory"
+        parameters:
+          product: "smart_watches"
+          region: "Europe"
+
+    - command: "Generate weekly sales report for the Dubai store."
+      expected:
+        domain: "retail"
+        action: "generate_sales_report"
+        parameters:
+          store: "Dubai"
+          period: "weekly"
+
+    - command: "List all items with stockout risk."
+      expected:
+        domain: "retail"
+        action: "list_stockout_risk"
+        parameters:
+          risk_level: "stockout"
+
+    - command: "Summarize customer feedback for wearable devices."
+      expected:
+        domain: "retail"
+        action: "summarize_feedback"
+        parameters:
+          product_category: "wearable_devices"
+
+    - command: "Plan inventory replenishment for high-demand items."
+      expected:
+        domain: "retail"
+        action: "plan_replenishment"
+        parameters:
+          demand_level: "high"
+
+
+energy:
+  description: "Energy consumption, grid demand, outages and renewables."
+  examples:
+    - command: "Create an energy consumption summary for October."
+      expected:
+        domain: "energy"
+        action: "consumption_summary"
+        parameters:
+          period: "October"
+
+    - command: "Forecast next week's grid demand for Istanbul region."
+      expected:
+        domain: "energy"
+        action: "forecast_grid_demand"
+        parameters:
+          region: "Istanbul"
+          period: "next_week"
+
+    - command: "List all power outages longer than two hours."
+      expected:
+        domain: "energy"
+        action: "list_outages"
+        parameters:
+          duration_minutes_min: 120
+
+    - command: "Analyze renewable energy output for last week."
+      expected:
+        domain: "energy"
+        action: "renewable_output_analysis"
+        parameters:
+          period: "last_week"
+
+    - command: "Inspect transformer outage reports for anomalies."
+      expected:
+        domain: "energy"
+        action: "inspect_outage_reports"
+        parameters:
+          report_type: "transformer_outage"
+
+    - command: "Optimize energy usage for the data center."
+      expected:
+        domain: "energy"
+        action: "optimize_energy_usage"
+        parameters:
+          facility: "data_center"
+
+
+healthcare_admin:
+  description: "Scheduling, claims, and lab result workflows in healthcare."
+  examples:
+    - command: "Schedule a follow-up appointment reminder for patient A129."
+      expected:
+        domain: "healthcare_admin"
+        action: "schedule_followup"
+        parameters:
+          patient_id: "A129"
+          reminder_type: "follow_up"
+
+    - command: "Generate monthly claims summary for insurance partners."
+      expected:
+        domain: "healthcare_admin"
+        action: "claims_summary"
+        parameters:
+          audience: "insurance_partners"
+          frequency: "monthly"
+
+    - command: "List all pending lab results older than 72 hours."
+      expected:
+        domain: "healthcare_admin"
+        action: "list_pending_labs"
+        parameters:
+          older_than_hours: 72
+
+
+general_admin:
+  description: "General admin workflows: travel, meetings, announcements, OKRs."
+  examples:
+    - command: "Create a travel approval request for next week's conference."
+      expected:
+        domain: "general_admin"
+        action: "create_travel_request"
+        parameters:
+          event: "conference"
+          timeframe: "next_week"
+
+    - command: "List all scheduled meetings for today."
+      expected:
+        domain: "general_admin"
+        action: "list_meetings"
+        parameters:
+          date: "today"
+
+    - command: "Draft a company-wide announcement for the new product update."
+      expected:
+        domain: "general_admin"
+        action: "draft_announcement"
+        parameters:
+          scope: "company_wide"
+          subject: "new_product_update"
+
+    - command: "Summarize all team OKRs for the current quarter."
+      expected:
+        domain: "general_admin"
+        action: "summarize_okrs"
+        parameters:
+          scope: "team"
+          period: "current_quarter"
+
+    - command: "Create a procurement tracker for office supplies."
+      expected:
+        domain: "general_admin"
+        action: "create_procurement_tracker"
+        parameters:
+          category: "office_supplies"
+
+
+knowledge_work:
+  description: "Knowledge base, documentation, tagging and summaries."
+  examples:
+    - command: "Generate knowledge base article for onboarding new partners."
+      expected:
+        domain: "knowledge_work"
+        action: "create_documentation"
+        parameters:
+          topic: "onboarding_new_partners"
+
+    - command: "Tag all internal documents related to GDPR compliance."
+      expected:
+        domain: "knowledge_work"
+        action: "tag_documents"
+        parameters:
+          scope: "internal"
+          tag: "GDPR_compliance"
+
+    - command: "Summarize product specification document for the engineering team."
+      expected:
+        domain: "knowledge_work"
+        action: "summarize_document"
+        parameters:
+          document_type: "product_specification"
+          audience: "engineering_team"

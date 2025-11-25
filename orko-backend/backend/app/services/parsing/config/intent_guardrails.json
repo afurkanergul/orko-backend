@@ -1,0 +1,58 @@
+{
+  "description": "Guardrails for ORKO command parser unsafe/destructive and high-risk actions.",
+  "rule": "No execution of unsafe/destructive actions without explicit confirmation.",
+
+  "destructive_verbs": [
+    "delete", "remove", "erase", "drop", "shutdown", "wipe", "format",
+    "kill", "terminate", "destroy", "purge", "disable", "halt",
+    "shred", "obliterate", "override", "break",
+    "cut power", "power off",
+    "close account", "void contract", "cancel shipment",
+    "revoke access", "disable user", 
+    "reset system", "factory reset", 
+    "dismantle", "disconnect", "lock account",
+    "cancel order", "reverse transaction", "cash out",
+    "clear logs", "wipe logs", "truncate logs",
+    "drop index", "drop schema", "drop database"
+  ],
+
+  "risk_tiers": {
+    "high_risk": [
+      "shutdown_system",
+      "erase_database",
+      "drop_table",
+      "terminate_employee",
+      "void_contract",
+      "delete_financial_record",
+      "disable_security_controls",
+      "revoke_access",
+      "kill_process_forcefully",
+      "wipe_storage"
+    ],
+    "medium_risk": [
+      "restart_service",
+      "update_contract",
+      "reassign_resources",
+      "reset_password",
+      "modify_access"
+    ],
+    "low_risk": [
+      "list_items",
+      "show_report",
+      "get_status",
+      "check_metrics",
+      "view_logs"
+    ]
+  },
+
+  "requires_explicit_confirmation": true,
+
+  "notes": [
+    "Parser must label intents using destructive_verbs as destructive.",
+    "High-risk actions MUST NOT execute without explicit user confirmation.",
+    "Medium-risk actions may require confirmation based on org policy.",
+    "Low-risk actions execute normally unless flagged by other guardrails.",
+    "Until confirmation is received for destructive or high-risk actions, only simulate=true is allowed.",
+    "Risk tiers support multi-industry safety rules (IT, HR, finance, logistics, operations, compliance)."
+  ]
+}

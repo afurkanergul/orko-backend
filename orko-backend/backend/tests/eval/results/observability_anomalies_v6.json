@@ -1,0 +1,173 @@
+{
+  "timestamp": 1763657508.6476977,
+  "anomalies": [
+    {
+      "type": "low_f1_domain",
+      "domain": "marketing",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain marketing has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "general",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain general has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "general_admin",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain general_admin has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "knowledge_work",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain knowledge_work has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "operations",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain operations has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "logistics",
+      "f1": 0.2727272727272727,
+      "precision": 0.17647058823529413,
+      "recall": 0.6,
+      "message": "Domain logistics has low F1 (0.27)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "sales",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain sales has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "customer_support",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain customer_support has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "trading",
+      "f1": 0.25,
+      "precision": 0.3333333333333333,
+      "recall": 0.2,
+      "message": "Domain trading has low F1 (0.25)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "hr",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain hr has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "retail",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain retail has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "legal",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain legal has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "finance",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain finance has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "devops",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain devops has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "it_ops",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain it_ops has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "procurement",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain procurement has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "manufacturing",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain manufacturing has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "docs",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain docs has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "healthcare_admin",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain healthcare_admin has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "energy",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain energy has low F1 (0.00)."
+    },
+    {
+      "type": "low_f1_domain",
+      "domain": "analytics",
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "message": "Domain analytics has low F1 (0.00)."
+    }
+  ]
+}

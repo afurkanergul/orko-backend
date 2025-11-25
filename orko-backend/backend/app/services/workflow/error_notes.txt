@@ -1,0 +1,3 @@
+Planning file for error handling in Workflow Composer.
+Later: validate misconfigured actions before execution.
+Later: show error badges in Composer UI.

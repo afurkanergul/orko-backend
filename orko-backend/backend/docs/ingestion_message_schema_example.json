@@ -1,0 +1,9 @@
+{
+  "source": "telegram",
+  "sender": "123456789",
+  "timestamp": "2025-11-13T10:15:30Z",
+  "content": "Hello ORKO!",
+  "attachments": [],
+  "org_id": 1,
+  "channel_msg_id": "tg-987654321"
+}

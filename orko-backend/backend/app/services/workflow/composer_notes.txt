@@ -1,0 +1,44 @@
+This file will guide the design of ORKO’s Workflow Composer.
+Later: connect Composer UI to workflow actions.
+
+# Composer Layout Ideas
+
+* User drags actions into canvas
+* ORKO connects actions based on inputs and outputs
+
+---
+
+Later: automatic line-drawing between actions.
+Later: clickable action editor panel.
+
+# Dynamic Loader Integration Ideas
+- Composer should list actions after dynamic loader runs.
+- User can click action names to see details.
+
+# Template Integration Ideas
+- Composer UI may show default action templates.
+- User can duplicate templates to build custom actions.
+
+# Category Integration Ideas
+- Composer UI may show categories to help organize actions.
+- User can expand or collapse categories to navigate actions.
+
+# Error Handling Ideas
+- Composer UI will highlight invalid actions or broken links.
+- Users will receive clear error messages for debugging.
+
+# Versioning Ideas
+- Composer UI may show version numbers next to each action.
+- Users can upgrade or downgrade action versions visually.
+
+# Evaluation & Metrics Ideas
+- Composer and Dashboard may show basic metrics for each action set (success rate, error rate).
+- Admins may see evaluation summaries for parser accuracy and workflow success over time.
+
+# Permission & Access Control Ideas
+- Composer UI may hide restricted actions for regular users.
+- Admin users may unlock advanced action-building or lifecycle controls.
+
+# Logging Ideas
+- Composer UI may show execution logs or action-level messages.
+- Admin view may include detailed logs for debugging and performance.

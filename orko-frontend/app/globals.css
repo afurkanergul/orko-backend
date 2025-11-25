@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* -------------------------------------- */
+/* ORKO Design Tokens (Canva-accurate)    */
+/* -------------------------------------- */
+:root {
+  --orko-accent-start: #6A5AE0;
+  --orko-accent-end: #00B3FF;
+  --orko-bg: #F8F9FB;
+  --orko-surface: #ffffff;
+  --orko-card: #ffffff;
+  --orko-text: #1A1A2E;
+  --orko-muted: #6B7280;
+
+  /* Canva exact spacing */
+  --space-page: 32px;
+  --space-block: 24px;
+}
+
+/* -------------------------------------- */
+/* RESET + BASE TYPOGRAPHY                */
+/* -------------------------------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--orko-bg);
+  font-family: 'Inter', sans-serif;
+  color: var(--orko-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* EXACT CANVA TEXT SCALE */
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* -------------------------------------- */
+/* CANVA-LIKE CARD + SHADOW               */
+/* -------------------------------------- */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* -------------------------------------- */
+/* GRID EXACTLY LIKE CANVA                */
+/* -------------------------------------- */
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+/* -------------------------------------- */
+/* CANVA FILTER CHIP                      */
+/* -------------------------------------- */
+.chip {
+  padding: 8px 20px;
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6B7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chip:hover {
+  border-color: var(--orko-accent-start);
+  color: var(--orko-accent-start);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(106, 90, 224, 0.1);
+}
+
+.chip-active {
+  background: linear-gradient(135deg, var(--orko-accent-start), var(--orko-accent-end));
+  border-color: var(--orko-accent-start);
+  color: white;
+}
+
+/* -------------------------------------- */
+/* CANVA ICON BOX                         */
+/* -------------------------------------- */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--orko-accent-start), var(--orko-accent-end));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 16px;
+}
+
+/* -------------------------------------- */
+/* CANVA BADGES                           */
+/* -------------------------------------- */
+.badge {
+  padding: 2px 8px;
+  background: #F0F3F8;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--orko-accent-start);
+}
+
+/* -------------------------------------- */
+/* GLOBAL UI SMOOTHNESS — Canva Motion    */
+/* -------------------------------------- */
+* {
+  transition: all 120ms ease-out;
+}

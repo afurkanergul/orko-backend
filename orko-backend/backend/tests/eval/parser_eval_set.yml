@@ -1,0 +1,802 @@
+commands:
+  - id: "CMD-001"
+    command: "Create a new wheat shipment contract to Egypt."
+    expected:
+      domain: "trading"
+      action: "create_contract"
+      parameters:
+        commodity: "wheat"
+        destination_country: "Egypt"
+
+  - id: "CMD-002"
+    command: "List all vessels arriving in Mersin this week."
+    expected:
+      domain: "logistics"
+      action: "list_vessels"
+      parameters:
+        port: "Mersin"
+
+  - id: "CMD-003"
+    command: "Generate a quarterly cashflow report for EMEA."
+    expected:
+      domain: "finance"
+      action: "generate_cashflow_report"
+      parameters:
+        region: "EMEA"
+
+  - id: "CMD-004"
+    command: "Add a new employee in Dubai office."
+    expected:
+      domain: "hr"
+      action: "create_employee"
+      parameters:
+        location: "Dubai"
+
+  - id: "CMD-005"
+    command: "Restart the payments API in production region."
+    expected:
+      domain: "it_ops"
+      action: "restart_service"
+      parameters:
+        service: "payments"
+
+  - id: "CMD-006"
+    command: "Show PnL for soybean oil in North America."
+    expected:
+      domain: "trading"
+      action: "show_pnl"
+      parameters:
+        commodity: "soybean oil"
+        region: "North America"
+
+  - id: "CMD-007"
+    command: "Book a truck for 500 MT barley to Ankara silo tomorrow."
+    expected:
+      domain: "logistics"
+      action: "book_truck"
+      parameters:
+        product: "barley"
+        destination: "Ankara silo"
+
+  - id: "CMD-008"
+    command: "List all invoices past due more than 30 days."
+    expected:
+      domain: "finance"
+      action: "list_overdue_invoices"
+      parameters: {}
+
+  - id: "CMD-009"
+    command: "Show all employees who are on vacation next week."
+    expected:
+      domain: "hr"
+      action: "list_vacations"
+      parameters: {}
+
+  - id: "CMD-010"
+    command: "Open a high-priority incident for API latency spikes."
+    expected:
+      domain: "it_ops"
+      action: "create_ticket"
+      parameters:
+        priority: "high"
+
+  - id: "CMD-011"
+    command: "Create a contract for 5000 MT corn export to Spain."
+    expected:
+      domain: "trading"
+      action: "create_contract"
+      parameters:
+        commodity: "corn"
+        destination_country: "Spain"
+
+  - id: "CMD-012"
+    command: "Allocate a warehouse slot for incoming shipment tomorrow."
+    expected:
+      domain: "logistics"
+      action: "allocate_warehouse_slot"
+      parameters:
+        time: "tomorrow"
+
+  - id: "CMD-013"
+    command: "Show monthly operating expenses for January."
+    expected:
+      domain: "finance"
+      action: "show_operating_expenses"
+      parameters:
+        month: "January"
+
+  - id: "CMD-014"
+    command: "Schedule onboarding for a new software engineer."
+    expected:
+      domain: "hr"
+      action: "schedule_onboarding"
+      parameters:
+        role: "software engineer"
+
+  - id: "CMD-015"
+    command: "Deploy the billing service to staging."
+    expected:
+      domain: "it_ops"
+      action: "deploy_service"
+      parameters:
+        service: "billing"
+        target: "staging"
+
+  - id: "CMD-016"
+    command: "Update price basis for sunflower oil."
+    expected:
+      domain: "trading"
+      action: "update_price_basis"
+      parameters:
+        commodity: "sunflower oil"
+
+  - id: "CMD-017"
+    command: "Create a delivery schedule for Istanbul warehouse."
+    expected:
+      domain: "logistics"
+      action: "create_delivery_schedule"
+      parameters:
+        warehouse: "Istanbul"
+
+  - id: "CMD-018"
+    command: "Prepare budget forecast for Q3."
+    expected:
+      domain: "finance"
+      action: "prepare_budget_forecast"
+      parameters:
+        quarter: "Q3"
+
+  - id: "CMD-019"
+    command: "Add emergency leave for employee John Doe."
+    expected:
+      domain: "hr"
+      action: "add_leave"
+      parameters:
+        type: "emergency"
+
+  - id: "CMD-020"
+    command: "Run diagnostics on authentication server."
+    expected:
+      domain: "it_ops"
+      action: "run_diagnostics"
+      parameters:
+        service: "authentication"
+
+  - id: "CMD-021"
+    command: "Create hedging plan for soybean meal."
+    expected:
+      domain: "trading"
+      action: "create_hedging_plan"
+      parameters:
+        commodity: "soybean meal"
+
+  - id: "CMD-022"
+    command: "List all shipments delayed more than 48 hours."
+    expected:
+      domain: "logistics"
+      action: "list_delayed_shipments"
+      parameters:
+        delay: "48h"
+
+  - id: "CMD-023"
+    command: "Generate tax summary for year 2024."
+    expected:
+      domain: "finance"
+      action: "generate_tax_summary"
+      parameters:
+        year: 2024
+
+  - id: "CMD-024"
+    command: "Promote employee Sara to Senior Analyst."
+    expected:
+      domain: "hr"
+      action: "promote_employee"
+      parameters:
+        role: "Senior Analyst"
+
+  - id: "CMD-025"
+    command: "Rotate logs on the production cluster."
+    expected:
+      domain: "it_ops"
+      action: "rotate_logs"
+      parameters:
+        target: "production cluster"
+  - id: "CMD-026"
+    command: "Deploy the new authentication microservice to production."
+    expected:
+      domain: "devops"
+      action: "deploy_microservice"
+      parameters:
+        service: "authentication"
+        environment: "production"
+
+  - id: "CMD-027"
+    command: "Rollback the analytics service to the previous version."
+    expected:
+      domain: "devops"
+      action: "rollback_service"
+      parameters:
+        service: "analytics"
+
+  - id: "CMD-028"
+    command: "Increase CPU allocation for the fraud detection service."
+    expected:
+      domain: "devops"
+      action: "adjust_resources"
+      parameters:
+        service: "fraud detection"
+        resource: "cpu"
+
+  - id: "CMD-029"
+    command: "Create a new support case for customer BlueWave Inc."
+    expected:
+      domain: "customer_support"
+      action: "create_case"
+      parameters:
+        customer: "BlueWave Inc"
+
+  - id: "CMD-030"
+    command: "Escalate the ticket for payment synchronization failure."
+    expected:
+      domain: "customer_support"
+      action: "escalate_ticket"
+      parameters:
+        issue: "payment synchronization failure"
+
+  - id: "CMD-031"
+    command: "Show all unresolved tickets older than 48 hours."
+    expected:
+      domain: "customer_support"
+      action: "list_unresolved_tickets"
+      parameters:
+        age: "48h"
+
+  - id: "CMD-032"
+    command: "Create a daily maintenance checklist for the packaging line."
+    expected:
+      domain: "operations"
+      action: "create_checklist"
+      parameters:
+        target: "packaging line"
+
+  - id: "CMD-033"
+    command: "Schedule preventive maintenance for machine A12."
+    expected:
+      domain: "operations"
+      action: "schedule_maintenance"
+      parameters:
+        machine: "A12"
+
+  - id: "CMD-034"
+    command: "List all operational risks assigned to the operations manager."
+    expected:
+      domain: "operations"
+      action: "list_risks"
+      parameters:
+        owner: "operations manager"
+
+  - id: "CMD-035"
+    command: "Show revenue breakdown by region for the last quarter."
+    expected:
+      domain: "analytics"
+      action: "revenue_breakdown"
+      parameters:
+        period: "last quarter"
+
+  - id: "CMD-036"
+    command: "Generate retention analysis for premium customers."
+    expected:
+      domain: "analytics"
+      action: "retention_analysis"
+      parameters:
+        segment: "premium"
+
+  - id: "CMD-037"
+    command: "Forecast monthly demand for the next 6 months."
+    expected:
+      domain: "analytics"
+      action: "forecast_demand"
+      parameters:
+        horizon: "6 months"
+
+  - id: "CMD-038"
+    command: "Create a new sales opportunity with ACME Corp for Q3."
+    expected:
+      domain: "sales"
+      action: "create_opportunity"
+      parameters:
+        customer: "ACME Corp"
+        quarter: "Q3"
+
+  - id: "CMD-039"
+    command: "Show pipeline status for enterprise deals."
+    expected:
+      domain: "sales"
+      action: "show_pipeline"
+      parameters:
+        segment: "enterprise"
+
+  - id: "CMD-040"
+    command: "Generate win-loss analysis for last quarter."
+    expected:
+      domain: "sales"
+      action: "win_loss_analysis"
+      parameters:
+        period: "last quarter"
+
+  - id: "CMD-041"
+    command: "Create a product launch campaign for the new smart speaker."
+    expected:
+      domain: "marketing"
+      action: "create_campaign"
+      parameters:
+        product: "smart speaker"
+
+  - id: "CMD-042"
+    command: "Analyze marketing spend effectiveness for Q2."
+    expected:
+      domain: "marketing"
+      action: "analyze_spend"
+      parameters:
+        quarter: "Q2"
+
+  - id: "CMD-043"
+    command: "Generate social media engagement report for last week."
+    expected:
+      domain: "marketing"
+      action: "engagement_report"
+      parameters:
+        period: "last week"
+
+  - id: "CMD-044"
+    command: "Rebuild the DevOps monitoring dashboard."
+    expected:
+      domain: "devops"
+      action: "rebuild_dashboard"
+      parameters:
+        type: "monitoring"
+
+  - id: "CMD-045"
+    command: "Run load test for the login API with 5000 concurrent users."
+    expected:
+      domain: "devops"
+      action: "run_load_test"
+      parameters:
+        api: "login"
+        users: 5000
+
+  - id: "CMD-046"
+    command: "Classify all customer tickets by sentiment."
+    expected:
+      domain: "customer_support"
+      action: "sentiment_classification"
+      parameters: {}
+
+  - id: "CMD-047"
+    command: "Summarize operational incidents for this month."
+    expected:
+      domain: "operations"
+      action: "summarize_incidents"
+      parameters:
+        period: "this month"
+
+  - id: "CMD-048"
+    command: "Generate churn probability analysis for all customer segments."
+    expected:
+      domain: "analytics"
+      action: "churn_analysis"
+      parameters: {}
+
+  - id: "CMD-049"
+    command: "List all opportunities expected to close within 30 days."
+    expected:
+      domain: "sales"
+      action: "list_opportunities"
+      parameters:
+        close_window: "30 days"
+
+  - id: "CMD-050"
+    command: "Create competitive landscape report for mobile devices."
+    expected:
+      domain: "marketing"
+      action: "competitive_report"
+      parameters:
+        category: "mobile devices"
+  - id: "CMD-051"
+    command: "Create a purchase order for 300 laptops."
+    expected:
+      domain: "procurement"
+      action: "create_purchase_order"
+      parameters:
+        item: "laptops"
+        quantity: 300
+
+  - id: "CMD-052"
+    command: "List all suppliers with overdue deliveries."
+    expected:
+      domain: "procurement"
+      action: "list_overdue_suppliers"
+      parameters: {}
+
+  - id: "CMD-053"
+    command: "Approve vendor contract renewal for Globex Ltd."
+    expected:
+      domain: "procurement"
+      action: "approve_vendor_contract"
+      parameters:
+        vendor: "Globex Ltd"
+
+  - id: "CMD-054"
+    command: "Show machine downtime report for manufacturing line 2."
+    expected:
+      domain: "manufacturing"
+      action: "machine_downtime_report"
+      parameters:
+        line: 2
+
+  - id: "CMD-055"
+    command: "Schedule calibration for quality sensors."
+    expected:
+      domain: "manufacturing"
+      action: "schedule_calibration"
+      parameters:
+        equipment: "quality sensors"
+
+  - id: "CMD-056"
+    command: "List all active work orders in assembly section."
+    expected:
+      domain: "manufacturing"
+      action: "list_work_orders"
+      parameters:
+        section: "assembly"
+
+  - id: "CMD-057"
+    command: "Draft a non-disclosure agreement for new supplier discussions."
+    expected:
+      domain: "legal"
+      action: "draft_nda"
+      parameters:
+        purpose: "supplier discussions"
+
+  - id: "CMD-058"
+    command: "Review the service contract for renewal terms."
+    expected:
+      domain: "legal"
+      action: "review_contract"
+      parameters:
+        contract_type: "service"
+
+  - id: "CMD-059"
+    command: "List all compliance actions pending for Q1."
+    expected:
+      domain: "legal"
+      action: "list_compliance_actions"
+      parameters:
+        quarter: "Q1"
+
+  - id: "CMD-060"
+    command: "Check inventory levels for smart watches in Europe region."
+    expected:
+      domain: "retail"
+      action: "check_inventory"
+      parameters:
+        product: "smart watches"
+        region: "Europe"
+
+  - id: "CMD-061"
+    command: "Generate weekly sales report for the Dubai store."
+    expected:
+      domain: "retail"
+      action: "generate_sales_report"
+      parameters:
+        location: "Dubai"
+
+  - id: "CMD-062"
+    command: "List all items with stockout risk."
+    expected:
+      domain: "retail"
+      action: "list_stockout_risk"
+      parameters: {}
+
+  - id: "CMD-063"
+    command: "Create an energy consumption summary for October."
+    expected:
+      domain: "energy"
+      action: "consumption_summary"
+      parameters:
+        month: "October"
+
+  - id: "CMD-064"
+    command: "Forecast next week's grid demand for Istanbul region."
+    expected:
+      domain: "energy"
+      action: "forecast_grid_demand"
+      parameters:
+        region: "Istanbul"
+
+  - id: "CMD-065"
+    command: "List all power outages longer than two hours."
+    expected:
+      domain: "energy"
+      action: "list_outages"
+      parameters:
+        duration: "2h"
+
+  - id: "CMD-066"
+    command: "Initiate procurement for backup generators."
+    expected:
+      domain: "procurement"
+      action: "initiate_procurement"
+      parameters:
+        item: "backup generators"
+
+  - id: "CMD-067"
+    command: "Assign technicians to repair manufacturing robot A7."
+    expected:
+      domain: "manufacturing"
+      action: "assign_technicians"
+      parameters:
+        machine: "robot A7"
+
+  - id: "CMD-068"
+    command: "Review compliance documents for new data privacy regulations."
+    expected:
+      domain: "legal"
+      action: "review_compliance_docs"
+      parameters:
+        regulation: "data privacy"
+
+  - id: "CMD-069"
+    command: "Show best-selling products for Q1 across all stores."
+    expected:
+      domain: "retail"
+      action: "top_products"
+      parameters:
+        quarter: "Q1"
+
+  - id: "CMD-070"
+    command: "Analyze renewable energy output for last week."
+    expected:
+      domain: "energy"
+      action: "renewable_output_analysis"
+      parameters:
+        period: "last week"
+
+  - id: "CMD-071"
+    command: "Create sourcing plan for semiconductor components."
+    expected:
+      domain: "procurement"
+      action: "create_sourcing_plan"
+      parameters:
+        component: "semiconductors"
+
+  - id: "CMD-072"
+    command: "Optimize assembly line sequence for reduced downtime."
+    expected:
+      domain: "manufacturing"
+      action: "optimize_line_sequence"
+      parameters:
+        line: "assembly"
+
+  - id: "CMD-073"
+    command: "Draft employment contract for new senior engineer."
+    expected:
+      domain: "legal"
+      action: "draft_employment_contract"
+      parameters:
+        role: "senior engineer"
+
+  - id: "CMD-074"
+    command: "Summarize customer feedback for wearable devices."
+    expected:
+      domain: "retail"
+      action: "summarize_feedback"
+      parameters:
+        category: "wearable devices"
+
+  - id: "CMD-075"
+    command: "Inspect transformer outage reports for anomalies."
+    expected:
+      domain: "energy"
+      action: "inspect_outage_reports"
+      parameters:
+        type: "transformer"
+  - id: "CMD-076"
+    command: "Schedule a follow-up appointment reminder for patient A129."
+    expected:
+      domain: "healthcare_admin"
+      action: "schedule_followup"
+      parameters:
+        patient_id: "A129"
+
+  - id: "CMD-077"
+    command: "Generate monthly claims summary for insurance partners."
+    expected:
+      domain: "healthcare_admin"
+      action: "claims_summary"
+      parameters:
+        period: "monthly"
+
+  - id: "CMD-078"
+    command: "List all pending lab results older than 72 hours."
+    expected:
+      domain: "healthcare_admin"
+      action: "list_pending_labs"
+      parameters:
+        age: "72h"
+
+  - id: "CMD-079"
+    command: "Create a travel approval request for next week's conference."
+    expected:
+      domain: "general_admin"
+      action: "create_travel_request"
+      parameters:
+        time: "next week"
+
+  - id: "CMD-080"
+    command: "List all scheduled meetings for today."
+    expected:
+      domain: "general_admin"
+      action: "list_meetings"
+      parameters:
+        period: "today"
+
+  - id: "CMD-081"
+    command: "Draft a company-wide announcement for the new product update."
+    expected:
+      domain: "general_admin"
+      action: "draft_announcement"
+      parameters:
+        topic: "new product update"
+
+  - id: "CMD-082"
+    command: "Summarize all team OKRs for the current quarter."
+    expected:
+      domain: "general_admin"
+      action: "summarize_okrs"
+      parameters:
+        quarter: "current"
+
+  - id: "CMD-083"
+    command: "Generate knowledge base article for onboarding new partners."
+    expected:
+      domain: "knowledge_work"
+      action: "create_documentation"
+      parameters:
+        subject: "partner onboarding"
+
+  - id: "CMD-084"
+    command: "Tag all internal documents related to GDPR compliance."
+    expected:
+      domain: "knowledge_work"
+      action: "tag_documents"
+      parameters:
+        topic: "gdpr compliance"
+
+  - id: "CMD-085"
+    command: "Summarize product specification document for the engineering team."
+    expected:
+      domain: "knowledge_work"
+      action: "summarize_document"
+      parameters:
+        target_team: "engineering"
+
+  - id: "CMD-086"
+    command: "Analyze customer churn trends for enterprise accounts."
+    expected:
+      domain: "analytics"
+      action: "churn_analysis"
+      parameters:
+        segment: "enterprise"
+
+  - id: "CMD-087"
+    command: "Create a procurement tracker for office supplies."
+    expected:
+      domain: "general_admin"
+      action: "create_procurement_tracker"
+      parameters:
+        type: "office supplies"
+
+  - id: "CMD-088"
+    command: "Prepare compliance briefing for new data regulations."
+    expected:
+      domain: "legal"
+      action: "prepare_briefing"
+      parameters:
+        regulation: "data regulations"
+
+  - id: "CMD-089"
+    command: "Show machine utilization rate for manufacturing plant B."
+    expected:
+      domain: "manufacturing"
+      action: "machine_utilization"
+      parameters:
+        plant: "B"
+
+  - id: "CMD-090"
+    command: "List all customer escalations in the last 48 hours."
+    expected:
+      domain: "customer_support"
+      action: "list_escalations"
+      parameters:
+        period: "48h"
+
+  - id: "CMD-091"
+    command: "Generate invoice aging report for corporate accounts."
+    expected:
+      domain: "finance"
+      action: "invoice_aging"
+      parameters:
+        segment: "corporate"
+
+  - id: "CMD-092"
+    command: "Draft action plan for disaster recovery test."
+    expected:
+      domain: "it_ops"
+      action: "draft_dr_plan"
+      parameters:
+        plan_type: "disaster recovery"
+
+  - id: "CMD-093"
+    command: "Optimize energy usage for the data center."
+    expected:
+      domain: "energy"
+      action: "optimize_energy_usage"
+      parameters:
+        target: "data center"
+
+  - id: "CMD-094"
+    command: "Forecast operational staffing needs for next quarter."
+    expected:
+      domain: "operations"
+      action: "forecast_staffing"
+      parameters:
+        quarter: "next"
+
+  - id: "CMD-095"
+    command: "Plan inventory replenishment for high-demand items."
+    expected:
+      domain: "retail"
+      action: "plan_replenishment"
+      parameters:
+        priority: "high-demand"
+
+  - id: "CMD-096"
+    command: "Create safety inspection checklist for the loading docks."
+    expected:
+      domain: "operations"
+      action: "create_safety_checklist"
+      parameters:
+        area: "loading docks"
+
+  - id: "CMD-097"
+    command: "Schedule patch update for core banking system."
+    expected:
+      domain: "it_ops"
+      action: "schedule_patch"
+      parameters:
+        system: "core banking"
+
+  - id: "CMD-098"
+    command: "Record quality inspection results for batch QZ-109."
+    expected:
+      domain: "manufacturing"
+      action: "record_inspection_results"
+      parameters:
+        batch: "QZ-109"
+
+  - id: "CMD-099"
+    command: "Generate weekly procurement savings report."
+    expected:
+      domain: "procurement"
+      action: "procurement_savings_report"
+      parameters:
+        period: "weekly"
+
+  - id: "CMD-100"
+    command: "Summarize all audit findings for year 2024."
+    expected:
+      domain: "legal"
+      action: "summarize_audit_findings"
+      parameters:
+        year: 2024

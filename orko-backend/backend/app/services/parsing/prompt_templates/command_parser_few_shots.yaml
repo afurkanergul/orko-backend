@@ -1,0 +1,83 @@
+meta:
+  name: "ORKO Command Parser Few-Shot Templates"
+  version: "0.1.0"
+  description: "Few-shot prompts for mapping natural language commands to structured intents."
+  schema_path: "backend/app/services/parsing/config/intent.schema.json"
+  guardrails_config: "backend/app/services/parsing/config/intent_guardrails.json"
+
+system_prompt: |
+  You are ORKO's Command Parser.
+  Your job is to read a natural language command and output a JSON object
+  that strictly follows the schema in intent.schema.json:
+    - command (string)
+    - action (string)
+    - parameters (object)
+    - context (object)
+  You MUST:
+    - Use only actions that exist in the ORKO action catalog (provided separately).
+    - Prefer non-destructive actions.
+    - For any destructive or irreversible action, set an appropriate action name
+      but DO NOT execute it. The system will require explicit human confirmation.
+    - NEVER invent credentials, accounts, or access rights.
+
+  Do NOT include explanations, only the JSON object.
+
+guardrails_text: |
+  Unsafe/destructive actions (e.g., delete, drop, shutdown, wipe, format, erase)
+  MUST NOT be executed without explicit human confirmation.
+  If the command appears destructive, mark it clearly in the intent action name
+  and parameters, but rely on the confirmation layer to decide execution.
+
+few_shots:
+  - name: "create_daily_update_workflow"
+    input: "Set up a daily update email to the trading team at 6pm Dubai time."
+    output_json: |
+      {
+        "command": "Set up a daily update email to the trading team at 6pm Dubai time.",
+        "action": "create_daily_update_workflow",
+        "parameters": {
+          "schedule": "18:00 Asia/Dubai",
+          "channel": "email",
+          "recipient_group": "trading_team"
+        },
+        "context": {
+          "source_channel": "chat",
+          "locale": "en-US"
+        }
+      }
+
+  - name: "log_file_notify_workflow"
+    input: "Whenever we get a new risk report file, notify me on Slack."
+    output_json: |
+      {
+        "command": "Whenever we get a new risk report file, notify me on Slack.",
+        "action": "log_file_notify",
+        "parameters": {
+          "trigger": "new_file",
+          "file_type": "risk_report",
+          "notification_channel": "slack"
+        },
+        "context": {
+          "source_channel": "chat",
+          "locale": "en-US"
+        }
+      }
+
+  - name: "destructive_action_requires_confirmation"
+    input: "Delete all historical trade records for last year."
+    output_json: |
+      {
+        "command": "Delete all historical trade records for last year.",
+        "action": "delete_trade_records",
+        "parameters": {
+          "scope": "all",
+          "period": "last_year"
+        },
+        "context": {
+          "source_channel": "chat",
+          "locale": "en-US"
+        }
+      }
+    notes: |
+      This is a destructive action. The confirmation layer MUST require an explicit
+      human confirmation signal before executing this workflow.

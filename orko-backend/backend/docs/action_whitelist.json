@@ -1,0 +1,18 @@
+{
+  "allowed": [
+    "list_vessels",
+    "list_overdue_invoices",
+    "list_employees",
+    "list_tickets",
+    "show_pipeline",
+    "revenue_breakdown",
+    "generate_report",
+    "generate_forecast",
+    "list_stockout_risk",
+    "generate_sales_report",
+    "create_checklist",
+    "forecast_demand",
+    "summary",
+    "sentiment_classification"
+  ]
+}

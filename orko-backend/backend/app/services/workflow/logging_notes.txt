@@ -1,0 +1,3 @@
+Planning file for logging inside Workflow Composer and action execution.
+Later: log action execution start/end times.
+Later: log workflow errors, warnings, and performance metrics.

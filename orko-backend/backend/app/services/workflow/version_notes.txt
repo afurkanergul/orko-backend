@@ -1,0 +1,3 @@
+Planning file for versioning of workflow actions and templates.
+Later: store version numbers inside action metadata.
+Later: allow Composer to switch between versions.
