@@ -1,214 +1,57 @@
-\# Aider Settings \& Master Instructions (Maximum-Level Diagnostics)
+# Aider Settings for ORKO Diagnostics
 
+## Default Model
 
+- Use: `gpt-4.1`
+- Invocation example:
+  - `aider --model gpt-4.1`
 
-\## Core Principles
+## Patch Style
 
+- Balanced:
+  - Avoid hyper-aggressive refactors.
+  - Prefer minimal, well-scoped, high-quality changes.
 
+## Languages of Interest
 
-1\. ORKO does NOT implement diagnostics internally.
+- Python (FastAPI backend).
+- JavaScript/TypeScript (frontend).
+- JSON/YAML (configs and schema).
+- Go (future).
 
-2\. Aider + Git + GitHub IS the diagnostics engine.
+## Repo Structure Assumptions
 
-3\. All diagnostics are external, driven by Aider tasks and GitHub workflows.
+- Single repo containing:
+  - `orko-backend/`
+  - `orko-frontend/`
+  - `orko_rules/`
+  - Pattern Brain related files (to be added)
+- Backend entrypoint: `orko-backend/app/main.py`
+- Dev server: `uvicorn app.main:app --reload` at `http://localhost:8000`
 
-4\. ORKO must remain multi-industry, multi-tenant, and production-grade.
+## Diagnostics Philosophy
 
+- ORKO is NOT a diagnostics engine.
+- Aider + Git + GitHub form the external diagnostics system.
+- All deep analysis, semantic graphs, AST reasoning, and risk scoring happen in Aider.
 
+## Output Formats
 
----
+Aider should produce:
 
+1. **JSON**:
+   - Machine-readable reports for future automation.
+2. **Markdown**:
+   - Human-friendly diagnostics summaries for PR comments.
 
+## Safety and Guardrails
 
-\## General Behavior for Aider
+- No destructive actions without clear justification.
+- Prefer PR-based autofixes:
+  - Create branches like `aider/fix-<short-description>`.
+  - Open PRs against `dev`.
 
+## Working Directory
 
-
-When running in this repo, Aider MUST:
-
-
-
-1\. Read and obey all rules in:
-
-&nbsp;  - `orko\_rules/pattern\_brain\_contract.md`
-
-&nbsp;  - `orko\_rules/schema\_contract.md`
-
-&nbsp;  - `orko\_rules/workflow\_contract.md`
-
-&nbsp;  - `orko\_rules/canonicalization\_rules.md`
-
-&nbsp;  - `orko\_rules/aider\_settings.md` (this file)
-
-
-
-2\. Treat these files as \*\*hard constraints\*\*.
-
-
-
-3\. Always:
-
-&nbsp;  - Explain the reasoning behind diagnostics.
-
-&nbsp;  - Return structured outputs:
-
-&nbsp;    - JSON diagnostics block.
-
-&nbsp;    - Markdown summary (for PR comments).
-
-
-
----
-
-
-
-\## Maximum-Level Diagnostics Capabilities
-
-
-
-Aider MUST attempt to:
-
-
-
-\- Build a semantic graph across:
-
-&nbsp; - `orko-backend/`
-
-&nbsp; - `orko-frontend/`
-
-&nbsp; - `pattern\_brain/`
-
-&nbsp; - Config files (JSON/YAML)
-
-&nbsp; - GitHub workflows
-
-\- Perform multi-language AST-style analysis for:
-
-&nbsp; - Python
-
-&nbsp; - JS/TS
-
-&nbsp; - JSON
-
-&nbsp; - YAML
-
-&nbsp; - (Go – where present)
-
-\- Cross-file semantic consistency mapping:
-
-&nbsp; - Schema ↔ DB ↔ Code ↔ Frontend ↔ Workflows
-
-\- Verify:
-
-&nbsp; - Evaluator → Parser → Workflow lineage
-
-&nbsp; - Canonical domain/action/parameter lineage
-
-\- Compute risk scores for:
-
-&nbsp; - Inconsistencies
-
-&nbsp; - Complexity
-
-&nbsp; - Potential breakages
-
-
-
----
-
-
-
-\## Output Format Requirements
-
-
-
-For \*\*every diagnostics run\*\*, Aider MUST output:
-
-
-
-1\. A JSON block (in a fenced ```json code block) with:
-
-&nbsp;  - `summary`
-
-&nbsp;  - `issues` (list)
-
-&nbsp;    - `id`
-
-&nbsp;    - `category`
-
-&nbsp;    - `severity`
-
-&nbsp;    - `description`
-
-&nbsp;    - `files`
-
-&nbsp;    - `line\_numbers`
-
-&nbsp;    - `proposed\_fix\_summary`
-
-&nbsp;  - `risk\_score\_overall` (0–100)
-
-&nbsp;  - `recommended\_next\_actions` (list)
-
-2\. A Markdown report suitable for PR comments:
-
-&nbsp;  - Executive summary
-
-&nbsp;  - Risk breakdown
-
-&nbsp;  - Key issues
-
-&nbsp;  - Recommended fixes
-
-
-
----
-
-
-
-\## Auto-Fix Behavior
-
-
-
-When explicitly instructed by a task:
-
-
-
-\- Aider MAY generate patches across multiple files.
-
-\- Patches MUST:
-
-&nbsp; - Respect canonicalization rules.
-
-&nbsp; - Maintain schema/workflow alignment.
-
-&nbsp; - Be minimal but complete.
-
-\- After applying patches, Aider MUST:
-
-&nbsp; - Re-run diagnostics in a \*\*“post-fix check”\*\* mode.
-
-&nbsp; - Confirm that high-severity issues are reduced or resolved.
-
-
-
----
-
-
-
-\## Safety \& Destructive Actions
-
-
-
-Aider MUST:
-
-
-
-\- Avoid destructive operations (e.g., deleting large file sets) unless explicitly asked.
-
-\- Always show patches before applying (via Git diffs).
-
-\- Prefer refactoring over “quick hacks”.
-
-
-
+- Always start Aider from the repo root:
+  - `C:\Users\AhmetErgul\Downloads\ORKO_Step1-1_starter`

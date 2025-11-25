@@ -1,154 +1,89 @@
-\# Schema Contract
+# Schema Contract for ORKO (External Diagnostics via Aider)
 
+## Scope
 
+This contract defines how Aider must reason about schemas across:
 
-\## Goals
+- Backend (FastAPI, Pydantic models, dataclasses).
+- Database models (SQLAlchemy or equivalents).
+- JSON/YAML configuration files.
+- Frontend API payloads (TS types, interfaces, Zod schemas where present).
 
+## Core Rules
 
+1. Every input/output handled by ORKO MUST have a **schema**.
+2. Schemas MUST be the single source of truth for:
+   - Field names.
+   - Field types.
+   - Required vs optional.
+   - Default values.
+   - Enum/choice values when applicable.
 
-1\. Enforce strict alignment between:
+## Alignment Expectations
 
-&nbsp;  - JSON/YAML schemas
+Aider MUST verify:
 
-&nbsp;  - Python/Go data models
+1. **Schema ↔ Parser alignment**
+   - All fields parsed from requests or files are defined in a schema.
+   - Parsers do not accept fields that are missing in schema definitions.
+   - Types match (e.g., string vs int vs list).
 
-&nbsp;  - DB schemas (PostgreSQL)
+2. **Schema ↔ Evaluator alignment**
+   - Evaluators do not reference fields not guaranteed by the schema.
+   - Evaluators handle optional vs required fields correctly.
+   - Risky assumptions are flagged (e.g., unguarded `field["key"]` when not required).
 
-&nbsp;  - Frontend types (TS/JS)
+3. **Schema ↔ Database alignment**
+   - When DB models exist, columns match schema fields:
+     - Type compatibility.
+     - Nullability vs required.
+     - Length/constraints vs enum/choices.
+   - Orphan columns / orphan schema fields are highlighted.
 
-2\. Avoid schema drift.
+4. **Schema ↔ Frontend alignment**
+   - Frontend TS/JS types match backend schema:
+     - Name.
+     - Type.
+     - Optionality.
+   - Aider reports mismatches as risks for runtime bugs.
 
-3\. Support multi-tenant, multi-industry, multi-language environments.
+## Error Categories to Report
 
+For each schema-related problem, Aider MUST categorize it into:
 
+- `SchemaMismatch`
+- `SchemaParserMismatch`
+- `SchemaEvaluatorMismatch`
+- `SchemaDBMismatch`
+- `SchemaFrontendMismatch`
+- `MissingSchemaDefinition`
+- `OutdatedSchemaDefinition`
 
----
+Each finding should include:
 
+- File path(s).
+- Line numbers.
+- Severity: `low`, `medium`, `high`, `critical`.
+- Suggested fix (concrete).
 
+## Multi-Language Considerations
 
-\## Schema Sources
+- Python: Pydantic models, dataclasses, TypedDicts.
+- JS/TS: types, interfaces, Zod schemas, Yup schemas.
+- JSON/YAML: explicit schema files or config with implied schema.
 
+Aider must construct a **unified schema view** across languages.
 
+## Performance & Evolution
 
-Aider MUST treat the following as schema sources:
+- Aider should flag duplicated schemas that drift over time.
+- Aider may recommend refactoring towards a single canonical location for schema definitions.
 
+## Relationship to Other Contracts
 
+- This file is tightly connected to:
+  - `pattern_brain_contract.md` (lineage and invariants).
+  - `workflow_contract.md` (how schemas are used in workflows).
+  - `canonicalization_rules.md` (naming and IDs).
 
-\- Backend:
-
-&nbsp; - Pydantic models (FastAPI request/response models)
-
-&nbsp; - ORM models (e.g., SQLAlchemy) mapping to PostgreSQL (`orko\_ai`)
-
-\- DB:
-
-&nbsp; - Table definitions and migrations referencing `orko\_ai`
-
-\- Frontend:
-
-&nbsp; - TypeScript interfaces / types representing API payloads
-
-\- Config:
-
-&nbsp; - JSON/YAML schema definitions
-
-
-
----
-
-
-
-\## Schema → DB → Code Alignment Rules
-
-
-
-For each entity:
-
-
-
-1\. Every field in a schema must:
-
-&nbsp;  - Map to a DB column, OR
-
-&nbsp;  - Be explicitly documented as virtual/derived.
-
-2\. Every DB column must:
-
-&nbsp;  - Map to a schema field, OR
-
-&nbsp;  - Be explicitly marked as internal/technical (e.g., audit fields).
-
-3\. Types must be consistent or safely coercible:
-
-&nbsp;  - Example: `integer` in DB ↔ `int` in Python ↔ `number` in TS.
-
-4\. Nullability and optionality must align:
-
-&nbsp;  - `NOT NULL` in DB MUST NOT be optional in the schema without a default.
-
-5\. Multi-tenant fields:
-
-&nbsp;  - Tenant identifiers must be consistently named and typed.
-
-
-
-Aider MUST flag any deviation as a schema alignment issue.
-
-
-
----
-
-
-
-\## Schema Validation Rules
-
-
-
-Aider diagnostics MUST:
-
-
-
-\- Ensure every request/response body used by FastAPI routes references a schema.
-
-\- Ensure every public API is represented in:
-
-&nbsp; - Backend models
-
-&nbsp; - Frontend types
-
-&nbsp; - Pattern Brain contracts, where relevant
-
-\- Check that JSON/YAML configuration defining schemas matches:
-
-&nbsp; - Actual code
-
-&nbsp; - DB migrations
-
-
-
----
-
-
-
-\## Reporting Requirements
-
-
-
-Aider MUST output for each detected issue:
-
-
-
-\- Category: `schema\_mismatch` / `schema\_drift` / `schema\_missing`
-
-\- Files and line numbers
-
-\- Expected vs actual schema definition
-
-\- Proposed fix suggestion (including patch snippets)
-
-\- Severity (e.g., `high` if it can cause runtime breakage)
-
-
-
-
-
+Aider should cross-reference all three when performing diagnostics.

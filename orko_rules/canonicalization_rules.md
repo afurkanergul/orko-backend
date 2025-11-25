@@ -1,152 +1,77 @@
-\# Canonicalization Rules
+# Canonicalization Rules for ORKO
 
+## Purpose
 
+Ensure strict canonical naming and structure for:
 
-\## Purpose
+- Domains
+- Actions
+- Parameters
+- Workflow names
+- Schema names
+- Evaluator and parser identifiers
 
+Aider uses these rules to detect inconsistencies and propose fixes.
 
+## Canonical Naming Rules
 
-Enforce strict, global naming and structural patterns:
+1. Domains:
+   - Format: `snake_case` or `kebab-case` in code, configurable, but consistent.
+   - Must not include industry-specific suffixes (avoid `grain_trading_only` style names).
 
+2. Actions:
+   - Verb-noun pattern where possible: `create_order`, `evaluate_parser`, etc.
+   - Same action name across backend, frontend, and configs.
 
+3. Parameters:
+   - Clear, descriptive names.
+   - Avoid synonyms for the same concept in different parts of the system.
 
-\- Domains
+4. Canonical registry:
+   - Where present (e.g., YAML or JSON), it is the single ground truth.
+   - All code and workflows must align with it.
 
-\- Actions
+## Canonicalization Checks
 
-\- Parameters
+Aider MUST:
 
-\- Entities
+1. Identify all occurrences of domains/actions/parameters across:
+   - Backend Python.
+   - Frontend JS/TS.
+   - Config files (JSON/YAML/TOML).
+   - Rule files and docs.
 
-\- Config keys
+2. Group them into canonical entities:
+   - Same name, same type, same meaning.
 
+3. Detect:
+   - Naming drift (e.g., `tenant_id` vs `tenantId` vs `org_id`).
+   - Semantic drift (same name used for different meanings).
 
+4. Propose:
+   - Concrete rename strategies.
+   - Code patches for safe renaming.
+   - Updates in tests and documentation.
 
----
+## Canonical Lineage
 
+For each canonical entity, Aider constructs a lineage:
 
+- Canonical definition → schemas → parsers → workflows → evaluators → outputs → logs
 
-\## Canonical Name Structure
+Any missing link or mismatch becomes a diagnostic.
 
+## Multi-Tenant and Multi-Company Canonicalization
 
+- Entities related to tenant or company boundaries must be explicit.
+- Aider should detect ambiguous names that risk cross-tenant leakage.
+- Recommended pattern: `tenant_id` or `customer_id` consistently throughout.
 
-\- Domains: `snake\_case`, singular where possible. Example: `portfolio`, `execution`, `pricing`.
+## Enforcement
 
-\- Actions: `snake\_case`, verb-first where possible. Example: `create\_order`, `cancel\_order`.
+When Aider applies autofixes:
 
-\- Parameters: `snake\_case`, descriptive. Example: `instrument\_id`, `tenant\_id`, `risk\_score`.
-
-
-
-Aider MUST detect:
-
-
-
-\- Inconsistent naming of the same concept across files.
-
-\- Overloaded names used for different concepts.
-
-
-
----
-
-
-
-\## Canonical Lineage Rules
-
-
-
-For every domain/action/parameter, Aider MUST:
-
-
-
-1\. Identify its canonical definition location (Pattern Brain or core models).
-
-2\. Build a lineage:
-
-&nbsp;  - Where it is defined.
-
-&nbsp;  - Where it is consumed.
-
-&nbsp;  - Where it is persisted (DB).
-
-&nbsp;  - Where it is exposed (APIs, UI).
-
-
-
-3\. Ensure ALL references share exactly the same spelling and conceptual meaning.
-
-
-
----
-
-
-
-\## Conflict Detection
-
-
-
-Aider MUST flag:
-
-
-
-\- Same name used for different concepts.
-
-\- Different names used for the SAME concept.
-
-\- Multiple canonical definitions of the same concept.
-
-
-
-For each conflict, Aider MUST:
-
-
-
-\- Propose a single canonical name.
-
-\- Suggest patches to align all references.
-
-\- Provide risk assessment (e.g., “high risk if renamed incorrectly”).
-
-
-
----
-
-
-
-\## Multi-Industry \& Multi-Tenant Constraints
-
-
-
-\- Names MUST NOT embed industry-specific terms unless absolutely necessary.
-
-\- Tenancy-related fields (e.g., `tenant\_id`, `org\_id`) MUST be consistent everywhere.
-
-\- Aider must avoid turning ORKO into a single-industry system.
-
-
-
----
-
-
-
-\## Reporting
-
-
-
-For canonicalization issues, Aider MUST provide:
-
-
-
-\- Category: `canonicalization\_error` / `naming\_conflict`
-
-\- Files and line numbers
-
-\- Suggested canonical name
-
-\- Exact before/after name mapping
-
-\- Suggested patches (multi-file allowed)
-
-
-
+- It must:
+  - Follow these rules.
+  - Update all references in a single coherent patch where possible.
+  - Re-run checks to confirm the repo is in a more canonical state than before.

@@ -1,182 +1,98 @@
-\# Workflow Contract
+# Workflow Contract for ORKO (External Diagnostics via Aider)
 
+## Purpose
 
+Define how Aider must analyze and validate ORKO workflows without embedding diagnostics into ORKO itself.
 
-\## Purpose
+ORKO is the workflow engine.  
+Aider is the external auditor and fixer.
 
+## Workflow Definition Expectations
 
+A workflow is any sequence of steps that:
 
-Define how workflows must align with:
+- Accepts an input (JSON, API request, message).
+- Performs validations and transformations.
+- Executes actions (e.g., parsing, evaluation, model calls, storage).
+- Produces outputs (responses, events, database writes, logs).
 
+## Required Properties for Each Workflow
 
+Aider should expect or infer for each workflow:
 
-\- Parser behavior
+- Name / identifier.
+- Domain and action (where applicable).
+- Input schema reference.
+- Output schema reference.
+- Pre-conditions and post-conditions.
+- Error handling strategy.
+- Observability hooks (logging/metrics/traces).
 
-\- Evaluator behavior
+## Workflow Alignment Checks
 
-\- Schemas
+Aider MUST perform:
 
-\- DB
+1. **Input alignment**
+   - Workflow entrypoints use schemas defined in `schema_contract`.
+   - All used parameters exist in canonical definitions.
 
-\- Frontend usage
+2. **Step-by-step lineage verification**
+   - Map data as it flows between:
+     - Parser.
+     - Validator.
+     - Business logic.
+     - Evaluator.
+   - Ensure nothing is silently dropped or added without schema support.
 
+3. **Evaluator–Parser–Workflow lineage**
+   - Evaluators only consume well-defined outputs of parsers and workflows.
+   - Workflows do not call evaluators with incomplete payloads.
+   - All evaluator outputs are either used or explicitly discarded.
 
+4. **Cross-language workflow validation**
+   - Backend endpoints ↔ frontend calls.
+   - Worker jobs ↔ database operations.
+   - Config-driven workflows ↔ implementation.
 
-Aider uses this to validate \*\*end-to-end lineage\*\* from input → parser → evaluator → output.
+## Multi-Step Workflow Validation
 
+Aider should construct a workflow graph and verify:
 
+- There is a clear path from input to output for each workflow.
+- Loops and retries are safe and bounded.
+- Critical steps have error handling and logging.
+- Unsupported states/transitions are flagged.
 
----
+## Risk Scoring
 
+For each workflow, Aider must compute a risk score based on:
 
+- Number and severity of mismatches.
+- Missing validation steps.
+- Missing logging on critical edges.
+- Presence of TODOs or commented-out guards.
 
-\## Workflow Definition Expectations
+Scores: `low`, `medium`, `high`, `critical`.
 
+## Reporting
 
+For each high/critical workflow issue, Aider must:
 
-Workflows may be represented as:
+- Provide:
+  - Workflow name.
+  - Files and line numbers.
+  - Description of problem.
+  - Recommended fix (may include code).
+- Optionally propose multi-file patches that:
+  - Add missing validations.
+  - Align schemas and parameters.
+  - Introduce logging and guards.
 
+## Multi-Tenant and Multi-Industry Rules
 
+- Workflows must NOT hardcode a single industry.
+- Aider should detect:
+  - References that make flows industry-specific without configuration.
+  - Missing tenant boundaries.
 
-\- Python orchestration code
-
-\- YAML/JSON workflow files
-
-\- Pattern Brain contract entries
-
-\- Documentation in Markdown
-
-
-
-For each workflow, Aider MUST be able to determine:
-
-
-
-1\. Input domains, actions, parameters.
-
-2\. Order of steps.
-
-3\. Decision branches / conditions.
-
-4\. Expected outputs and side-effects.
-
-
-
----
-
-
-
-\## Lineage: Input → Parser → Evaluator → Output
-
-
-
-Aider MUST verify that:
-
-
-
-1\. Parser:
-
-&nbsp;  - Identifies domains, actions, parameters according to canonical definitions.
-
-&nbsp;  - Outputs structures that match the schemas.
-
-
-
-2\. Evaluator:
-
-&nbsp;  - Consumes the parser output WITHOUT implicit renaming or hidden assumptions.
-
-&nbsp;  - Produces results that map back to canonical domain concepts.
-
-
-
-3\. Workflow:
-
-&nbsp;  - Orchestrates parser and evaluator in a clear sequence.
-
-&nbsp;  - Uses canonical names consistently at each step.
-
-
-
-Any mismatch (e.g., parser uses `order\_type` while evaluator uses `trade\_type`) MUST be:
-
-
-
-\- Reported as a `workflow\_alignment\_error` AND `canonicalization\_error`.
-
-\- Accompanied by suggested renaming or refactoring.
-
-
-
----
-
-
-
-\## Multi-Step Workflow Validation
-
-
-
-For every workflow Aider analyzes:
-
-
-
-\- Ensure all steps:
-
-&nbsp; - Are reachable (no dead flows) OR explicitly documented as deprecated.
-
-&nbsp; - Have clear preconditions and postconditions.
-
-\- Validate that:
-
-&nbsp; - Every step’s inputs are produced by previous steps or external sources.
-
-&nbsp; - Every step’s outputs are either consumed or explicitly final.
-
-
-
----
-
-
-
-\## Multi-Language Cross-Workflow Checks
-
-
-
-Aider MUST validate:
-
-
-
-\- Backend workflow ↔ Frontend calls:
-
-&nbsp; - Every frontend call corresponds to a backend route.
-
-&nbsp; - Payload shapes match the schema contract.
-
-\- Backend ↔ Config:
-
-&nbsp; - Workflow names and step identifiers referenced in config exist in code.
-
-
-
----
-
-
-
-\## Reporting
-
-
-
-For each workflow issue, Aider MUST provide:
-
-
-
-\- Category: `workflow\_alignment\_error`, `dead\_step`, `missing\_step`, etc.
-
-\- Files, line numbers.
-
-\- Impacted domains/actions/parameters.
-
-\- Severity and suggested fix.
-
-
-
+Aider should recommend parameterizing such assumptions.

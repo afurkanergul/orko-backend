@@ -1,268 +1,108 @@
-\# Pattern Brain Contract (Maximum-Level, External Diagnostics Only)
+# Pattern Brain Contract (External Diagnostics via Aider ONLY)
+
+## Core Principles
+
+1. Pattern Brain is an internal ORKO concept for:
+   - Defining cross-domain patterns.
+   - Encoding invariants and expectations.
+   - Describing how workflows, schemas, evaluators, parsers, and parameters must align.
+2. Pattern Brain **does NOT perform diagnostics itself.**
+   - All diagnostics are executed externally by **Aider + Git + GitHub**.
+   - ORKO remains a clean execution and workflow engine.
+3. Aider is the single diagnostics engine responsible for:
+   - Reading these contracts and rules.
+   - Building semantic and structural understanding of the repo.
+   - Finding violations.
+   - Proposing and applying fixes.
+
+## Cross-Domain Pattern Invariants
+
+Aider MUST assume and enforce these invariants across all languages (Python, JS/TS, JSON, YAML, and future GO):
+
+1. Every domain, action, and parameter has a **single canonical definition**.
+2. Canonical definitions must appear in:
+   - A central canonical registry (YAML/JSON/TOML file when present).
+   - Backend schemas and validator classes.
+   - Evaluator and parser code.
+   - Workflow definitions (state machines, orchestration logic).
+3. For any entity `(domain, action, parameter)`:
+   - **Name** must be consistent across backend, frontend, schemas, docs, tests, and configuration.
+   - **Type** and **allowed values** must match wherever referenced.
+   - **Semantics** (what it means) must not conflict across files.
+
+## Semantic Lineage Expectations
+
+Aider MUST build and reason about **lineage chains**:
+
+- Input → Parsing → Validation → Business Logic → Evaluator → Output
+
+For each lineage, Aider should:
+
+1. Map input fields to:
+   - Request payloads (FastAPI models).
+   - Frontend forms / API calls.
+   - Database models (where applicable).
+   - Evaluator inputs.
+2. Check that:
+   - No field appears in the evaluator that is missing from schema or parser.
+   - No field appears in schema that is never parsed, validated, or used.
+3. Detect and report:
+   - Missing links in the chain.
+   - Conflicting types between steps.
+   - Conflicting naming between steps.
+
+## Workflow–Schema–Parameter Alignment Rules
+
+1. Every workflow step must reference only canonical domains, actions, and parameters.
+2. Each workflow must specify:
+   - Expected input structure.
+   - Transformation logic.
+   - Output structure.
+3. Aider must:
+   - Identify workflows that use undefined or deprecated parameters.
+   - Identify workflows with unclear or mismatched preconditions and postconditions.
+   - Highlight missing validation steps between parsing and evaluator.
+
+## Observability Expectations
+
+Pattern Brain requires that diagnostics encourage observability:
+
+1. Aider should look for:
+   - Logging hooks at key workflow boundaries.
+   - Error handling around external calls.
+   - Structured logs (JSON) for core events when present.
+2. Aider reports when:
+   - A critical workflow has no logging.
+   - A critical schema/evaluator mismatch is not guarded.
+   - A critical API endpoint lacks validation.
+
+## Full Repo Correlation Constraints
+
+Aider MUST treat the repo as a single correlated system, not isolated files:
+
+1. Build a semantic graph of:
+   - Domains, actions, parameters.
+   - Schemas, validators, models.
+   - Parsers, evaluators, workflows.
+   - Backend and frontend API layers.
+2. Use this graph to:
+   - Detect dangling definitions.
+   - Detect inconsistent naming.
+   - Detect missing alignments.
+   - Score risk per node and per edge.
+
+## Multi-Industry and Multi-Tenant Requirements
+
+1. All patterns must be **industry-agnostic**:
+   - No hard-coded assumptions tied to a single domain (e.g., agriculture only).
+2. Multi-tenant safety:
+   - Aider should flag patterns where tenant isolation might be broken (shared IDs, no tenant filter, etc.).
+   - Aider should encourage boundaries: tenant_id, organization_id, or similar attributes.
+
+## Relationship to Aider Tasks
 
-
-
-\## Core Principles
-
-
-
-1\. Pattern Brain is an INTERNAL, CLEAN CONTRACT LAYER.
-
-2\. Pattern Brain DOES NOT run diagnostics.
-
-3\. Aider + Git + GitHub is the ONLY diagnostics engine.
-
-4\. Pattern Brain defines expected patterns, invariants, and lineage across the entire repo.
-
-5\. ORKO is multi-industry and multi-tenant. No single-industry bias is allowed.
-
-
-
----
-
-
-
-\## Supported Domains and Languages
-
-
-
-\- Multi-industry by design (finance, agriculture, logistics, e-commerce, healthcare, etc.).
-
-\- Multi-language code and config:
-
-&nbsp; - Python (backend, scripts).
-
-&nbsp; - JavaScript / TypeScript (frontend, tools).
-
-&nbsp; - JSON (schemas, config).
-
-&nbsp; - YAML (config, workflows).
-
-&nbsp; - Go (future backend modules or tools).
-
-
-
-Aider must treat all of these as first-class when running diagnostics.
-
-
-
----
-
-
-
-\## Semantic Graph Expectations
-
-
-
-When Aider runs diagnostics, it MUST construct a conceptual semantic graph of the repo:
-
-
-
-\- Nodes:
-
-&nbsp; - Files
-
-&nbsp; - Modules
-
-&nbsp; - Classes
-
-&nbsp; - Functions
-
-&nbsp; - Endpoints (HTTP routes)
-
-&nbsp; - Schemas / DTOs
-
-&nbsp; - DB tables and columns
-
-&nbsp; - Config entries
-
-&nbsp; - Domains, actions, parameters
-
-
-
-\- Edges:
-
-&nbsp; - “calls” / “uses”
-
-&nbsp; - “implements”
-
-&nbsp; - “depends on”
-
-&nbsp; - “validates”
-
-&nbsp; - “is defined by”
-
-&nbsp; - “is consumed by”
-
-
-
-The semantic graph MUST support reasoning about:
-
-
-
-1\. Cross-file consistency.
-
-2\. Cross-language coherence (e.g., backend FastAPI routes ↔ frontend API clients).
-
-3\. Schema → DB → code alignment.
-
-4\. Parser → Evaluator → Workflow lineage.
-
-
-
----
-
-
-
-\## Cross-Domain Pattern Invariants
-
-
-
-Aider MUST enforce these invariants during diagnostics:
-
-
-
-1\. \*\*Canonical Domain Model\*\*
-
-&nbsp;  - Every business domain MUST have:
-
-&nbsp;    - A canonical name (e.g., `trading`, `orders`, `users`, `portfolios`).
-
-&nbsp;    - A clear set of actions (e.g., `create\_order`, `cancel\_order`, `evaluate\_risk`).
-
-&nbsp;    - A defined parameter set with types and constraints.
-
-
-
-2\. \*\*Non–Industry-Specific\*\*
-
-&nbsp;  - Names and patterns MUST NOT hard-code a single industry.
-
-&nbsp;  - Example: prefer `instrument` over `grain`, `asset` over `corn`.
-
-
-
-3\. \*\*Multi-Tenant Safety\*\*
-
-&nbsp;  - No hard-coded tenant IDs.
-
-&nbsp;  - Tenant-specific logic must be gated and configurable.
-
-&nbsp;  - Access control and separation of tenant data must be respected in patterns.
-
-
-
-4\. \*\*Observability\*\*
-
-&nbsp;  - Key flows must expose:
-
-&nbsp;    - Logging hooks
-
-&nbsp;    - Metrics hooks
-
-&nbsp;    - Tracing hooks (even if not fully implemented yet)
-
-&nbsp;  - Aider should flag missing observability anchors in critical paths.
-
-
-
----
-
-
-
-\## Workflow–Schema–Parameter Alignment
-
-
-
-For each workflow, Aider MUST verify:
-
-
-
-1\. The workflow steps reference only existing, canonical domains and actions.
-
-2\. Every input/output parameter in the workflow:
-
-&nbsp;  - Exists in schemas.
-
-&nbsp;  - Is used consistently in code and DB.
-
-3\. Evaluator, parser, and workflow definitions share the SAME domain/action/parameter names.
-
-
-
-If any mismatch exists, Aider MUST:
-
-\- Mark it as a high-severity issue.
-
-\- Suggest canonical renaming or schema updates.
-
-\- Include line numbers, files, and a suggested patch.
-
-
-
----
-
-
-
-\## Full-Repo Correlation Constraints
-
-
-
-Aider MUST check correlations across:
-
-
-
-\- `orko-backend/`
-
-\- `orko-frontend/`
-
-\- `pattern\_brain/`
-
-\- `orko\_rules/`
-
-\- Config files (YAML, JSON)
-
-\- GitHub workflows
-
-
-
-It MUST detect when:
-
-
-
-1\. A route exists with no matching schema.
-
-2\. A schema exists with no matching DB mapping.
-
-3\. A DB column exists with no schema field or code usage.
-
-4\. A workflow step references a non-existent domain/action/parameter.
-
-5\. Evaluator or parser logic diverges from workflow contracts.
-
-
-
----
-
-
-
-\## Internal Cleanliness Rule
-
-
-
-Pattern Brain is ONLY a set of contracts and invariants. It MUST NOT:
-
-
-
-\- Contain diagnostic engines.
-
-\- Contain complex execution logic.
-
-\- Duplicate Aider’s functionality.
-
-
-
-Aider uses this contract as the authoritative reference for what “correct” means across the repo.
-
-
-
+- All Aider diagnostic tasks MUST:
+  - Load and respect this contract.
+  - Treat these rules as **hard constraints** unless clearly documented as TODO.
+  - Never move diagnostics logic into ORKO itself.
+- ORKO is the execution engine; Aider is the external doctor and auditor.
