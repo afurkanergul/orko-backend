@@ -1,0 +1,3 @@
+ORKO AI is a modular automation system that learns from workflows.
+It connects email, files, and chat messages into one knowledge brain.
+This is a sample file for extraction testing.

@@ -1,0 +1,37 @@
+{
+  "allowed_verbs": [
+    "view",
+    "list",
+    "show",
+    "summarize",
+    "calculate",
+    "create",
+    "update",
+    "map",
+    "trigger",
+    "schedule"
+  ],
+
+  "risky_verbs": [
+    "send",
+    "execute",
+    "trade",
+    "modify",
+    "write"
+  ],
+
+  "blocked_verbs": [
+    "delete",
+    "remove",
+    "drop",
+    "shutdown",
+    "wipe",
+    "restart",
+    "format",
+    "reboot"
+  ],
+
+  "require_confirmation_for_risky": true,
+
+  "notes": "This unified guardrail file merges both legacy formats. 'allowed_verbs' = safe. 'risky_verbs' = high-risk actions requiring confirmation. 'blocked_verbs' = forbidden actions."
+}

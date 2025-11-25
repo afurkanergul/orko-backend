@@ -1,0 +1,123 @@
+# backend/app/services/parsing/config/parser_eval_set.yml
+# Multi-domain labeled evaluation set for Step 6 — Day 10
+
+commands:
+  - id: "T-001"
+    command: "Create a new wheat shipment contract to Egypt for 10,000 MT FOB Black Sea."
+    expected:
+      domain: "trading"
+      action: "create_contract"
+      parameters:
+        commodity: "wheat"
+        destination_country: "Egypt"
+
+  - id: "T-002"
+    command: "Show PnL for soybean oil in EMEA for this month."
+    expected:
+      domain: "trading"
+      action: "show_pnl"
+      parameters:
+        commodity: "soybean oil"
+        region: "EMEA"
+
+  - id: "L-001"
+    command: "List all vessels arriving in Mersin this week."
+    expected:
+      domain: "logistics"
+      action: "list_vessels"
+      parameters:
+        port: "Mersin"
+
+  - id: "L-002"
+    command: "Book a truck for 500 MT barley to Ankara silo tomorrow."
+    expected:
+      domain: "logistics"
+      action: "book_truck"
+      parameters:
+        product: "barley"
+
+  - id: "F-001"
+    command: "Generate a quarterly cashflow report for North America."
+    expected:
+      domain: "finance"
+      action: "generate_cashflow_report"
+      parameters:
+        region: "North America"
+
+  - id: "F-002"
+    command: "List all invoices past due for more than 30 days."
+    expected:
+      domain: "finance"
+      action: "list_overdue_invoices"
+      parameters: {}
+
+  - id: "HR-001"
+    command: "Add a new employee in Dubai office to the payroll system."
+    expected:
+      domain: "hr"
+      action: "create_employee"
+      parameters:
+        location: "Dubai"
+
+  - id: "HR-002"
+    command: "Show all employees on vacation next week in Istanbul."
+    expected:
+      domain: "hr"
+      action: "list_vacations"
+      parameters:
+        location: "Istanbul"
+
+  - id: "IT-001"
+    command: "Open a high-priority ticket for API latency in production."
+    expected:
+      domain: "it_ops"
+      action: "create_ticket"
+      parameters:
+        priority: "high"
+
+  - id: "IT-002"
+    command: "Restart the payments service in EU cluster."
+    expected:
+      domain: "it_ops"
+      action: "restart_service"
+      parameters:
+        service: "payments"
+
+  - id: "CS-001"
+    command: "Show all open high-priority support tickets for ACME Corp."
+    expected:
+      domain: "customer_support"
+      action: "list_tickets"
+      parameters:
+        customer: "ACME Corp"
+
+  - id: "MK-001"
+    command: "Generate a sales performance report for Q2 in North America."
+    expected:
+      domain: "sales_marketing"
+      action: "sales_performance_report"
+      parameters:
+        region: "North America"
+
+  - id: "AN-001"
+    command: "Show month-to-date revenue by region and product."
+    expected:
+      domain: "analytics"
+      action: "revenue_breakdown"
+      parameters: {}
+
+  - id: "OP-001"
+    command: "Create a daily startup checklist for the packaging line."
+    expected:
+      domain: "operations"
+      action: "create_checklist"
+      parameters:
+        area: "packaging line"
+
+  - id: "OP-002"
+    command: "Assign an approval task to the plant manager for tomorrow's maintenance."
+    expected:
+      domain: "operations"
+      action: "create_approval_task"
+      parameters:
+        subject: "maintenance"

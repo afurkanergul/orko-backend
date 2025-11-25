@@ -1,0 +1,1409 @@
+commands:
+- id: CMD-001
+  command: Create a new wheat shipment contract to Egypt.
+  expected:
+    domain: trading
+    action: create_contract
+    parameters:
+      commodity: wheat
+      destination_country: Egypt
+- id: CMD-002
+  command: List all vessels arriving in Mersin this week.
+  expected:
+    domain: logistics
+    action: list_vessels
+    parameters:
+      port: Mersin
+- id: CMD-003
+  command: Generate a quarterly cashflow report for EMEA.
+  expected:
+    domain: finance
+    action: generate_cashflow_report
+    parameters:
+      region: EMEA
+- id: CMD-004
+  command: Add a new employee in Dubai office.
+  expected:
+    domain: hr
+    action: create_employee
+    parameters:
+      location: Dubai
+- id: CMD-005
+  command: Restart the payments API in production region.
+  expected:
+    domain: it_ops
+    action: restart_service
+    parameters:
+      service: payments
+- id: CMD-006
+  command: Show PnL for soybean oil in North America.
+  expected:
+    domain: trading
+    action: show_pnl
+    parameters:
+      commodity: soybean oil
+      region: North America
+- id: CMD-007
+  command: Book a truck for 500 MT barley to Ankara silo tomorrow.
+  expected:
+    domain: logistics
+    action: book_truck
+    parameters:
+      product: barley
+      destination: Ankara silo
+- id: CMD-008
+  command: List all invoices past due more than 30 days.
+  expected:
+    domain: finance
+    action: list_overdue_invoices
+    parameters: {}
+- id: CMD-009
+  command: Show all employees who are on vacation next week.
+  expected:
+    domain: hr
+    action: list_vacations
+    parameters: {}
+- id: CMD-010
+  command: Open a high-priority incident for API latency spikes.
+  expected:
+    domain: it_ops
+    action: create_ticket
+    parameters:
+      priority: high
+- id: CMD-011
+  command: Create a contract for 5000 MT corn export to Spain.
+  expected:
+    domain: trading
+    action: create_contract
+    parameters:
+      commodity: corn
+      destination_country: Spain
+- id: CMD-012
+  command: Allocate a warehouse slot for incoming shipment tomorrow.
+  expected:
+    domain: logistics
+    action: allocate_warehouse_slot
+    parameters:
+      time: tomorrow
+- id: CMD-013
+  command: Show monthly operating expenses for January.
+  expected:
+    domain: finance
+    action: show_operating_expenses
+    parameters:
+      month: January
+- id: CMD-014
+  command: Schedule onboarding for a new software engineer.
+  expected:
+    domain: hr
+    action: schedule_onboarding
+    parameters:
+      role: software engineer
+- id: CMD-015
+  command: Deploy the billing service to staging.
+  expected:
+    domain: it_ops
+    action: deploy_service
+    parameters:
+      service: billing
+      target: staging
+- id: CMD-016
+  command: Update price basis for sunflower oil.
+  expected:
+    domain: trading
+    action: update_price_basis
+    parameters:
+      commodity: sunflower oil
+- id: CMD-017
+  command: Create a delivery schedule for Istanbul warehouse.
+  expected:
+    domain: logistics
+    action: create_delivery_schedule
+    parameters:
+      warehouse: Istanbul
+- id: CMD-018
+  command: Prepare budget forecast for Q3.
+  expected:
+    domain: finance
+    action: prepare_budget_forecast
+    parameters:
+      quarter: Q3
+- id: CMD-019
+  command: Add emergency leave for employee John Doe.
+  expected:
+    domain: hr
+    action: add_leave
+    parameters:
+      type: emergency
+- id: CMD-020
+  command: Run diagnostics on authentication server.
+  expected:
+    domain: it_ops
+    action: run_diagnostics
+    parameters:
+      service: authentication
+- id: CMD-021
+  command: Create hedging plan for soybean meal.
+  expected:
+    domain: trading
+    action: create_hedging_plan
+    parameters:
+      commodity: soybean meal
+- id: CMD-022
+  command: List all shipments delayed more than 48 hours.
+  expected:
+    domain: logistics
+    action: list_delayed_shipments
+    parameters:
+      delay: 48h
+- id: CMD-023
+  command: Generate tax summary for year 2024.
+  expected:
+    domain: finance
+    action: generate_tax_summary
+    parameters:
+      year: 2024
+- id: CMD-024
+  command: Promote employee Sara to Senior Analyst.
+  expected:
+    domain: hr
+    action: promote_employee
+    parameters:
+      role: Senior Analyst
+- id: CMD-025
+  command: Rotate logs on the production cluster.
+  expected:
+    domain: it_ops
+    action: rotate_logs
+    parameters:
+      target: production cluster
+- id: CMD-026
+  command: Deploy the new authentication microservice to production.
+  expected:
+    domain: devops
+    action: deploy_microservice
+    parameters:
+      service: authentication
+      environment: production
+- id: CMD-027
+  command: Rollback the analytics service to the previous version.
+  expected:
+    domain: devops
+    action: rollback_service
+    parameters:
+      service: analytics
+- id: CMD-028
+  command: Increase CPU allocation for the fraud detection service.
+  expected:
+    domain: devops
+    action: adjust_resources
+    parameters:
+      service: fraud detection
+      resource: cpu
+- id: CMD-029
+  command: Create a new support case for customer BlueWave Inc.
+  expected:
+    domain: customer_support
+    action: create_case
+    parameters:
+      customer: BlueWave Inc
+- id: CMD-030
+  command: Escalate the ticket for payment synchronization failure.
+  expected:
+    domain: customer_support
+    action: escalate_ticket
+    parameters:
+      issue: payment synchronization failure
+- id: CMD-031
+  command: Show all unresolved tickets older than 48 hours.
+  expected:
+    domain: customer_support
+    action: list_unresolved_tickets
+    parameters:
+      age: 48h
+- id: CMD-032
+  command: Create a daily maintenance checklist for the packaging line.
+  expected:
+    domain: operations
+    action: create_checklist
+    parameters:
+      target: packaging line
+- id: CMD-033
+  command: Schedule preventive maintenance for machine A12.
+  expected:
+    domain: operations
+    action: schedule_maintenance
+    parameters:
+      machine: A12
+- id: CMD-034
+  command: List all operational risks assigned to the operations manager.
+  expected:
+    domain: operations
+    action: list_risks
+    parameters:
+      owner: operations manager
+- id: CMD-035
+  command: Show revenue breakdown by region for the last quarter.
+  expected:
+    domain: analytics
+    action: revenue_breakdown
+    parameters:
+      period: last quarter
+- id: CMD-036
+  command: Generate retention analysis for premium customers.
+  expected:
+    domain: analytics
+    action: retention_analysis
+    parameters:
+      segment: premium
+- id: CMD-037
+  command: Forecast monthly demand for the next 6 months.
+  expected:
+    domain: analytics
+    action: forecast_demand
+    parameters:
+      horizon: 6 months
+- id: CMD-038
+  command: Create a new sales opportunity with ACME Corp for Q3.
+  expected:
+    domain: sales
+    action: create_opportunity
+    parameters:
+      customer: ACME Corp
+      quarter: Q3
+- id: CMD-039
+  command: Show pipeline status for enterprise deals.
+  expected:
+    domain: sales
+    action: show_pipeline
+    parameters:
+      segment: enterprise
+- id: CMD-040
+  command: Generate win-loss analysis for last quarter.
+  expected:
+    domain: sales
+    action: win_loss_analysis
+    parameters:
+      period: last quarter
+- id: CMD-041
+  command: Create a product launch campaign for the new smart speaker.
+  expected:
+    domain: marketing
+    action: create_campaign
+    parameters:
+      product: smart speaker
+- id: CMD-042
+  command: Analyze marketing spend effectiveness for Q2.
+  expected:
+    domain: marketing
+    action: analyze_spend
+    parameters:
+      quarter: Q2
+- id: CMD-043
+  command: Generate social media engagement report for last week.
+  expected:
+    domain: marketing
+    action: engagement_report
+    parameters:
+      period: last week
+- id: CMD-044
+  command: Rebuild the DevOps monitoring dashboard.
+  expected:
+    domain: devops
+    action: rebuild_dashboard
+    parameters:
+      type: monitoring
+- id: CMD-045
+  command: Run load test for the login API with 5000 concurrent users.
+  expected:
+    domain: devops
+    action: run_load_test
+    parameters:
+      api: login
+      users: 5000
+- id: CMD-046
+  command: Classify all customer tickets by sentiment.
+  expected:
+    domain: customer_support
+    action: sentiment_classification
+    parameters: {}
+- id: CMD-047
+  command: Summarize operational incidents for this month.
+  expected:
+    domain: operations
+    action: summarize_incidents
+    parameters:
+      period: this month
+- id: CMD-048
+  command: Generate churn probability analysis for all customer segments.
+  expected:
+    domain: analytics
+    action: churn_analysis
+    parameters: {}
+- id: CMD-049
+  command: List all opportunities expected to close within 30 days.
+  expected:
+    domain: sales
+    action: list_opportunities
+    parameters:
+      close_window: 30 days
+- id: CMD-050
+  command: Create competitive landscape report for mobile devices.
+  expected:
+    domain: marketing
+    action: competitive_report
+    parameters:
+      category: mobile devices
+- id: CMD-051
+  command: Create a purchase order for 300 laptops.
+  expected:
+    domain: procurement
+    action: create_purchase_order
+    parameters:
+      item: laptops
+      quantity: 300
+- id: CMD-052
+  command: List all suppliers with overdue deliveries.
+  expected:
+    domain: procurement
+    action: list_overdue_suppliers
+    parameters: {}
+- id: CMD-053
+  command: Approve vendor contract renewal for Globex Ltd.
+  expected:
+    domain: procurement
+    action: approve_vendor_contract
+    parameters:
+      vendor: Globex Ltd
+- id: CMD-054
+  command: Show machine downtime report for manufacturing line 2.
+  expected:
+    domain: manufacturing
+    action: machine_downtime_report
+    parameters:
+      line: 2
+- id: CMD-055
+  command: Schedule calibration for quality sensors.
+  expected:
+    domain: manufacturing
+    action: schedule_calibration
+    parameters:
+      equipment: quality sensors
+- id: CMD-056
+  command: List all active work orders in assembly section.
+  expected:
+    domain: manufacturing
+    action: list_work_orders
+    parameters:
+      section: assembly
+- id: CMD-057
+  command: Draft a non-disclosure agreement for new supplier discussions.
+  expected:
+    domain: legal
+    action: draft_nda
+    parameters:
+      purpose: supplier discussions
+- id: CMD-058
+  command: Review the service contract for renewal terms.
+  expected:
+    domain: legal
+    action: review_contract
+    parameters:
+      contract_type: service
+- id: CMD-059
+  command: List all compliance actions pending for Q1.
+  expected:
+    domain: legal
+    action: list_compliance_actions
+    parameters:
+      quarter: Q1
+- id: CMD-060
+  command: Check inventory levels for smart watches in Europe region.
+  expected:
+    domain: retail
+    action: check_inventory
+    parameters:
+      product: smart watches
+      region: Europe
+- id: CMD-061
+  command: Generate weekly sales report for the Dubai store.
+  expected:
+    domain: retail
+    action: generate_sales_report
+    parameters:
+      location: Dubai
+- id: CMD-062
+  command: List all items with stockout risk.
+  expected:
+    domain: retail
+    action: list_stockout_risk
+    parameters: {}
+- id: CMD-063
+  command: Create an energy consumption summary for October.
+  expected:
+    domain: energy
+    action: consumption_summary
+    parameters:
+      month: October
+- id: CMD-064
+  command: Forecast next week's grid demand for Istanbul region.
+  expected:
+    domain: energy
+    action: forecast_grid_demand
+    parameters:
+      region: Istanbul
+- id: CMD-065
+  command: List all power outages longer than two hours.
+  expected:
+    domain: energy
+    action: list_outages
+    parameters:
+      duration: 2h
+- id: CMD-066
+  command: Initiate procurement for backup generators.
+  expected:
+    domain: procurement
+    action: initiate_procurement
+    parameters:
+      item: backup generators
+- id: CMD-067
+  command: Assign technicians to repair manufacturing robot A7.
+  expected:
+    domain: manufacturing
+    action: assign_technicians
+    parameters:
+      machine: robot A7
+- id: CMD-068
+  command: Review compliance documents for new data privacy regulations.
+  expected:
+    domain: legal
+    action: review_compliance_docs
+    parameters:
+      regulation: data privacy
+- id: CMD-069
+  command: Show best-selling products for Q1 across all stores.
+  expected:
+    domain: retail
+    action: top_products
+    parameters:
+      quarter: Q1
+- id: CMD-070
+  command: Analyze renewable energy output for last week.
+  expected:
+    domain: energy
+    action: renewable_output_analysis
+    parameters:
+      period: last week
+- id: CMD-071
+  command: Create sourcing plan for semiconductor components.
+  expected:
+    domain: procurement
+    action: create_sourcing_plan
+    parameters:
+      component: semiconductors
+- id: CMD-072
+  command: Optimize assembly line sequence for reduced downtime.
+  expected:
+    domain: manufacturing
+    action: optimize_line_sequence
+    parameters:
+      line: assembly
+- id: CMD-073
+  command: Draft employment contract for new senior engineer.
+  expected:
+    domain: legal
+    action: draft_employment_contract
+    parameters:
+      role: senior engineer
+- id: CMD-074
+  command: Summarize customer feedback for wearable devices.
+  expected:
+    domain: retail
+    action: summarize_feedback
+    parameters:
+      category: wearable devices
+- id: CMD-075
+  command: Inspect transformer outage reports for anomalies.
+  expected:
+    domain: energy
+    action: inspect_outage_reports
+    parameters:
+      type: transformer
+- id: CMD-076
+  command: Schedule a follow-up appointment reminder for patient A129.
+  expected:
+    domain: healthcare_admin
+    action: schedule_followup
+    parameters:
+      patient_id: A129
+- id: CMD-077
+  command: Generate monthly claims summary for insurance partners.
+  expected:
+    domain: healthcare_admin
+    action: claims_summary
+    parameters:
+      period: monthly
+- id: CMD-078
+  command: List all pending lab results older than 72 hours.
+  expected:
+    domain: healthcare_admin
+    action: list_pending_labs
+    parameters:
+      age: 72h
+- id: CMD-079
+  command: Create a travel approval request for next week's conference.
+  expected:
+    domain: general_admin
+    action: create_travel_request
+    parameters:
+      time: next week
+- id: CMD-080
+  command: List all scheduled meetings for today.
+  expected:
+    domain: general_admin
+    action: list_meetings
+    parameters:
+      period: today
+- id: CMD-081
+  command: Draft a company-wide announcement for the new product update.
+  expected:
+    domain: general_admin
+    action: draft_announcement
+    parameters:
+      topic: new product update
+- id: CMD-082
+  command: Summarize all team OKRs for the current quarter.
+  expected:
+    domain: general_admin
+    action: summarize_okrs
+    parameters:
+      quarter: current
+- id: CMD-083
+  command: Generate knowledge base article for onboarding new partners.
+  expected:
+    domain: knowledge_work
+    action: create_documentation
+    parameters:
+      subject: partner onboarding
+- id: CMD-084
+  command: Tag all internal documents related to GDPR compliance.
+  expected:
+    domain: knowledge_work
+    action: tag_documents
+    parameters:
+      topic: gdpr compliance
+- id: CMD-085
+  command: Summarize product specification document for the engineering team.
+  expected:
+    domain: knowledge_work
+    action: summarize_document
+    parameters:
+      target_team: engineering
+- id: CMD-086
+  command: Analyze customer churn trends for enterprise accounts.
+  expected:
+    domain: analytics
+    action: churn_analysis
+    parameters:
+      segment: enterprise
+- id: CMD-087
+  command: Create a procurement tracker for office supplies.
+  expected:
+    domain: general_admin
+    action: create_procurement_tracker
+    parameters:
+      type: office supplies
+- id: CMD-088
+  command: Prepare compliance briefing for new data regulations.
+  expected:
+    domain: legal
+    action: prepare_briefing
+    parameters:
+      regulation: data regulations
+- id: CMD-089
+  command: Show machine utilization rate for manufacturing plant B.
+  expected:
+    domain: manufacturing
+    action: machine_utilization
+    parameters:
+      plant: B
+- id: CMD-090
+  command: List all customer escalations in the last 48 hours.
+  expected:
+    domain: customer_support
+    action: list_escalations
+    parameters:
+      period: 48h
+- id: CMD-091
+  command: Generate invoice aging report for corporate accounts.
+  expected:
+    domain: finance
+    action: invoice_aging
+    parameters:
+      segment: corporate
+- id: CMD-092
+  command: Draft action plan for disaster recovery test.
+  expected:
+    domain: it_ops
+    action: draft_dr_plan
+    parameters:
+      plan_type: disaster recovery
+- id: CMD-093
+  command: Optimize energy usage for the data center.
+  expected:
+    domain: energy
+    action: optimize_energy_usage
+    parameters:
+      target: data center
+- id: CMD-094
+  command: Forecast operational staffing needs for next quarter.
+  expected:
+    domain: operations
+    action: forecast_staffing
+    parameters:
+      quarter: next
+- id: CMD-095
+  command: Plan inventory replenishment for high-demand items.
+  expected:
+    domain: retail
+    action: plan_replenishment
+    parameters:
+      priority: high-demand
+- id: CMD-096
+  command: Create safety inspection checklist for the loading docks.
+  expected:
+    domain: operations
+    action: create_safety_checklist
+    parameters:
+      area: loading docks
+- id: CMD-097
+  command: Schedule patch update for core banking system.
+  expected:
+    domain: it_ops
+    action: schedule_patch
+    parameters:
+      system: core banking
+- id: CMD-098
+  command: Record quality inspection results for batch QZ-109.
+  expected:
+    domain: manufacturing
+    action: record_inspection_results
+    parameters:
+      batch: QZ-109
+- id: CMD-099
+  command: Generate weekly procurement savings report.
+  expected:
+    domain: procurement
+    action: procurement_savings_report
+    parameters:
+      period: weekly
+- id: CMD-100
+  command: Summarize all audit findings for year 2024.
+  expected:
+    domain: legal
+    action: summarize_audit_findings
+    parameters:
+      year: 2024
+- id: CMD-101
+  command: Create corn hedge for Q1.
+  expected:
+    domain: trading
+    action: create_hedging_plan
+    parameters:
+      commodity: corn
+      period: Q1
+- id: CMD-102
+  command: Show PnL for coffee futures in LATAM.
+  expected:
+    domain: trading
+    action: show_pnl
+    parameters:
+      commodity: coffee
+      region: LATAM
+- id: CMD-103
+  command: Update basis for rapeseed oil FOB Rotterdam.
+  expected:
+    domain: trading
+    action: update_price_basis
+    parameters:
+      commodity: rapeseed oil
+      location: FOB Rotterdam
+- id: CMD-104
+  command: Create FX hedge plan for EUR exposure.
+  expected:
+    domain: trading
+    action: create_hedging_plan
+    parameters:
+      instrument: FX
+      currency: EUR
+- id: CMD-105
+  command: Generate position report for soybean complex.
+  expected:
+    domain: trading
+    action: generate_report
+    parameters:
+      book: soybean complex
+- id: CMD-106
+  command: List vessels arriving in Santos next 10 days.
+  expected:
+    domain: logistics
+    action: list_vessels
+    parameters:
+      port: Santos
+      window: 10 days
+- id: CMD-107
+  command: Book a container shipment from Shanghai to Hamburg.
+  expected:
+    domain: logistics
+    action: book_truck
+    parameters:
+      mode: container
+      origin: Shanghai
+      destination: Hamburg
+- id: CMD-108
+  command: Show all delayed rail shipments to Warsaw.
+  expected:
+    domain: logistics
+    action: list_delayed_shipments
+    parameters:
+      mode: rail
+      destination: Warsaw
+- id: CMD-109
+  command: Allocate warehouse slot for cold-chain cargo in Dubai.
+  expected:
+    domain: logistics
+    action: allocate_warehouse_slot
+    parameters:
+      temperature_control: true
+      location: Dubai
+- id: CMD-110
+  command: Generate daily dispatch report for Mersin warehouse.
+  expected:
+    domain: logistics
+    action: generate_report
+    parameters:
+      warehouse: Mersin
+      period: daily
+- id: CMD-111
+  command: Generate monthly cashflow report for APAC.
+  expected:
+    domain: finance
+    action: generate_cashflow_report
+    parameters:
+      region: APAC
+      period: monthly
+- id: CMD-112
+  command: Show invoice aging for retail customers.
+  expected:
+    domain: finance
+    action: invoice_aging
+    parameters:
+      segment: retail
+- id: CMD-113
+  command: Generate PnL summary for global trading desk.
+  expected:
+    domain: finance
+    action: generate_report
+    parameters:
+      desk: global trading
+      metric: PnL
+- id: CMD-114
+  command: List overdue invoices above 100k USD.
+  expected:
+    domain: finance
+    action: list_overdue_invoices
+    parameters:
+      min_amount: 100000
+- id: CMD-115
+  command: Generate annual tax summary for 2023.
+  expected:
+    domain: finance
+    action: generate_tax_summary
+    parameters:
+      year: 2023
+- id: CMD-116
+  command: Create new employee record in London office.
+  expected:
+    domain: hr
+    action: create_employee
+    parameters:
+      location: London
+- id: CMD-117
+  command: List employees whose probation ends this month.
+  expected:
+    domain: hr
+    action: list_employees
+    parameters:
+      filter: probation_end_this_month
+- id: CMD-118
+  command: Schedule onboarding for 3 junior analysts.
+  expected:
+    domain: hr
+    action: schedule_onboarding
+    parameters:
+      role: junior analyst
+      count: 3
+- id: CMD-119
+  command: Generate headcount report by department.
+  expected:
+    domain: hr
+    action: generate_report
+    parameters:
+      metric: headcount
+      group_by: department
+- id: CMD-120
+  command: Promote Maria to Senior Product Manager.
+  expected:
+    domain: hr
+    action: promote_employee
+    parameters:
+      employee: Maria
+      role: Senior Product Manager
+- id: CMD-121
+  command: Restart reporting API in EU cluster.
+  expected:
+    domain: it_ops
+    action: restart_service
+    parameters:
+      service: reporting API
+      cluster: EU
+- id: CMD-122
+  command: Run diagnostics on Redis cache cluster.
+  expected:
+    domain: it_ops
+    action: run_diagnostics
+    parameters:
+      service: redis-cache
+- id: CMD-123
+  command: Schedule patch update for fraud engine.
+  expected:
+    domain: it_ops
+    action: schedule_patch
+    parameters:
+      system: fraud engine
+- id: CMD-124
+  command: Draft DR plan for core settlement system.
+  expected:
+    domain: it_ops
+    action: draft_dr_plan
+    parameters:
+      system: core settlement
+- id: CMD-125
+  command: Check status of production Kubernetes cluster.
+  expected:
+    domain: it_ops
+    action: check
+    parameters:
+      environment: production
+      target: kubernetes cluster
+- id: CMD-126
+  command: Deploy analytics microservice to canary environment.
+  expected:
+    domain: devops
+    action: deploy_microservice
+    parameters:
+      service: analytics
+      environment: canary
+- id: CMD-127
+  command: Rollback payments microservice to previous version.
+  expected:
+    domain: devops
+    action: rollback_service
+    parameters:
+      service: payments
+- id: CMD-128
+  command: Run load test on checkout API with 10k users.
+  expected:
+    domain: devops
+    action: run_load_test
+    parameters:
+      api: checkout
+      users: 10000
+- id: CMD-129
+  command: Rebuild observability dashboard for SRE team.
+  expected:
+    domain: devops
+    action: rebuild_dashboard
+    parameters:
+      audience: SRE
+- id: CMD-130
+  command: Rotate secrets for CI/CD pipeline.
+  expected:
+    domain: devops
+    action: rotate
+    parameters:
+      target: ci/cd pipeline secrets
+- id: CMD-131
+  command: Create a new support case for ACME Logistics.
+  expected:
+    domain: customer_support
+    action: create_case
+    parameters:
+      customer: ACME Logistics
+- id: CMD-132
+  command: List unresolved tickets older than 72 hours.
+  expected:
+    domain: customer_support
+    action: list_unresolved_tickets
+    parameters:
+      age: 72h
+- id: CMD-133
+  command: Escalate ticket about failed onboarding emails.
+  expected:
+    domain: customer_support
+    action: escalate_ticket
+    parameters:
+      issue: onboarding emails failed
+- id: CMD-134
+  command: Classify all open tickets by sentiment.
+  expected:
+    domain: customer_support
+    action: sentiment_classification
+    parameters:
+      scope: open_tickets
+- id: CMD-135
+  command: List all customer escalations for premium accounts.
+  expected:
+    domain: customer_support
+    action: list_escalations
+    parameters:
+      segment: premium
+- id: CMD-136
+  command: Create daily safety checklist for loading bay.
+  expected:
+    domain: operations
+    action: create_checklist
+    parameters:
+      area: loading bay
+- id: CMD-137
+  command: Schedule maintenance for conveyor belt C3.
+  expected:
+    domain: operations
+    action: schedule_maintenance
+    parameters:
+      machine: conveyor C3
+- id: CMD-138
+  command: List all open operational risks for APAC.
+  expected:
+    domain: operations
+    action: list_risks
+    parameters:
+      region: APAC
+- id: CMD-139
+  command: Summarize incidents for global operations this week.
+  expected:
+    domain: operations
+    action: summarize_incidents
+    parameters:
+      period: this week
+- id: CMD-140
+  command: Forecast staffing levels for night shift.
+  expected:
+    domain: operations
+    action: forecast_staffing
+    parameters:
+      shift: night
+- id: CMD-141
+  command: Generate revenue breakdown by product family.
+  expected:
+    domain: analytics
+    action: revenue_breakdown
+    parameters:
+      dimension: product_family
+- id: CMD-142
+  command: Run churn analysis for SMB segment.
+  expected:
+    domain: analytics
+    action: churn_analysis
+    parameters:
+      segment: SMB
+- id: CMD-143
+  command: Forecast demand for next 12 months in EMEA.
+  expected:
+    domain: analytics
+    action: forecast_demand
+    parameters:
+      horizon: 12 months
+      region: EMEA
+- id: CMD-144
+  command: Generate retention analysis for loyalty program.
+  expected:
+    domain: analytics
+    action: retention_analysis
+    parameters:
+      program: loyalty
+- id: CMD-145
+  command: Summarize marketing attribution impact for Q4.
+  expected:
+    domain: analytics
+    action: summarize
+    parameters:
+      topic: marketing attribution
+      quarter: Q4
+- id: CMD-146
+  command: Create opportunity for MegaCorp renewal in Q2.
+  expected:
+    domain: sales
+    action: create_opportunity
+    parameters:
+      customer: MegaCorp
+      quarter: Q2
+- id: CMD-147
+  command: Show sales pipeline for EMEA enterprise deals.
+  expected:
+    domain: sales
+    action: show_pipeline
+    parameters:
+      region: EMEA
+      segment: enterprise
+- id: CMD-148
+  command: Generate win-loss analysis for mid-market deals.
+  expected:
+    domain: sales
+    action: win_loss_analysis
+    parameters:
+      segment: mid-market
+- id: CMD-149
+  command: List opportunities closing in next 60 days.
+  expected:
+    domain: sales
+    action: list_opportunities
+    parameters:
+      close_window: 60 days
+- id: CMD-150
+  command: Generate sales forecast for North America.
+  expected:
+    domain: sales
+    action: generate_forecast
+    parameters:
+      region: North America
+- id: CMD-151
+  command: Create launch campaign for new smartwatch.
+  expected:
+    domain: marketing
+    action: create_campaign
+    parameters:
+      product: smartwatch
+- id: CMD-152
+  command: Analyze marketing spend for digital channels in Q3.
+  expected:
+    domain: marketing
+    action: analyze_spend
+    parameters:
+      quarter: Q3
+      channel: digital
+- id: CMD-153
+  command: Generate weekly engagement report for LinkedIn.
+  expected:
+    domain: marketing
+    action: engagement_report
+    parameters:
+      channel: LinkedIn
+      period: weekly
+- id: CMD-154
+  command: Create competitive report for ESG-focused funds.
+  expected:
+    domain: marketing
+    action: competitive_report
+    parameters:
+      segment: ESG funds
+- id: CMD-155
+  command: Summarize performance of email campaigns in August.
+  expected:
+    domain: marketing
+    action: summarize
+    parameters:
+      channel: email
+      month: August
+- id: CMD-156
+  command: Create purchase order for 1,000 office chairs.
+  expected:
+    domain: procurement
+    action: create_purchase_order
+    parameters:
+      item: office chairs
+      quantity: 1000
+- id: CMD-157
+  command: List suppliers with overdue quality audits.
+  expected:
+    domain: procurement
+    action: list_overdue_suppliers
+    parameters:
+      filter: quality_audit_overdue
+- id: CMD-158
+  command: Approve vendor contract extension for Nimbus Corp.
+  expected:
+    domain: procurement
+    action: approve_vendor_contract
+    parameters:
+      vendor: Nimbus Corp
+- id: CMD-159
+  command: Create sourcing plan for cloud providers.
+  expected:
+    domain: procurement
+    action: create_sourcing_plan
+    parameters:
+      category: cloud infrastructure
+- id: CMD-160
+  command: Generate weekly procurement savings report.
+  expected:
+    domain: procurement
+    action: procurement_savings_report
+    parameters:
+      period: weekly
+- id: CMD-161
+  command: Show machine downtime report for line A.
+  expected:
+    domain: manufacturing
+    action: machine_downtime_report
+    parameters:
+      line: A
+- id: CMD-162
+  command: List open work orders in finishing section.
+  expected:
+    domain: manufacturing
+    action: list_work_orders
+    parameters:
+      section: finishing
+- id: CMD-163
+  command: Schedule calibration for packaging line sensors.
+  expected:
+    domain: manufacturing
+    action: schedule_calibration
+    parameters:
+      equipment: packaging sensors
+- id: CMD-164
+  command: Optimize line sequence for plant C bottling line.
+  expected:
+    domain: manufacturing
+    action: optimize_line_sequence
+    parameters:
+      line: plant C bottling
+- id: CMD-165
+  command: Record inspection results for batch ZX-404.
+  expected:
+    domain: manufacturing
+    action: record_inspection_results
+    parameters:
+      batch: ZX-404
+- id: CMD-166
+  command: Draft NDA for potential JV discussions.
+  expected:
+    domain: legal
+    action: draft_nda
+    parameters:
+      purpose: JV discussions
+- id: CMD-167
+  command: Review master service agreement for termination clause.
+  expected:
+    domain: legal
+    action: review_contract
+    parameters:
+      contract_type: MSA
+- id: CMD-168
+  command: List open compliance actions for GDPR.
+  expected:
+    domain: legal
+    action: list_compliance_actions
+    parameters:
+      regulation: GDPR
+- id: CMD-169
+  command: Prepare briefing for new AI regulation.
+  expected:
+    domain: legal
+    action: prepare_briefing
+    parameters:
+      regulation: AI
+- id: CMD-170
+  command: Summarize audit findings for SOX controls.
+  expected:
+    domain: legal
+    action: summarize_audit_findings
+    parameters:
+      topic: SOX controls
+- id: CMD-171
+  command: Check inventory for wireless earbuds in US stores.
+  expected:
+    domain: retail
+    action: check_inventory
+    parameters:
+      product: wireless earbuds
+      region: US
+- id: CMD-172
+  command: List items with stockout risk above 80%.
+  expected:
+    domain: retail
+    action: list_stockout_risk
+    parameters:
+      threshold: 0.8
+- id: CMD-173
+  command: Generate daily sales report for Istanbul flagship store.
+  expected:
+    domain: retail
+    action: generate_sales_report
+    parameters:
+      location: Istanbul flagship
+      period: daily
+- id: CMD-174
+  command: Show top products for Black Friday campaign.
+  expected:
+    domain: retail
+    action: top_products
+    parameters:
+      event: Black Friday
+- id: CMD-175
+  command: Plan replenishment for fast-moving SKUs.
+  expected:
+    domain: retail
+    action: plan_replenishment
+    parameters:
+      priority: fast-moving
+- id: CMD-176
+  command: Generate monthly consumption summary for data center A.
+  expected:
+    domain: energy
+    action: consumption_summary
+    parameters:
+      site: data center A
+      period: monthly
+- id: CMD-177
+  command: Forecast grid demand for Berlin region next week.
+  expected:
+    domain: energy
+    action: forecast_grid_demand
+    parameters:
+      region: Berlin
+      horizon: next week
+- id: CMD-178
+  command: List outages longer than 4 hours in Q1.
+  expected:
+    domain: energy
+    action: list_outages
+    parameters:
+      duration: 4h
+      quarter: Q1
+- id: CMD-179
+  command: Optimize energy usage for HQ building.
+  expected:
+    domain: energy
+    action: optimize_energy_usage
+    parameters:
+      target: HQ building
+- id: CMD-180
+  command: Analyze renewable output for solar farms in Spain.
+  expected:
+    domain: energy
+    action: renewable_output_analysis
+    parameters:
+      region: Spain
+- id: CMD-181
+  command: Schedule follow-up visit for patient B203 next month.
+  expected:
+    domain: healthcare_admin
+    action: schedule_followup
+    parameters:
+      patient_id: B203
+      timeframe: next month
+- id: CMD-182
+  command: List pending lab results older than 96 hours.
+  expected:
+    domain: healthcare_admin
+    action: list_pending_labs
+    parameters:
+      age: 96h
+- id: CMD-183
+  command: Generate monthly claims summary for provider group X.
+  expected:
+    domain: healthcare_admin
+    action: claims_summary
+    parameters:
+      period: monthly
+      provider_group: X
+- id: CMD-184
+  command: Show appointment schedule for Dr. Smith today.
+  expected:
+    domain: healthcare_admin
+    action: show
+    parameters:
+      doctor: Dr. Smith
+      period: today
+- id: CMD-185
+  command: Record insurance pre-authorization for procedure 784C.
+  expected:
+    domain: healthcare_admin
+    action: record
+    parameters:
+      procedure_code: 784C
+- id: CMD-186
+  command: Create travel request for conference in Berlin next month.
+  expected:
+    domain: general_admin
+    action: create_travel_request
+    parameters:
+      destination: Berlin
+      time: next month
+- id: CMD-187
+  command: List all meetings for leadership team tomorrow.
+  expected:
+    domain: general_admin
+    action: list_meetings
+    parameters:
+      period: tomorrow
+      audience: leadership
+- id: CMD-188
+  command: Draft announcement for office relocation.
+  expected:
+    domain: general_admin
+    action: draft_announcement
+    parameters:
+      topic: office relocation
+- id: CMD-189
+  command: Summarize OKRs for customer success team.
+  expected:
+    domain: general_admin
+    action: summarize_okrs
+    parameters:
+      team: customer success
+- id: CMD-190
+  command: Create procurement tracker for remote work equipment.
+  expected:
+    domain: general_admin
+    action: create_procurement_tracker
+    parameters:
+      type: remote work equipment
+- id: CMD-191
+  command: Create onboarding documentation for data platform.
+  expected:
+    domain: knowledge_work
+    action: create_documentation
+    parameters:
+      subject: data platform onboarding
+- id: CMD-192
+  command: Tag documents related to climate risk.
+  expected:
+    domain: knowledge_work
+    action: tag_documents
+    parameters:
+      topic: climate risk
+- id: CMD-193
+  command: Summarize product requirements document for design team.
+  expected:
+    domain: knowledge_work
+    action: summarize_document
+    parameters:
+      target_team: design
+- id: CMD-194
+  command: Classify internal memos by topic.
+  expected:
+    domain: knowledge_work
+    action: classify
+    parameters:
+      scope: internal memos
+- id: CMD-195
+  command: Generate summary of technical RFCs created this month.
+  expected:
+    domain: knowledge_work
+    action: summarize
+    parameters:
+      topic: RFCs
+      period: this month

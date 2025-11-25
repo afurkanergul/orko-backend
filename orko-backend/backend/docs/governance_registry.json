@@ -1,0 +1,11 @@
+{
+  "destructive_verbs": "...from intent_guardrails.json...",
+  "risk_tiers": "...from intent_guardrails.json...",
+  "whitelist": "...from action_whitelist.json...",
+  "blacklist": "...from action_blacklist.json...",
+  "governance_rules": {
+    "high_risk_requires_admin": true,
+    "medium_risk_requires_confirmation": true,
+    "destructive_verbs_always_flag": true
+  }
+}

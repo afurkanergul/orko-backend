@@ -1,0 +1,25 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ORKO Intent Schema",
+  "type": "object",
+  "properties": {
+    "command": { "type": "string" },
+    "action": { "type": "string" },
+    "parameters": { 
+      "type": "object",
+      "additionalProperties": { "$ref": "#/definitions/parameter" }
+    },
+    "context": { 
+      "type": "object",
+      "additionalProperties": true
+    }
+  },
+  "required": ["command", "action"],
+  "additionalProperties": false,
+
+  "definitions": {
+    "parameter": {
+      "type": "string"
+    }
+  }
+}

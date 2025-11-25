@@ -1,0 +1,113 @@
+# backend/tests/e2e/test_scenarios.yml
+
+scenarios:
+
+  - id: TR-001
+    industry: trading
+    command: "Create a new wheat shipment contract to Egypt."
+    expected_domain: trading
+    expected_action: create_contract
+    expected_workflow: trading.create_contract
+    expected_side_effects:
+      audit_log: "Contract created for wheat shipment to Egypt"
+      trigger_queue: "enqueue: trading.create_contract"
+      dlq: "none"
+
+  - id: LG-001
+    industry: logistics
+    command: "Book a truck for 500 MT barley to Ankara silo tomorrow."
+    expected_domain: logistics
+    expected_action: book_truck
+    expected_workflow: logistics.book_truck
+    expected_side_effects:
+      audit_log: "Truck booking created for 500 MT barley to Ankara"
+      trigger_queue: "enqueue: logistics.book_truck"
+      dlq: "none"
+
+  - id: FN-001
+    industry: finance
+    command: "Generate a quarterly cashflow report."
+    expected_domain: finance
+    expected_action: generate_cashflow_report
+    expected_workflow: finance.generate_cashflow_report
+    expected_side_effects:
+      audit_log: "Quarterly cashflow report generation initiated"
+      trigger_queue: "enqueue: finance.generate_cashflow_report"
+      dlq: "none"
+
+  - id: HR-001
+    industry: hr
+    command: "Add a new employee in Dubai office."
+    expected_domain: hr
+    expected_action: create_employee
+    expected_workflow: hr.create_employee
+    expected_side_effects:
+      audit_log: "Employee creation requested for Dubai office"
+      trigger_queue: "enqueue: hr.create_employee"
+      dlq: "none"
+
+  - id: IT-001
+    industry: it_ops
+    command: "Restart the payments service in EU cluster."
+    expected_domain: it_ops
+    expected_action: restart_service
+    expected_workflow: it_ops.restart_service
+    expected_side_effects:
+      audit_log: "Restart requested for payments service in EU cluster"
+      trigger_queue: "enqueue: it_ops.restart_service"
+      dlq: "none"
+
+  - id: CS-001
+    industry: customer_support
+    command: "List all high-priority tickets for ACME Corp."
+    expected_domain: customer_support
+    expected_action: list_tickets
+    expected_workflow: customer_support.list_tickets
+    expected_side_effects:
+      audit_log: "Listing high-priority tickets for ACME Corp"
+      trigger_queue: "enqueue: customer_support.list_tickets"
+      dlq: "none"
+
+  - id: OP-001
+    industry: operations
+    command: "Create a maintenance checklist for tomorrow."
+    expected_domain: operations
+    expected_action: create_checklist
+    expected_workflow: operations.create_checklist
+    expected_side_effects:
+      audit_log: "Maintenance checklist created for tomorrow"
+      trigger_queue: "enqueue: operations.create_checklist"
+      dlq: "none"
+
+  - id: LG-002
+    industry: logistics
+    command: "List all vessels arriving in Mersin this week."
+    expected_domain: logistics
+    expected_action: list_vessels
+    expected_workflow: logistics.list_vessels
+    expected_side_effects:
+      audit_log: "Vessel list requested for Mersin this week"
+      trigger_queue: "enqueue: logistics.list_vessels"
+      dlq: "none"
+
+  - id: FN-002
+    industry: finance
+    command: "List all invoices past due more than 30 days."
+    expected_domain: finance
+    expected_action: list_overdue_invoices
+    expected_workflow: finance.list_overdue_invoices
+    expected_side_effects:
+      audit_log: "Overdue invoices >30 days requested"
+      trigger_queue: "enqueue: finance.list_overdue_invoices"
+      dlq: "none"
+
+  - id: IT-002
+    industry: it_ops
+    command: "Open a critical ticket for API errors in prod."
+    expected_domain: it_ops
+    expected_action: create_ticket
+    expected_workflow: it_ops.create_ticket
+    expected_side_effects:
+      audit_log: "Critical ticket created for API errors in prod"
+      trigger_queue: "enqueue: it_ops.create_ticket"
+      dlq: "none"

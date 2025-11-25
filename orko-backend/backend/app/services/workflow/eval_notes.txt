@@ -1,0 +1,4 @@
+Planning file for evaluation set and accuracy metrics (Command Parser & Action Trigger).
+Later: define 15 representative commands across trading, logistics, and documentation.
+Later: measure parser accuracy, precision, recall, and latency on this eval set.
+Later: store metrics in parser_metrics and connect to a dashboard.

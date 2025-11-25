@@ -1,0 +1,17 @@
+{
+  "create_daily_pnl_report": {
+    "workflow_name": "daily_pnl_report_v1",
+    "required_params": ["date", "desk", "format"],
+    "defaults": { "format": "xlsx" }
+  },
+  "update_contract_record": {
+    "workflow_name": "contract_update_v1",
+    "required_params": ["contract_id", "field", "value"],
+    "defaults": {}
+  },
+  "send_logistics_update": {
+    "workflow_name": "logistics_update_v1",
+    "required_params": ["shipment_id", "status_channel"],
+    "defaults": { "status_channel": "email" }
+  }
+}

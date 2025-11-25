@@ -1,0 +1,31 @@
+# ============================
+# ORKO Backend Dependencies
+# ============================
+
+# Core Framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.5
+
+# Database & Migrations
+sqlalchemy
+alembic
+psycopg2-binary
+
+# Environment / Utilities
+python-dotenv
+pandas
+matplotlib
+openai
+
+# Testing
+pytest
+httpx>=0.25.0
+faker
+
+# Integrations
+google-auth
+google-auth-oauthlib
+google-api-python-client
+cryptography
+msal
+requests

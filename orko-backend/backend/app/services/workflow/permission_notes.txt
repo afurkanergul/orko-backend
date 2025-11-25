@@ -1,0 +1,4 @@
+Planning file for Workflow Composer permission rules and access control.
+Later: restrict certain actions to admin roles only.
+Later: limit editing of workflows for non-admin users.
+Later: integrate with ORKO’s authentication system.
